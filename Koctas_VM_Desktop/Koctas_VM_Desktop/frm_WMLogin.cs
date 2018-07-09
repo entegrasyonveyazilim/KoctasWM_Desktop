@@ -148,7 +148,7 @@ namespace KoctasWM_Project
             sysTime.wMonth = Convert.ToUInt16(dt.Month);
             sysTime.wMilliseconds = Convert.ToUInt16(dt.Millisecond);
 
-            SetSystemTime(ref sysTime);
+            //SetSystemTime(ref sysTime);
 
         }
 
@@ -229,7 +229,7 @@ namespace KoctasWM_Project
 
 
             //Version bilgisi çekiliyor
-            lbl_Version.Text = Utility.GetCurrentApplicationDate()+" - V. " + Utility.GetCurrentApplicationVersion();
+            lbl_Version.Text = /*Utility.GetCurrentApplicationDate()+*/" - V. " + Utility.GetCurrentApplicationVersion();
             lbl_BaglantiBilgisi.Text = " sisteme bağlanıyorsunuz...";
         }
 
@@ -316,10 +316,10 @@ namespace KoctasWM_Project
                 GlobalData.kullaniciAdi = txtKullaniciAdi.Text.Trim();
                 frm_Menu frm = new frm_Menu();
 
-                TIME_ZONE_INFORMATION tzI = new TIME_ZONE_INFORMATION();
-                GetTimeZoneInformation(ref tzI);
-                tzI.Bias = -120;
-                SetTimeZoneInformation(ref tzI);
+                //TIME_ZONE_INFORMATION tzI = new TIME_ZONE_INFORMATION();
+                //GetTimeZoneInformation(ref tzI);
+                //tzI.Bias = -120;
+                //SetTimeZoneInformation(ref tzI);
 
                 DateTime to_set = Convert.ToDateTime(resp.E_TARIH + " " + resp.E_SAAT.Hour.ToString() +':'+resp.E_SAAT.Minute.ToString());
                 to_set -= new TimeSpan(2, 0, 0);
