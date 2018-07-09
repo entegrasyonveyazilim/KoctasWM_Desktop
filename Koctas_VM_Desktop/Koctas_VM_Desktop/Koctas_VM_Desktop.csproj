@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DF7FBDB-0015-46C4-91E8-5D07B5E5843B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Koctas_VM_Desktop</RootNamespace>
+    <AssemblyName>Koctas_VM_Desktop</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_01_SA_Trans_Girisi_Paletleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_01_SA_Trans_Girisi_Paletleme.designer.cs">
+      <DependentUpon>frm_01_SA_Trans_Girisi_Paletleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_02_SA_Trans_Girisi_Adresleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_02_SA_Trans_Girisi_Adresleme.designer.cs">
+      <DependentUpon>frm_02_SA_Trans_Girisi_Adresleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_03_Depo_Adresler_Arasi_Palet_Transferi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_03_Depo_Adresler_Arasi_Palet_Transferi.designer.cs">
+      <DependentUpon>frm_03_Depo_Adresler_Arasi_Palet_Transferi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_04_Depo_Musteri_Iade_Alani_Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_04_Depo_Musteri_Iade_Alani_Transfer.designer.cs">
+      <DependentUpon>frm_04_Depo_Musteri_Iade_Alani_Transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_05_Depo_Palet_Aktarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_05_Depo_Palet_Aktarim.designer.cs">
+      <DependentUpon>frm_05_Depo_Palet_Aktarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_06_Depo_Stok_Niteligi_Degisiklik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_06_Depo_Stok_Niteligi_Degisiklik.designer.cs">
+      <DependentUpon>frm_06_Depo_Stok_Niteligi_Degisiklik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_07_Depo_Adres_Sorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_07_Depo_Adres_Sorgulama.designer.cs">
+      <DependentUpon>frm_07_Depo_Adres_Sorgulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_07_Depo_Adres_Sorgulama_Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_07_Depo_Adres_Sorgulama_Detay.designer.cs">
+      <DependentUpon>frm_07_Depo_Adres_Sorgulama_Detay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_07_Depo_Palet_Sorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_07_Depo_Palet_Sorgulama.designer.cs">
+      <DependentUpon>frm_07_Depo_Palet_Sorgulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_07_Depo_Urun_Sorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_07_Depo_Urun_Sorgulama.designer.cs">
+      <DependentUpon>frm_07_Depo_Urun_Sorgulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_08_Depo_Fark_Giris_Cikislari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_08_Depo_Fark_Giris_Cikislari.designer.cs">
+      <DependentUpon>frm_08_Depo_Fark_Giris_Cikislari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_09_Depo_Set_Alanina_Tasima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_09_Depo_Set_Alanina_Tasima.designer.cs">
+      <DependentUpon>frm_09_Depo_Set_Alanina_Tasima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_09_Depo_Set_Urunu_Paletleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_09_Depo_Set_Urunu_Paletleme.designer.cs">
+      <DependentUpon>frm_09_Depo_Set_Urunu_Paletleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_11_Toplama_Ikmal_Nakil_Sip_Onaylama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_11_Toplama_Ikmal_Nakil_Sip_Onaylama.designer.cs">
+      <DependentUpon>frm_11_Toplama_Ikmal_Nakil_Sip_Onaylama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_12_15_Genel_Cikis_Islemleri_Formlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_12_15_Genel_Cikis_Islemleri_Formlari.designer.cs">
+      <DependentUpon>frm_12_15_Genel_Cikis_Islemleri_Formlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_14_Genel_Cikis_Isl_Masraf_Yerine_Cikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_14_Genel_Cikis_Isl_Masraf_Yerine_Cikis.designer.cs">
+      <DependentUpon>frm_14_Genel_Cikis_Isl_Masraf_Yerine_Cikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_15_Genel_Cikis_Isl_Sigorta_Ara_Hesabina_Cikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_15_Genel_Cikis_Isl_Sigorta_Ara_Hesabina_Cikis.designer.cs">
+      <DependentUpon>frm_15_Genel_Cikis_Isl_Sigorta_Ara_Hesabina_Cikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi.designer.cs">
+      <DependentUpon>frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_17_Toplama_Nakil_Sip_Onaylama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_17_Toplama_Nakil_Sip_Onaylama.designer.cs">
+      <DependentUpon>frm_17_Toplama_Nakil_Sip_Onaylama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_18_Toplama_Manual_Nakil_Sip_Onaylama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_18_Toplama_Manual_Nakil_Sip_Onaylama.designer.cs">
+      <DependentUpon>frm_18_Toplama_Manual_Nakil_Sip_Onaylama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_18_Toplama_Manual_Nakil_Sip_Onaylama_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_18_Toplama_Manual_Nakil_Sip_Onaylama_Giris.designer.cs">
+      <DependentUpon>frm_18_Toplama_Manual_Nakil_Sip_Onaylama_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma.designer.cs">
+      <DependentUpon>frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris.designer.cs">
+      <DependentUpon>frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali.designer.cs">
+      <DependentUpon>frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay.designer.cs">
+      <DependentUpon>frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol.designer.cs">
+      <DependentUpon>frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D.designer.cs">
+      <DependentUpon>frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_20_v2_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_20_v2_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D.designer.cs">
+      <DependentUpon>frm_20_v2_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_22_Dagitim_Mus_Sev_Kolilerin_Kargoya_Verilmesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_22_Dagitim_Mus_Sev_Kolilerin_Kargoya_Verilmesi.designer.cs">
+      <DependentUpon>frm_22_Dagitim_Mus_Sev_Kolilerin_Kargoya_Verilmesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_23_Dagitim_Mag_Sev_Paletleme_Iptali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_23_Dagitim_Mag_Sev_Paletleme_Iptali.designer.cs">
+      <DependentUpon>frm_23_Dagitim_Mag_Sev_Paletleme_Iptali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_24_Dagitim_Mag_Sev_Yukleme_Mal_Cikisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_24_Dagitim_Mag_Sev_Yukleme_Mal_Cikisi.designer.cs">
+      <DependentUpon>frm_24_Dagitim_Mag_Sev_Yukleme_Mal_Cikisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim.designer.cs">
+      <DependentUpon>frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim_Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim_Detay.designer.cs">
+      <DependentUpon>frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim_Detay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_26_Sayim_Islemleri_Envanter_Sayimi_Kullanici_Secimi_ile_Sayim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_26_Sayim_Islemleri_Envanter_Sayimi_Kullanici_Secimi_ile_Sayim.designer.cs">
+      <DependentUpon>frm_26_Sayim_Islemleri_Envanter_Sayimi_Kullanici_Secimi_ile_Sayim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_26_Sayim_Islemleri_Envanter_Sayimi_Sistem_Onerisi_Sayim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_26_Sayim_Islemleri_Envanter_Sayimi_Sistem_Onerisi_Sayim.designer.cs">
+      <DependentUpon>frm_26_Sayim_Islemleri_Envanter_Sayimi_Sistem_Onerisi_Sayim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_31_Mal_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_31_Mal_Giris.designer.cs">
+      <DependentUpon>frm_31_Mal_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_31_Mal_Giris2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_31_Mal_Giris2.designer.cs">
+      <DependentUpon>frm_31_Mal_Giris2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_32_1_Sarfa_Gonderilecek_Urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_32_1_Sarfa_Gonderilecek_Urunler.designer.cs">
+      <DependentUpon>frm_32_1_Sarfa_Gonderilecek_Urunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_32_Musteri_Iade_Girisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_32_Musteri_Iade_Girisi.designer.cs">
+      <DependentUpon>frm_32_Musteri_Iade_Girisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_32_v2_Musteri_Iade_Girisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_32_v2_Musteri_Iade_Girisi.designer.cs">
+      <DependentUpon>frm_32_v2_Musteri_Iade_Girisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_37_Toplama_Iptal_Alanindan_Transferler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_37_Toplama_Iptal_Alanindan_Transferler.designer.cs">
+      <DependentUpon>frm_37_Toplama_Iptal_Alanindan_Transferler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_38_Mal_Cikisi_Faturalama_ve_ATF_Cikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_38_Mal_Cikisi_Faturalama_ve_ATF_Cikis.designer.cs">
+      <DependentUpon>frm_38_Mal_Cikisi_Faturalama_ve_ATF_Cikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_39_Depo_Yerleri_Arasi_Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_39_Depo_Yerleri_Arasi_Transfer.designer.cs">
+      <DependentUpon>frm_39_Depo_Yerleri_Arasi_Transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_40__Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris_Mgz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_40__Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris_Mgz.designer.cs">
+      <DependentUpon>frm_40__Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris_Mgz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_41_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Mgz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_41_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Mgz.designer.cs">
+      <DependentUpon>frm_41_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Mgz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu.designer.cs">
+      <DependentUpon>frm_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu_Adres_Palet_Sorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu_Adres_Palet_Sorgulama.designer.cs">
+      <DependentUpon>frm_Menu_Adres_Palet_Sorgulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu_Depo_Ici_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu_Depo_Ici_Islemleri.designer.cs">
+      <DependentUpon>frm_Menu_Depo_Ici_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu_Envanter_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu_Envanter_Islemleri.designer.cs">
+      <DependentUpon>frm_Menu_Envanter_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu_MalGirisiPaletleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu_MalGirisiPaletleme.designer.cs">
+      <DependentUpon>frm_Menu_MalGirisiPaletleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu_Mal_Cikis_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu_Mal_Cikis_Islemleri.designer.cs">
+      <DependentUpon>frm_Menu_Mal_Cikis_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu_Mal_Cikis_Sevkiyat_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu_Mal_Cikis_Sevkiyat_Islemleri.designer.cs">
+      <DependentUpon>frm_Menu_Mal_Cikis_Sevkiyat_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu_Mal_Cikis_Toplama_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu_Mal_Cikis_Toplama_Islemleri.designer.cs">
+      <DependentUpon>frm_Menu_Mal_Cikis_Toplama_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu_Sayim_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu_Sayim_Islemleri.designer.cs">
+      <DependentUpon>frm_Menu_Sayim_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu_Sayim_Islemleri_Envanter_Sayim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu_Sayim_Islemleri_Envanter_Sayim.designer.cs">
+      <DependentUpon>frm_Menu_Sayim_Islemleri_Envanter_Sayim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu_Set_Urun_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu_Set_Urun_Islemleri.designer.cs">
+      <DependentUpon>frm_Menu_Set_Urun_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Msg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Msg.designer.cs">
+      <DependentUpon>frm_Msg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Waiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Waiting.designer.cs">
+      <DependentUpon>frm_Waiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_WMLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_WMLogin.designer.cs">
+      <DependentUpon>frm_WMLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalData.cs" />
+    <Compile Include="PictureButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Web References\WS_Islem\Reference.cs" />
+    <Compile Include="Service References\Web References\WS_Kontrol\Reference.cs" />
+    <Compile Include="Service References\Web References\WS_Login\Reference.cs" />
+    <Compile Include="Service References\Web References\WS_Yardim\Reference.cs" />
+    <Compile Include="TaskBarHelper.cs" />
+    <Compile Include="Utility.cs" />
+    <EmbeddedResource Include="frm_01_SA_Trans_Girisi_Paletleme.resx">
+      <DependentUpon>frm_01_SA_Trans_Girisi_Paletleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_02_SA_Trans_Girisi_Adresleme.resx">
+      <DependentUpon>frm_02_SA_Trans_Girisi_Adresleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_03_Depo_Adresler_Arasi_Palet_Transferi.resx">
+      <DependentUpon>frm_03_Depo_Adresler_Arasi_Palet_Transferi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_04_Depo_Musteri_Iade_Alani_Transfer.resx">
+      <DependentUpon>frm_04_Depo_Musteri_Iade_Alani_Transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_05_Depo_Palet_Aktarim.resx">
+      <DependentUpon>frm_05_Depo_Palet_Aktarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_06_Depo_Stok_Niteligi_Degisiklik.resx">
+      <DependentUpon>frm_06_Depo_Stok_Niteligi_Degisiklik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_07_Depo_Adres_Sorgulama.resx">
+      <DependentUpon>frm_07_Depo_Adres_Sorgulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_07_Depo_Adres_Sorgulama_Detay.resx">
+      <DependentUpon>frm_07_Depo_Adres_Sorgulama_Detay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_07_Depo_Palet_Sorgulama.resx">
+      <DependentUpon>frm_07_Depo_Palet_Sorgulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_07_Depo_Urun_Sorgulama.resx">
+      <DependentUpon>frm_07_Depo_Urun_Sorgulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_08_Depo_Fark_Giris_Cikislari.resx">
+      <DependentUpon>frm_08_Depo_Fark_Giris_Cikislari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_09_Depo_Set_Alanina_Tasima.resx">
+      <DependentUpon>frm_09_Depo_Set_Alanina_Tasima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_09_Depo_Set_Urunu_Paletleme.resx">
+      <DependentUpon>frm_09_Depo_Set_Urunu_Paletleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_11_Toplama_Ikmal_Nakil_Sip_Onaylama.resx">
+      <DependentUpon>frm_11_Toplama_Ikmal_Nakil_Sip_Onaylama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_12_15_Genel_Cikis_Islemleri_Formlari.resx">
+      <DependentUpon>frm_12_15_Genel_Cikis_Islemleri_Formlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_14_Genel_Cikis_Isl_Masraf_Yerine_Cikis.resx">
+      <DependentUpon>frm_14_Genel_Cikis_Isl_Masraf_Yerine_Cikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_15_Genel_Cikis_Isl_Sigorta_Ara_Hesabina_Cikis.resx">
+      <DependentUpon>frm_15_Genel_Cikis_Isl_Sigorta_Ara_Hesabina_Cikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi.resx">
+      <DependentUpon>frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_17_Toplama_Nakil_Sip_Onaylama.resx">
+      <DependentUpon>frm_17_Toplama_Nakil_Sip_Onaylama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_18_Toplama_Manual_Nakil_Sip_Onaylama.resx">
+      <DependentUpon>frm_18_Toplama_Manual_Nakil_Sip_Onaylama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_18_Toplama_Manual_Nakil_Sip_Onaylama_Giris.resx">
+      <DependentUpon>frm_18_Toplama_Manual_Nakil_Sip_Onaylama_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma.resx">
+      <DependentUpon>frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris.resx">
+      <DependentUpon>frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali.resx">
+      <DependentUpon>frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay.resx">
+      <DependentUpon>frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol.resx">
+      <DependentUpon>frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D.resx">
+      <DependentUpon>frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_20_v2_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D.resx">
+      <DependentUpon>frm_20_v2_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_22_Dagitim_Mus_Sev_Kolilerin_Kargoya_Verilmesi.resx">
+      <DependentUpon>frm_22_Dagitim_Mus_Sev_Kolilerin_Kargoya_Verilmesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_23_Dagitim_Mag_Sev_Paletleme_Iptali.resx">
+      <DependentUpon>frm_23_Dagitim_Mag_Sev_Paletleme_Iptali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_24_Dagitim_Mag_Sev_Yukleme_Mal_Cikisi.resx">
+      <DependentUpon>frm_24_Dagitim_Mag_Sev_Yukleme_Mal_Cikisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim.resx">
+      <DependentUpon>frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim_Detay.resx">
+      <DependentUpon>frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim_Detay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_26_Sayim_Islemleri_Envanter_Sayimi_Kullanici_Secimi_ile_Sayim.resx">
+      <DependentUpon>frm_26_Sayim_Islemleri_Envanter_Sayimi_Kullanici_Secimi_ile_Sayim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_26_Sayim_Islemleri_Envanter_Sayimi_Sistem_Onerisi_Sayim.resx">
+      <DependentUpon>frm_26_Sayim_Islemleri_Envanter_Sayimi_Sistem_Onerisi_Sayim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_31_Mal_Giris.resx">
+      <DependentUpon>frm_31_Mal_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_31_Mal_Giris2.resx">
+      <DependentUpon>frm_31_Mal_Giris2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_32_1_Sarfa_Gonderilecek_Urunler.resx">
+      <DependentUpon>frm_32_1_Sarfa_Gonderilecek_Urunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_32_Musteri_Iade_Girisi.resx">
+      <DependentUpon>frm_32_Musteri_Iade_Girisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_32_v2_Musteri_Iade_Girisi.resx">
+      <DependentUpon>frm_32_v2_Musteri_Iade_Girisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_37_Toplama_Iptal_Alanindan_Transferler.resx">
+      <DependentUpon>frm_37_Toplama_Iptal_Alanindan_Transferler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_38_Mal_Cikisi_Faturalama_ve_ATF_Cikis.resx">
+      <DependentUpon>frm_38_Mal_Cikisi_Faturalama_ve_ATF_Cikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_39_Depo_Yerleri_Arasi_Transfer.resx">
+      <DependentUpon>frm_39_Depo_Yerleri_Arasi_Transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_40__Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris_Mgz.resx">
+      <DependentUpon>frm_40__Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris_Mgz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_41_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Mgz.resx">
+      <DependentUpon>frm_41_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Mgz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu.resx">
+      <DependentUpon>frm_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu_Adres_Palet_Sorgulama.resx">
+      <DependentUpon>frm_Menu_Adres_Palet_Sorgulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu_Depo_Ici_Islemleri.resx">
+      <DependentUpon>frm_Menu_Depo_Ici_Islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu_Envanter_Islemleri.resx">
+      <DependentUpon>frm_Menu_Envanter_Islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu_MalGirisiPaletleme.resx">
+      <DependentUpon>frm_Menu_MalGirisiPaletleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu_Mal_Cikis_Islemleri.resx">
+      <DependentUpon>frm_Menu_Mal_Cikis_Islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu_Mal_Cikis_Sevkiyat_Islemleri.resx">
+      <DependentUpon>frm_Menu_Mal_Cikis_Sevkiyat_Islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu_Mal_Cikis_Toplama_Islemleri.resx">
+      <DependentUpon>frm_Menu_Mal_Cikis_Toplama_Islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu_Sayim_Islemleri.resx">
+      <DependentUpon>frm_Menu_Sayim_Islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu_Sayim_Islemleri_Envanter_Sayim.resx">
+      <DependentUpon>frm_Menu_Sayim_Islemleri_Envanter_Sayim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu_Set_Urun_Islemleri.resx">
+      <DependentUpon>frm_Menu_Set_Urun_Islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Msg.resx">
+      <DependentUpon>frm_Msg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Waiting.resx">
+      <DependentUpon>frm_Waiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_WMLogin.resx">
+      <DependentUpon>frm_WMLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\Web References\WS_Islem\Reference.map" />
+    <None Include="Service References\Web References\WS_Islem\ws_wm_islem_v107.wsdl" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWmMalzemeInfoResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsAmbalajlamaEslemeResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsAmbalajlamaFaturaResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsAmbalajlamaResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsAtfGenelResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsAtfKaydetResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsDepoArasiTransferResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsDepoIciFarkResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsHurdaCikisiResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsIadeHurdaCikisiResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsIadeTransferResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsIkmalNaksipOnayResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsKargoyaTeslim2Response.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsKargoyaTeslimResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsKoliBolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsKuyrukDegistirResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsMasrafCikisiResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsMgCreate2Response.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsNewKoliUpdateResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsPaletTransferResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsPltToPltTransferResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsRampaSevkiyatResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsSatIadeCikisiResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsSatinalmaAdresResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsSatinalmaGirisResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsSayimAdresiTamamResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsSayimKaydetIiResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsSayimKaydetResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsSayimMlzTamamlaResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsSetUrunuPaletlemeResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsSetUrunuTasimaResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsSigortaCikisiResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsStkNitelikDegisResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsTeslimatTopGerAlResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsTeslimDagitimCreResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsTopIpTransferResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsToplamaNaksipCreResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsWebiadeKabul2Response.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsWebiadeKabulResponse.datasource" />
+    <None Include="Service References\Web References\WS_Islem\ZKtWmWsYuklemeTeslimatResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\Reference.map" />
+    <None Include="Service References\Web References\WS_Kontrol\ws_wm_kontrol_v107.wsdl" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmSayimAdresOnerResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmSayimMalzemeKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmSayimPaletKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsAdresSorguResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsAmbalajKontAdresResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsAmbalajKontAracResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsAmbalajKontKoliResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsAmbalajKontMlzResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsAtfInfoResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsCikisAdresKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsCikisMatnrKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsCikisPaletKont2Response.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsCikisPaletKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsGetSevkiyatNoResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsIadeMlzKontroluResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsIkmalNakilKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsKuyrukListeResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsKuyrukResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsMalFatAtfKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsMalzemeKontroluResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsManToplamaNaksipResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsMgCheckSasResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsPaletKontrol05Response.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsPaletKontrol06Response.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsPaletKontrolAllResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsPaletKontrolGirisResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsPaletKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsPaletSorguResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsRampaKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsRampaOnayResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsSayimAdresOnerResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsSayimKullaniciSecResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsSayimMlzKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsSetTasimaKontroluResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsSetUrunuKontroluResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsSevkiyatSiparisResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsTeslimatDagitimResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsTopIpMlzKontroluResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsToplamaLockCozResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsToplamaNaksipResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsUrunSorguResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsWebsipno2Response.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsWebsipnoResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsYetkiKontroluResponse.datasource" />
+    <None Include="Service References\Web References\WS_Kontrol\ZKtWmWsYuklemeMalKontrolResponse.datasource" />
+    <None Include="Service References\Web References\WS_Login\Reference.map" />
+    <None Include="Service References\Web References\WS_Login\ws_wm_login_v100.wsdl" />
+    <None Include="Service References\Web References\WS_Login\ZKT_WM_LOGINResponse.datasource" />
+    <None Include="Service References\Web References\WS_Yardim\Reference.map" />
+    <None Include="Service References\Web References\WS_Yardim\ws_wm_yardim_v101.wsdl" />
+    <None Include="Service References\Web References\WS_Yardim\ZKtWmWsKargoFirmalariResponse.datasource" />
+    <None Include="Service References\Web References\WS_Yardim\ZKtWmWsKoliTipleriResponse.datasource" />
+    <None Include="Service References\Web References\WS_Yardim\ZKtWmWsSayimKytOnceKontResponse.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="deneme.csproj" />
+    <Content Include="koctas-wm-app-ico.ico" />
+    <Content Include="KoctasWM_Project.csproj" />
+    <Content Include="KoctasWM_Project.csproj.user" />
+    <Content Include="WindowsFormsApplication1.csproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
