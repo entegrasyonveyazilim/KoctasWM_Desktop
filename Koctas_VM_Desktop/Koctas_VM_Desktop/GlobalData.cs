@@ -10,7 +10,7 @@ namespace KoctasWM_Project
         public static System.Net.NetworkCredential globalCr;
         public static string kullaniciAdi;
         public static string sunucuIp;
-        public static string sunucuTip = "PROD";
+        public static string sunucuTip = "DEV TEST";
 
         public static string modUser = "mod";
         public static string modPass = "9123";

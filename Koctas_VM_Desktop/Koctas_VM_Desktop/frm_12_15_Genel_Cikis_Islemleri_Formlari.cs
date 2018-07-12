@@ -53,7 +53,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu frm = new frm_Menu();
+            frm.Show();
+            this.Hide();
         }
 
         private void formAcilisDuzenle()

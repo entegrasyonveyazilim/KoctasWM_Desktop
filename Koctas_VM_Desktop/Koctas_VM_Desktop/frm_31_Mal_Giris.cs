@@ -33,7 +33,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_MalGirisiPaletleme frm = new frm_Menu_MalGirisiPaletleme();
+            frm.Show();
+            this.Hide();
         }
 
 
@@ -60,7 +62,7 @@ namespace KoctasWM_Project
 
                 frm.siparis_sayisi = lst_Siparis.Items.Count;
                 frm.Horoz = chk_horoz.Checked;
-                frm.ShowDialog();
+                frm .Show();
                 if (frm.DialogResult == DialogResult.OK)
                 {
                     this.Close();

@@ -137,7 +137,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Mal_Cikis_Sevkiyat_Islemleri frm = new frm_Menu_Mal_Cikis_Sevkiyat_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void btn_Ekle_Click(object sender, EventArgs e)
@@ -302,7 +304,7 @@ namespace KoctasWM_Project
                             MessageBox.Show(GlobalData.rMsg[0].Message.ToString(), "BİLGİ");
                             Utility.moreMsgCheck(GlobalData.rMsg);
                             Cursor.Current = Cursors.Default;
-                            this.Close();
+                            this.Hide();
                         }
                         else
                         {

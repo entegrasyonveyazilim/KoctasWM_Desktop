@@ -36,6 +36,8 @@
             this.lbl_SevkiyatRampasi = new System.Windows.Forms.Label();
             this.txtSevkiyatRampasi = new System.Windows.Forms.TextBox();
             this.p4 = new System.Windows.Forms.Panel();
+            this.lbl_Magaza = new System.Windows.Forms.Label();
+            this.txtMagaza = new System.Windows.Forms.TextBox();
             this.txtTeslimatNo = new System.Windows.Forms.TextBox();
             this.lbl_TeslimatNo = new System.Windows.Forms.Label();
             this.btn_Onayla = new KoctasWM_Project.PictureButton();
@@ -54,8 +56,6 @@
             this.btn_Geri = new KoctasWM_Project.PictureButton();
             this.btn_Kaydet = new KoctasWM_Project.PictureButton();
             this.lbl_LoginInfo = new System.Windows.Forms.Label();
-            this.txtMagaza = new System.Windows.Forms.TextBox();
-            this.lbl_Magaza = new System.Windows.Forms.Label();
             this.p2.SuspendLayout();
             this.p1.SuspendLayout();
             this.p4.SuspendLayout();
@@ -71,15 +71,16 @@
             this.p2.Location = new System.Drawing.Point(3, 33);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(312, 28);
+            this.p2.TabIndex = 72;
             // 
             // txtKargoPaletNo
             // 
             this.txtKargoPaletNo.BackColor = System.Drawing.Color.White;
             this.txtKargoPaletNo.Enabled = false;
-            this.txtKargoPaletNo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtKargoPaletNo.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtKargoPaletNo.Location = new System.Drawing.Point(131, 3);
             this.txtKargoPaletNo.Name = "txtKargoPaletNo";
-            this.txtKargoPaletNo.Size = new System.Drawing.Size(178, 21);
+            this.txtKargoPaletNo.Size = new System.Drawing.Size(178, 22);
             this.txtKargoPaletNo.TabIndex = 5;
             this.txtKargoPaletNo.GotFocus += new System.EventHandler(this.textBox1_GotFocus_1);
             this.txtKargoPaletNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtKargoPaletNo_KeyDown);
@@ -90,6 +91,7 @@
             this.lbl_KargoPaletNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_KargoPaletNo.Name = "lbl_KargoPaletNo";
             this.lbl_KargoPaletNo.Size = new System.Drawing.Size(122, 20);
+            this.lbl_KargoPaletNo.TabIndex = 6;
             this.lbl_KargoPaletNo.Text = "Sevk. Palet No:";
             // 
             // p1
@@ -100,6 +102,7 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 28);
+            this.p1.TabIndex = 73;
             // 
             // lbl_SevkiyatRampasi
             // 
@@ -107,15 +110,16 @@
             this.lbl_SevkiyatRampasi.Location = new System.Drawing.Point(3, 6);
             this.lbl_SevkiyatRampasi.Name = "lbl_SevkiyatRampasi";
             this.lbl_SevkiyatRampasi.Size = new System.Drawing.Size(122, 18);
+            this.lbl_SevkiyatRampasi.TabIndex = 0;
             this.lbl_SevkiyatRampasi.Text = "Sevk. Rampası:";
             // 
             // txtSevkiyatRampasi
             // 
             this.txtSevkiyatRampasi.BackColor = System.Drawing.Color.White;
-            this.txtSevkiyatRampasi.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtSevkiyatRampasi.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtSevkiyatRampasi.Location = new System.Drawing.Point(131, 3);
             this.txtSevkiyatRampasi.Name = "txtSevkiyatRampasi";
-            this.txtSevkiyatRampasi.Size = new System.Drawing.Size(178, 21);
+            this.txtSevkiyatRampasi.Size = new System.Drawing.Size(178, 22);
             this.txtSevkiyatRampasi.TabIndex = 3;
             this.txtSevkiyatRampasi.GotFocus += new System.EventHandler(this.txtSevkiyatRampasi_GotFocus);
             this.txtSevkiyatRampasi.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSevkiyatRampasi_KeyDown);
@@ -138,15 +142,35 @@
             this.p4.Location = new System.Drawing.Point(3, 93);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(312, 113);
+            this.p4.TabIndex = 74;
+            // 
+            // lbl_Magaza
+            // 
+            this.lbl_Magaza.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.lbl_Magaza.Location = new System.Drawing.Point(3, 6);
+            this.lbl_Magaza.Name = "lbl_Magaza";
+            this.lbl_Magaza.Size = new System.Drawing.Size(122, 16);
+            this.lbl_Magaza.TabIndex = 0;
+            this.lbl_Magaza.Text = "Mağaza:";
+            // 
+            // txtMagaza
+            // 
+            this.txtMagaza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.txtMagaza.Enabled = false;
+            this.txtMagaza.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txtMagaza.Location = new System.Drawing.Point(131, 3);
+            this.txtMagaza.Name = "txtMagaza";
+            this.txtMagaza.Size = new System.Drawing.Size(178, 20);
+            this.txtMagaza.TabIndex = 86;
             // 
             // txtTeslimatNo
             // 
             this.txtTeslimatNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtTeslimatNo.Enabled = false;
-            this.txtTeslimatNo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtTeslimatNo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtTeslimatNo.Location = new System.Drawing.Point(131, 48);
             this.txtTeslimatNo.Name = "txtTeslimatNo";
-            this.txtTeslimatNo.Size = new System.Drawing.Size(178, 19);
+            this.txtTeslimatNo.Size = new System.Drawing.Size(178, 20);
             this.txtTeslimatNo.TabIndex = 80;
             // 
             // lbl_TeslimatNo
@@ -155,16 +179,17 @@
             this.lbl_TeslimatNo.Location = new System.Drawing.Point(3, 51);
             this.lbl_TeslimatNo.Name = "lbl_TeslimatNo";
             this.lbl_TeslimatNo.Size = new System.Drawing.Size(122, 16);
+            this.lbl_TeslimatNo.TabIndex = 87;
             this.lbl_TeslimatNo.Text = "Teslimat No:";
             // 
             // btn_Onayla
             // 
             this.btn_Onayla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Onayla.BackgroundImage = null;
             this.btn_Onayla.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Onayla.ForeColor = System.Drawing.Color.White;
             this.btn_Onayla.Location = new System.Drawing.Point(234, 83);
             this.btn_Onayla.Name = "btn_Onayla";
+            this.btn_Onayla.PressedImage = null;
             this.btn_Onayla.Size = new System.Drawing.Size(75, 26);
             this.btn_Onayla.TabIndex = 74;
             this.btn_Onayla.Text = "Onayla";
@@ -178,15 +203,16 @@
             this.p3.Location = new System.Drawing.Point(165, 70);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(63, 39);
+            this.p3.TabIndex = 88;
             // 
             // txtPaletlenecekMiktar
             // 
             this.txtPaletlenecekMiktar.BackColor = System.Drawing.Color.White;
             this.txtPaletlenecekMiktar.Enabled = false;
-            this.txtPaletlenecekMiktar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtPaletlenecekMiktar.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtPaletlenecekMiktar.Location = new System.Drawing.Point(3, 18);
             this.txtPaletlenecekMiktar.Name = "txtPaletlenecekMiktar";
-            this.txtPaletlenecekMiktar.Size = new System.Drawing.Size(57, 21);
+            this.txtPaletlenecekMiktar.Size = new System.Drawing.Size(57, 22);
             this.txtPaletlenecekMiktar.TabIndex = 60;
             this.txtPaletlenecekMiktar.GotFocus += new System.EventHandler(this.txtPaletlenecekMiktar_GotFocus);
             this.txtPaletlenecekMiktar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPaletlenecekMiktar_KeyDown);
@@ -198,6 +224,7 @@
             this.lbl_PaletlenecekMiktar.Location = new System.Drawing.Point(3, 3);
             this.lbl_PaletlenecekMiktar.Name = "lbl_PaletlenecekMiktar";
             this.lbl_PaletlenecekMiktar.Size = new System.Drawing.Size(53, 20);
+            this.lbl_PaletlenecekMiktar.TabIndex = 61;
             this.lbl_PaletlenecekMiktar.Text = "Miktar";
             this.lbl_PaletlenecekMiktar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -207,7 +234,7 @@
             this.txtTeslimatMiktari.Enabled = false;
             this.txtTeslimatMiktari.Location = new System.Drawing.Point(3, 86);
             this.txtTeslimatMiktari.Name = "txtTeslimatMiktari";
-            this.txtTeslimatMiktari.Size = new System.Drawing.Size(66, 23);
+            this.txtTeslimatMiktari.Size = new System.Drawing.Size(66, 20);
             this.txtTeslimatMiktari.TabIndex = 69;
             // 
             // lbl_TeslimatMiktari
@@ -216,6 +243,7 @@
             this.lbl_TeslimatMiktari.Location = new System.Drawing.Point(3, 70);
             this.lbl_TeslimatMiktari.Name = "lbl_TeslimatMiktari";
             this.lbl_TeslimatMiktari.Size = new System.Drawing.Size(66, 20);
+            this.lbl_TeslimatMiktari.TabIndex = 89;
             this.lbl_TeslimatMiktari.Text = "Tes.Miktar";
             this.lbl_TeslimatMiktari.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -225,7 +253,7 @@
             this.txtPaletlenenMiktar.Enabled = false;
             this.txtPaletlenenMiktar.Location = new System.Drawing.Point(75, 86);
             this.txtPaletlenenMiktar.Name = "txtPaletlenenMiktar";
-            this.txtPaletlenenMiktar.Size = new System.Drawing.Size(84, 23);
+            this.txtPaletlenenMiktar.Size = new System.Drawing.Size(84, 20);
             this.txtPaletlenenMiktar.TabIndex = 57;
             // 
             // lbl_PaletlenenMiktar
@@ -234,6 +262,7 @@
             this.lbl_PaletlenenMiktar.Location = new System.Drawing.Point(70, 70);
             this.lbl_PaletlenenMiktar.Name = "lbl_PaletlenenMiktar";
             this.lbl_PaletlenenMiktar.Size = new System.Drawing.Size(96, 20);
+            this.lbl_PaletlenenMiktar.TabIndex = 90;
             this.lbl_PaletlenenMiktar.Text = "Paletlenen Mik.";
             this.lbl_PaletlenenMiktar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -241,10 +270,10 @@
             // 
             this.txtMalzemeTanimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtMalzemeTanimi.Enabled = false;
-            this.txtMalzemeTanimi.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtMalzemeTanimi.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtMalzemeTanimi.Location = new System.Drawing.Point(131, 25);
             this.txtMalzemeTanimi.Name = "txtMalzemeTanimi";
-            this.txtMalzemeTanimi.Size = new System.Drawing.Size(178, 19);
+            this.txtMalzemeTanimi.Size = new System.Drawing.Size(178, 20);
             this.txtMalzemeTanimi.TabIndex = 56;
             // 
             // lbl_MalzemeTanimi
@@ -253,6 +282,7 @@
             this.lbl_MalzemeTanimi.Location = new System.Drawing.Point(3, 28);
             this.lbl_MalzemeTanimi.Name = "lbl_MalzemeTanimi";
             this.lbl_MalzemeTanimi.Size = new System.Drawing.Size(122, 16);
+            this.lbl_MalzemeTanimi.TabIndex = 91;
             this.lbl_MalzemeTanimi.Text = "Malzeme Tanımı:";
             // 
             // p5
@@ -263,15 +293,16 @@
             this.p5.Location = new System.Drawing.Point(3, 64);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(312, 27);
+            this.p5.TabIndex = 1;
             // 
             // txtMalzemeNo
             // 
             this.txtMalzemeNo.BackColor = System.Drawing.Color.White;
             this.txtMalzemeNo.Enabled = false;
-            this.txtMalzemeNo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtMalzemeNo.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtMalzemeNo.Location = new System.Drawing.Point(131, 3);
             this.txtMalzemeNo.Name = "txtMalzemeNo";
-            this.txtMalzemeNo.Size = new System.Drawing.Size(178, 21);
+            this.txtMalzemeNo.Size = new System.Drawing.Size(178, 22);
             this.txtMalzemeNo.TabIndex = 5;
             this.txtMalzemeNo.GotFocus += new System.EventHandler(this.txtMalzemeNo_GotFocus);
             this.txtMalzemeNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMalzemeNo_KeyDown);
@@ -282,6 +313,7 @@
             this.lbl_MalzemeNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_MalzemeNo.Name = "lbl_MalzemeNo";
             this.lbl_MalzemeNo.Size = new System.Drawing.Size(122, 20);
+            this.lbl_MalzemeNo.TabIndex = 6;
             this.lbl_MalzemeNo.Text = "Malzeme No:";
             // 
             // btn_Geri
@@ -315,31 +347,14 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // txtMagaza
-            // 
-            this.txtMagaza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
-            this.txtMagaza.Enabled = false;
-            this.txtMagaza.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
-            this.txtMagaza.Location = new System.Drawing.Point(131, 3);
-            this.txtMagaza.Name = "txtMagaza";
-            this.txtMagaza.Size = new System.Drawing.Size(178, 19);
-            this.txtMagaza.TabIndex = 86;
-            // 
-            // lbl_Magaza
-            // 
-            this.lbl_Magaza.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.lbl_Magaza.Location = new System.Drawing.Point(3, 6);
-            this.lbl_Magaza.Name = "lbl_Magaza";
-            this.lbl_Magaza.Size = new System.Drawing.Size(122, 16);
-            this.lbl_Magaza.Text = "Mağaza:";
             // 
             // frm_23_Dagitim_Mag_Sev_Paletleme_Iptali
             // 
@@ -356,13 +371,19 @@
             this.Controls.Add(this.p1);
             this.Controls.Add(this.p4);
             this.Name = "frm_23_Dagitim_Mag_Sev_Paletleme_Iptali";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mağaza Sevkiyatları Paletleme ve İptali";
             this.Load += new System.EventHandler(this.frm_23_Dagitim_Mag_Sev_Paletleme_Iptali_Load);
             this.p2.ResumeLayout(false);
+            this.p2.PerformLayout();
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.p4.ResumeLayout(false);
+            this.p4.PerformLayout();
             this.p3.ResumeLayout(false);
+            this.p3.PerformLayout();
             this.p5.ResumeLayout(false);
+            this.p5.PerformLayout();
             this.ResumeLayout(false);
 
         }

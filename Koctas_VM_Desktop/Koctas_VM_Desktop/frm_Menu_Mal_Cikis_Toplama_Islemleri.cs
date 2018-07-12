@@ -25,42 +25,49 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Mal_Cikis_Islemleri frm = new frm_Menu_Mal_Cikis_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void btn_KuyrukSecimi_Click(object sender, EventArgs e)
         {
             frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi frm = new frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi();
             frm._kuyrukTipi = "W";
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_NakilOnaylama_Click(object sender, EventArgs e)
         {
             frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi frm = new frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi();
             frm._kuyrukTipi = "M";
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
             
             //frm_17_Toplama_Nakil_Sip_Onaylama frm = new frm_17_Toplama_Nakil_Sip_Onaylama();
-            //frm.ShowDialog();
+            //frm .Show();
         }
 
         private void btn_ManuelNakilOnaylama_Click(object sender, EventArgs e)
         {
             frm_18_Toplama_Manual_Nakil_Sip_Onaylama_Giris frm = new frm_18_Toplama_Manual_Nakil_Sip_Onaylama_Giris();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_TopTesDagAyr_Iptal_Islemleri_Click(object sender, EventArgs e)
         {
             frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris frm = new frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_TopTesDagAyr_Iptal_MAGAZA_Islemleri_Click(object sender, EventArgs e)
         {
             frm_40__Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris_Mgz frm = new frm_40__Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris_Mgz();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
 

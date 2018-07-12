@@ -85,7 +85,7 @@ namespace KoctasWM_Project
                 {
                     frm_Msg frm = new frm_Msg();
                     frm._return = _msg;
-                    if (frm.ShowDialog() == DialogResult.Cancel)
+                    if (frm .ShowDialog() == DialogResult.Cancel)
                     {
                         MessageBox.Show("Diğer hata mesajları gösterilemiyor");
                     }

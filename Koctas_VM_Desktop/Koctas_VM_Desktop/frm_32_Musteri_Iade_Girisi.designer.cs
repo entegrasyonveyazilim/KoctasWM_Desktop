@@ -44,6 +44,7 @@
             this.txtAciklama = new System.Windows.Forms.TextBox();
             this.lb_Aciklama = new System.Windows.Forms.Label();
             this.p2 = new System.Windows.Forms.Panel();
+            this.txtIadeTuru = new System.Windows.Forms.TextBox();
             this.txtMalzemeNo = new System.Windows.Forms.TextBox();
             this.lbl_MalzemeNo = new System.Windows.Forms.Label();
             this.grd_List = new System.Windows.Forms.DataGrid();
@@ -62,11 +63,11 @@
             this.btn_Kaydet = new KoctasWM_Project.PictureButton();
             this.btn_Geri = new KoctasWM_Project.PictureButton();
             this.lbl_LoginInfo = new System.Windows.Forms.Label();
-            this.txtIadeTuru = new System.Windows.Forms.TextBox();
             this.p1.SuspendLayout();
             this.p3.SuspendLayout();
             this.p4.SuspendLayout();
             this.p2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).BeginInit();
             this.p5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,14 +79,15 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(150, 40);
+            this.p1.TabIndex = 93;
             // 
             // txtSiparisId
             // 
             this.txtSiparisId.BackColor = System.Drawing.Color.White;
-            this.txtSiparisId.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtSiparisId.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtSiparisId.Location = new System.Drawing.Point(4, 19);
             this.txtSiparisId.Name = "txtSiparisId";
-            this.txtSiparisId.Size = new System.Drawing.Size(143, 19);
+            this.txtSiparisId.Size = new System.Drawing.Size(143, 20);
             this.txtSiparisId.TabIndex = 5;
             this.txtSiparisId.GotFocus += new System.EventHandler(this.txtSiparisNo_GotFocus);
             this.txtSiparisId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSiparisNo_KeyDown);
@@ -96,6 +98,7 @@
             this.lbl_WebSiparisId.Location = new System.Drawing.Point(3, 4);
             this.lbl_WebSiparisId.Name = "lbl_WebSiparisId";
             this.lbl_WebSiparisId.Size = new System.Drawing.Size(144, 17);
+            this.lbl_WebSiparisId.TabIndex = 6;
             this.lbl_WebSiparisId.Text = "Web Sip. Id:";
             this.lbl_WebSiparisId.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -105,16 +108,17 @@
             this.lbl_SAPIadeSiparisNo.Location = new System.Drawing.Point(3, 79);
             this.lbl_SAPIadeSiparisNo.Name = "lbl_SAPIadeSiparisNo";
             this.lbl_SAPIadeSiparisNo.Size = new System.Drawing.Size(115, 21);
+            this.lbl_SAPIadeSiparisNo.TabIndex = 92;
             this.lbl_SAPIadeSiparisNo.Text = "SAP İ. Sip. No:";
             // 
             // txtSAPIadeSiparisNo
             // 
             this.txtSAPIadeSiparisNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtSAPIadeSiparisNo.Enabled = false;
-            this.txtSAPIadeSiparisNo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtSAPIadeSiparisNo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtSAPIadeSiparisNo.Location = new System.Drawing.Point(3, 95);
             this.txtSAPIadeSiparisNo.Name = "txtSAPIadeSiparisNo";
-            this.txtSAPIadeSiparisNo.Size = new System.Drawing.Size(128, 19);
+            this.txtSAPIadeSiparisNo.Size = new System.Drawing.Size(128, 20);
             this.txtSAPIadeSiparisNo.TabIndex = 83;
             // 
             // p3
@@ -127,15 +131,16 @@
             this.p3.Location = new System.Drawing.Point(3, 117);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(128, 46);
+            this.p3.TabIndex = 91;
             // 
             // txtDegisimMiktar
             // 
             this.txtDegisimMiktar.BackColor = System.Drawing.Color.White;
             this.txtDegisimMiktar.Enabled = false;
-            this.txtDegisimMiktar.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtDegisimMiktar.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtDegisimMiktar.Location = new System.Drawing.Point(66, 22);
             this.txtDegisimMiktar.Name = "txtDegisimMiktar";
-            this.txtDegisimMiktar.Size = new System.Drawing.Size(54, 19);
+            this.txtDegisimMiktar.Size = new System.Drawing.Size(54, 20);
             this.txtDegisimMiktar.TabIndex = 63;
             this.txtDegisimMiktar.GotFocus += new System.EventHandler(this.txtKabulMiktar_GotFocus);
             this.txtDegisimMiktar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDegisimMiktar_KeyDown);
@@ -147,16 +152,17 @@
             this.lbl_DegisimMiktari.Location = new System.Drawing.Point(66, 4);
             this.lbl_DegisimMiktari.Name = "lbl_DegisimMiktari";
             this.lbl_DegisimMiktari.Size = new System.Drawing.Size(58, 15);
+            this.lbl_DegisimMiktari.TabIndex = 64;
             this.lbl_DegisimMiktari.Text = "Değ. Mik:";
             // 
             // txtKabulMiktar
             // 
             this.txtKabulMiktar.BackColor = System.Drawing.Color.White;
             this.txtKabulMiktar.Enabled = false;
-            this.txtKabulMiktar.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtKabulMiktar.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtKabulMiktar.Location = new System.Drawing.Point(5, 22);
             this.txtKabulMiktar.Name = "txtKabulMiktar";
-            this.txtKabulMiktar.Size = new System.Drawing.Size(55, 19);
+            this.txtKabulMiktar.Size = new System.Drawing.Size(55, 20);
             this.txtKabulMiktar.TabIndex = 60;
             this.txtKabulMiktar.GotFocus += new System.EventHandler(this.txtKabulMiktar_GotFocus);
             this.txtKabulMiktar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtKabulMiktar_KeyDown);
@@ -168,6 +174,7 @@
             this.lbl_KabulMiktar.Location = new System.Drawing.Point(4, 6);
             this.lbl_KabulMiktar.Name = "lbl_KabulMiktar";
             this.lbl_KabulMiktar.Size = new System.Drawing.Size(58, 15);
+            this.lbl_KabulMiktar.TabIndex = 65;
             this.lbl_KabulMiktar.Text = "Kbl. Mik:";
             // 
             // p4
@@ -179,16 +186,17 @@
             this.p4.Location = new System.Drawing.Point(3, 166);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(312, 42);
+            this.p4.TabIndex = 90;
             // 
             // btn_Ekle
             // 
             this.btn_Ekle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Ekle.BackgroundImage = null;
             this.btn_Ekle.Enabled = false;
             this.btn_Ekle.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.btn_Ekle.ForeColor = System.Drawing.Color.White;
             this.btn_Ekle.Location = new System.Drawing.Point(228, 16);
             this.btn_Ekle.Name = "btn_Ekle";
+            this.btn_Ekle.PressedImage = null;
             this.btn_Ekle.Size = new System.Drawing.Size(81, 22);
             this.btn_Ekle.TabIndex = 81;
             this.btn_Ekle.Text = "Değiştir";
@@ -200,7 +208,7 @@
             this.txtAciklama.Enabled = false;
             this.txtAciklama.Location = new System.Drawing.Point(5, 16);
             this.txtAciklama.Name = "txtAciklama";
-            this.txtAciklama.Size = new System.Drawing.Size(217, 23);
+            this.txtAciklama.Size = new System.Drawing.Size(217, 20);
             this.txtAciklama.TabIndex = 60;
             this.txtAciklama.GotFocus += new System.EventHandler(this.txtAciklama_GotFocus);
             this.txtAciklama.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAciklama_KeyDown);
@@ -212,6 +220,7 @@
             this.lb_Aciklama.Location = new System.Drawing.Point(2, 1);
             this.lb_Aciklama.Name = "lb_Aciklama";
             this.lb_Aciklama.Size = new System.Drawing.Size(60, 20);
+            this.lb_Aciklama.TabIndex = 82;
             this.lb_Aciklama.Text = "Açıklama:";
             this.lb_Aciklama.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -224,15 +233,26 @@
             this.p2.Location = new System.Drawing.Point(3, 47);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(312, 30);
+            this.p2.TabIndex = 89;
+            // 
+            // txtIadeTuru
+            // 
+            this.txtIadeTuru.BackColor = System.Drawing.Color.White;
+            this.txtIadeTuru.Enabled = false;
+            this.txtIadeTuru.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txtIadeTuru.Location = new System.Drawing.Point(290, 5);
+            this.txtIadeTuru.Name = "txtIadeTuru";
+            this.txtIadeTuru.Size = new System.Drawing.Size(19, 20);
+            this.txtIadeTuru.TabIndex = 7;
             // 
             // txtMalzemeNo
             // 
             this.txtMalzemeNo.BackColor = System.Drawing.Color.White;
             this.txtMalzemeNo.Enabled = false;
-            this.txtMalzemeNo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtMalzemeNo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtMalzemeNo.Location = new System.Drawing.Point(131, 5);
             this.txtMalzemeNo.Name = "txtMalzemeNo";
-            this.txtMalzemeNo.Size = new System.Drawing.Size(153, 19);
+            this.txtMalzemeNo.Size = new System.Drawing.Size(153, 20);
             this.txtMalzemeNo.TabIndex = 5;
             this.txtMalzemeNo.GotFocus += new System.EventHandler(this.txtMalzemeNo_GotFocus);
             this.txtMalzemeNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMalzemeNo_KeyDown);
@@ -243,29 +263,36 @@
             this.lbl_MalzemeNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_MalzemeNo.Name = "lbl_MalzemeNo";
             this.lbl_MalzemeNo.Size = new System.Drawing.Size(122, 17);
+            this.lbl_MalzemeNo.TabIndex = 8;
             this.lbl_MalzemeNo.Text = "Malzeme No:";
             // 
             // grd_List
             // 
             this.grd_List.BackColor = System.Drawing.Color.White;
             this.grd_List.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
+            this.grd_List.DataMember = "";
             this.grd_List.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.grd_List.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.grd_List.Location = new System.Drawing.Point(137, 82);
             this.grd_List.Name = "grd_List";
             this.grd_List.Size = new System.Drawing.Size(178, 81);
             this.grd_List.TabIndex = 88;
-            this.grd_List.TableStyles.Add(this.dataGridTableStyle2);
+            this.grd_List.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle2});
             // 
             // dataGridTableStyle2
             // 
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn1);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn2);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn4);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn8);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn3);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn5);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn6);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn7);
+            this.dataGridTableStyle2.DataGrid = this.grd_List;
+            this.dataGridTableStyle2.GridColumnStyles.AddRange(new System.Windows.Forms.DataGridColumnStyle[] {
+            this.dataGridTextBoxColumn1,
+            this.dataGridTextBoxColumn2,
+            this.dataGridTextBoxColumn4,
+            this.dataGridTextBoxColumn8,
+            this.dataGridTextBoxColumn3,
+            this.dataGridTextBoxColumn5,
+            this.dataGridTextBoxColumn6,
+            this.dataGridTextBoxColumn7});
+            this.dataGridTableStyle2.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // dataGridTextBoxColumn1
             // 
@@ -336,15 +363,16 @@
             this.p5.Location = new System.Drawing.Point(165, 3);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(150, 40);
+            this.p5.TabIndex = 1;
             // 
             // txtSiparisNo
             // 
             this.txtSiparisNo.BackColor = System.Drawing.Color.White;
             this.txtSiparisNo.Enabled = false;
-            this.txtSiparisNo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtSiparisNo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtSiparisNo.Location = new System.Drawing.Point(4, 19);
             this.txtSiparisNo.Name = "txtSiparisNo";
-            this.txtSiparisNo.Size = new System.Drawing.Size(143, 19);
+            this.txtSiparisNo.Size = new System.Drawing.Size(143, 20);
             this.txtSiparisNo.TabIndex = 5;
             this.txtSiparisNo.GotFocus += new System.EventHandler(this.txtSiparisNo_GotFocus_1);
             this.txtSiparisNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSiparisNo_KeyDown_1);
@@ -355,6 +383,7 @@
             this.lbl_WebSiparisNo.Location = new System.Drawing.Point(3, 4);
             this.lbl_WebSiparisNo.Name = "lbl_WebSiparisNo";
             this.lbl_WebSiparisNo.Size = new System.Drawing.Size(144, 17);
+            this.lbl_WebSiparisNo.TabIndex = 6;
             this.lbl_WebSiparisNo.Text = "Web Sip. No:";
             this.lbl_WebSiparisNo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -388,23 +417,14 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // txtIadeTuru
-            // 
-            this.txtIadeTuru.BackColor = System.Drawing.Color.White;
-            this.txtIadeTuru.Enabled = false;
-            this.txtIadeTuru.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
-            this.txtIadeTuru.Location = new System.Drawing.Point(290, 5);
-            this.txtIadeTuru.Name = "txtIadeTuru";
-            this.txtIadeTuru.Size = new System.Drawing.Size(19, 19);
-            this.txtIadeTuru.TabIndex = 7;
             // 
             // frm_32_Musteri_Iade_Girisi
             // 
@@ -425,14 +445,22 @@
             this.Controls.Add(this.btn_Kaydet);
             this.Controls.Add(this.btn_Geri);
             this.Name = "frm_32_Musteri_Iade_Girisi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri İade Girişi";
             this.Load += new System.EventHandler(this.frm_32_Musteri_Iade_Girisi_Load);
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.p3.ResumeLayout(false);
+            this.p3.PerformLayout();
             this.p4.ResumeLayout(false);
+            this.p4.PerformLayout();
             this.p2.ResumeLayout(false);
+            this.p2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).EndInit();
             this.p5.ResumeLayout(false);
+            this.p5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

@@ -122,7 +122,9 @@ namespace KoctasWM_Project
             {
                 if (MessageBox.Show("Paleti henüz kaydetmediniz. Bu ekrandan çıkmak istediğinizden emin misiniz?", "BİLGİ", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
-                    this.Close();
+                    frm_Menu_Mal_Cikis_Sevkiyat_Islemleri frm = new frm_Menu_Mal_Cikis_Sevkiyat_Islemleri();
+                    frm.Show();
+                    this.Hide();
                 }
             }
         }
@@ -620,7 +622,7 @@ namespace KoctasWM_Project
                                 MessageBox.Show(GlobalData.rMsg[0].Message.ToString(), "BİLGİ");
                                 Utility.moreMsgCheck(GlobalData.rMsg);
                                 kaydedildi = true;
-                                this.Close();
+                                this.Hide();
                             }
                             else
                             {

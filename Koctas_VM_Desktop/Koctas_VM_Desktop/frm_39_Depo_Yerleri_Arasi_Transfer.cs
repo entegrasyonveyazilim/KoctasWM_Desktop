@@ -228,7 +228,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Depo_Ici_Islemleri frm = new frm_Menu_Depo_Ici_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void txtMiktar_KeyDown(object sender, KeyEventArgs e)

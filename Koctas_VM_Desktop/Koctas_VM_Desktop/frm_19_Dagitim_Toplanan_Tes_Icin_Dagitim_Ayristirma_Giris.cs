@@ -32,7 +32,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Mal_Cikis_Toplama_Islemleri frm = new frm_Menu_Mal_Cikis_Toplama_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void btn_DetayGetir_Click(object sender, EventArgs e)
@@ -67,7 +69,7 @@ namespace KoctasWM_Project
                     frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma frm = new frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma();
                     frm._tes = tes;
                     frm._dagitimTuru = "W";
-                    frm.ShowDialog();
+                    frm .Show();
                     txtMalzemeNo.Text = "";
                     Utility.selectText(txtMalzemeNo);
 

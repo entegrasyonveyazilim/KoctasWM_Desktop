@@ -134,7 +134,7 @@ namespace KoctasWM_Project
                 else
                 {
                     MessageBox.Show(resp.EsResponse[0].Message.ToString(), "HATA");
-                    this.Close();
+                    this.Hide();
                 }
 
             }
@@ -158,6 +158,7 @@ namespace KoctasWM_Project
                     if (MessageBox.Show("Henüz sayımı kaydetmediniz. Sayılmayan malzemeler sıfır sayılacak. Onaylıyor musunuz?", "HATA", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                     {
                         sayimTamamla();
+                        this.Hide();
                     }
                 }
                 else
@@ -167,7 +168,7 @@ namespace KoctasWM_Project
             }
             else
             {
-                this.Close();
+                this.Hide();
             }
         }
 

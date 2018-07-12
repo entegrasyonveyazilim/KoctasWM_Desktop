@@ -18,13 +18,16 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu frm = new frm_Menu();
+            frm.Show();
+            this.Hide();
         }
 
         private void btn_CanliOncesiSayim_Click(object sender, EventArgs e)
         {
             frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim frm = new frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void frm_Menu_Sayim_Islemleri_Load(object sender, EventArgs e)
@@ -37,7 +40,8 @@ namespace KoctasWM_Project
         private void btn_EnvanterSayim_Click(object sender, EventArgs e)
         {
             frm_Menu_Sayim_Islemleri_Envanter_Sayim frm = new frm_Menu_Sayim_Islemleri_Envanter_Sayim();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
     }

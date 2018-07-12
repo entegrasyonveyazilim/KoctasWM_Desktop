@@ -38,25 +38,32 @@
             this.btn_Iptal = new KoctasWM_Project.PictureButton();
             this.btn_Degistir = new KoctasWM_Project.PictureButton();
             this.lbl_LoginInfo = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).BeginInit();
             this.SuspendLayout();
             // 
             // grd_List
             // 
             this.grd_List.BackColor = System.Drawing.Color.White;
             this.grd_List.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
+            this.grd_List.DataMember = "";
             this.grd_List.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.grd_List.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.grd_List.Location = new System.Drawing.Point(3, 3);
             this.grd_List.Name = "grd_List";
             this.grd_List.Size = new System.Drawing.Size(312, 200);
             this.grd_List.TabIndex = 0;
-            this.grd_List.TableStyles.Add(this.dataGridTableStyle1);
+            this.grd_List.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle1});
             // 
             // dataGridTableStyle1
             // 
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn1);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn2);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn3);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn4);
+            this.dataGridTableStyle1.DataGrid = this.grd_List;
+            this.dataGridTableStyle1.GridColumnStyles.AddRange(new System.Windows.Forms.DataGridColumnStyle[] {
+            this.dataGridTextBoxColumn1,
+            this.dataGridTextBoxColumn2,
+            this.dataGridTextBoxColumn3,
+            this.dataGridTextBoxColumn4});
+            this.dataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // dataGridTextBoxColumn1
             // 
@@ -64,7 +71,6 @@
             this.dataGridTextBoxColumn1.FormatInfo = null;
             this.dataGridTextBoxColumn1.HeaderText = "Adres";
             this.dataGridTextBoxColumn1.MappingName = "Lgpla";
-            this.dataGridTextBoxColumn1.Width = 100;
             // 
             // dataGridTextBoxColumn2
             // 
@@ -88,6 +94,7 @@
             this.dataGridTextBoxColumn4.FormatInfo = null;
             this.dataGridTextBoxColumn4.HeaderText = "Miktar";
             this.dataGridTextBoxColumn4.MappingName = "Menge";
+            this.dataGridTextBoxColumn4.Width = 75;
             // 
             // btn_Iptal
             // 
@@ -119,11 +126,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -139,8 +147,10 @@
             this.Controls.Add(this.btn_Degistir);
             this.Controls.Add(this.grd_List);
             this.Name = "frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim_Detay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Önceki Sayım";
             this.Load += new System.EventHandler(this.frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim_Detay_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -28,7 +28,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu frm = new frm_Menu();
+            frm.Show();
+            this.Hide();
         }
 
         private void frm_Menu_Depo_Ici_Islemleri_Load(object sender, EventArgs e)
@@ -41,50 +43,58 @@ namespace KoctasWM_Project
         private void btn_PaletTransferi_Click(object sender, EventArgs e)
         {
             frm_03_Depo_Adresler_Arasi_Palet_Transferi frm = new frm_03_Depo_Adresler_Arasi_Palet_Transferi();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_MusteriIadeAlaniTransfer_Click(object sender, EventArgs e)
         {
             frm_04_Depo_Musteri_Iade_Alani_Transfer frm = new frm_04_Depo_Musteri_Iade_Alani_Transfer();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_PaletAktarim_Click(object sender, EventArgs e)
         {
             frm_05_Depo_Palet_Aktarim frm = new frm_05_Depo_Palet_Aktarim();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_AdresPaletSorgulama_Click(object sender, EventArgs e)
         {
             frm_Menu_Adres_Palet_Sorgulama frm = new frm_Menu_Adres_Palet_Sorgulama();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_IadeCikisi_Click(object sender, EventArgs e)
         {
             frm_12_15_Genel_Cikis_Islemleri_Formlari frm = new frm_12_15_Genel_Cikis_Islemleri_Formlari();
             frm.islemTuru = "iadeCikisi";
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_ikmalNakilOnaylama_Click(object sender, EventArgs e)
         {
             frm_11_Toplama_Ikmal_Nakil_Sip_Onaylama frm = new frm_11_Toplama_Ikmal_Nakil_Sip_Onaylama();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_ToplamaIptalAlaniTransfer_Click(object sender, EventArgs e)
         {
             frm_37_Toplama_Iptal_Alanindan_Transferler frm = new frm_37_Toplama_Iptal_Alanindan_Transferler();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_DepoYerleriArasiTransfer_Click(object sender, EventArgs e)
         {
             frm_39_Depo_Yerleri_Arasi_Transfer frm = new frm_39_Depo_Yerleri_Arasi_Transfer();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
 

@@ -94,11 +94,12 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 29);
+            this.p1.TabIndex = 95;
             // 
             // dtp_belge
             // 
-            this.dtp_belge.CalendarFont = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular);
-            this.dtp_belge.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.dtp_belge.CalendarFont = new System.Drawing.Font("Tahoma", 10F);
+            this.dtp_belge.Font = new System.Drawing.Font("Tahoma", 9F);
             this.dtp_belge.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_belge.Location = new System.Drawing.Point(108, 3);
             this.dtp_belge.Name = "dtp_belge";
@@ -113,6 +114,7 @@
             this.lbl_BelgeTarihi.Location = new System.Drawing.Point(3, 6);
             this.lbl_BelgeTarihi.Name = "lbl_BelgeTarihi";
             this.lbl_BelgeTarihi.Size = new System.Drawing.Size(122, 20);
+            this.lbl_BelgeTarihi.TabIndex = 65;
             this.lbl_BelgeTarihi.Text = "Belge Tarihi:";
             // 
             // p2
@@ -123,10 +125,11 @@
             this.p2.Location = new System.Drawing.Point(3, 34);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(312, 29);
+            this.p2.TabIndex = 94;
             // 
             // dtp_kayit
             // 
-            this.dtp_kayit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.dtp_kayit.Font = new System.Drawing.Font("Tahoma", 9F);
             this.dtp_kayit.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_kayit.Location = new System.Drawing.Point(108, 4);
             this.dtp_kayit.Name = "dtp_kayit";
@@ -140,6 +143,7 @@
             this.lbl_KayitTarihi.Location = new System.Drawing.Point(3, 6);
             this.lbl_KayitTarihi.Name = "lbl_KayitTarihi";
             this.lbl_KayitTarihi.Size = new System.Drawing.Size(122, 20);
+            this.lbl_KayitTarihi.TabIndex = 65;
             this.lbl_KayitTarihi.Text = "Kayıt Tarihi:";
             // 
             // p3
@@ -151,10 +155,11 @@
             this.p3.Location = new System.Drawing.Point(3, 65);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(312, 27);
+            this.p3.TabIndex = 93;
             // 
             // chk_horoz
             // 
-            this.chk_horoz.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.chk_horoz.Font = new System.Drawing.Font("Tahoma", 9F);
             this.chk_horoz.Location = new System.Drawing.Point(204, 3);
             this.chk_horoz.Name = "chk_horoz";
             this.chk_horoz.Size = new System.Drawing.Size(105, 20);
@@ -168,15 +173,16 @@
             this.lbl_IrsaliyeNo.Location = new System.Drawing.Point(3, 4);
             this.lbl_IrsaliyeNo.Name = "lbl_IrsaliyeNo";
             this.lbl_IrsaliyeNo.Size = new System.Drawing.Size(101, 20);
+            this.lbl_IrsaliyeNo.TabIndex = 69;
             this.lbl_IrsaliyeNo.Text = "İrsaliye No:";
             // 
             // txtIrsaliyeNo
             // 
             this.txtIrsaliyeNo.BackColor = System.Drawing.Color.White;
-            this.txtIrsaliyeNo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtIrsaliyeNo.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtIrsaliyeNo.Location = new System.Drawing.Point(110, 3);
             this.txtIrsaliyeNo.Name = "txtIrsaliyeNo";
-            this.txtIrsaliyeNo.Size = new System.Drawing.Size(88, 21);
+            this.txtIrsaliyeNo.Size = new System.Drawing.Size(88, 22);
             this.txtIrsaliyeNo.TabIndex = 3;
             this.txtIrsaliyeNo.GotFocus += new System.EventHandler(this.txtIrsaliyeNo_GotFocus);
             this.txtIrsaliyeNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIrsaliyeNo_KeyPress);
@@ -190,16 +196,17 @@
             this.p4.Location = new System.Drawing.Point(3, 96);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(312, 27);
+            this.p4.TabIndex = 92;
             // 
             // btn_KontrolEt
             // 
             this.btn_KontrolEt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_KontrolEt.BackgroundImage = null;
             this.btn_KontrolEt.Enabled = false;
             this.btn_KontrolEt.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.btn_KontrolEt.ForeColor = System.Drawing.Color.White;
             this.btn_KontrolEt.Location = new System.Drawing.Point(234, 3);
             this.btn_KontrolEt.Name = "btn_KontrolEt";
+            this.btn_KontrolEt.PressedImage = null;
             this.btn_KontrolEt.Size = new System.Drawing.Size(75, 22);
             this.btn_KontrolEt.TabIndex = 80;
             this.btn_KontrolEt.Text = "Kontrol Et";
@@ -211,16 +218,17 @@
             this.lbl_SevkiyatNo.Location = new System.Drawing.Point(3, 4);
             this.lbl_SevkiyatNo.Name = "lbl_SevkiyatNo";
             this.lbl_SevkiyatNo.Size = new System.Drawing.Size(101, 20);
+            this.lbl_SevkiyatNo.TabIndex = 81;
             this.lbl_SevkiyatNo.Text = "Sevkiyat No:";
             // 
             // txtSevkiyatNo
             // 
             this.txtSevkiyatNo.BackColor = System.Drawing.Color.White;
             this.txtSevkiyatNo.Enabled = false;
-            this.txtSevkiyatNo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtSevkiyatNo.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtSevkiyatNo.Location = new System.Drawing.Point(110, 3);
             this.txtSevkiyatNo.Name = "txtSevkiyatNo";
-            this.txtSevkiyatNo.Size = new System.Drawing.Size(118, 21);
+            this.txtSevkiyatNo.Size = new System.Drawing.Size(118, 22);
             this.txtSevkiyatNo.TabIndex = 3;
             this.txtSevkiyatNo.GotFocus += new System.EventHandler(this.txtSevkiyatNo_GotFocus);
             this.txtSevkiyatNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSevkiyatNo_KeyPress);
@@ -234,15 +242,16 @@
             this.p5.Location = new System.Drawing.Point(3, 126);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(312, 28);
+            this.p5.TabIndex = 91;
             // 
             // btn_Ekle
             // 
             this.btn_Ekle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Ekle.BackgroundImage = null;
             this.btn_Ekle.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.btn_Ekle.ForeColor = System.Drawing.Color.White;
             this.btn_Ekle.Location = new System.Drawing.Point(234, 3);
             this.btn_Ekle.Name = "btn_Ekle";
+            this.btn_Ekle.PressedImage = null;
             this.btn_Ekle.Size = new System.Drawing.Size(75, 22);
             this.btn_Ekle.TabIndex = 80;
             this.btn_Ekle.Text = "Ekle";
@@ -254,15 +263,16 @@
             this.lbl_SiparisNo.Location = new System.Drawing.Point(3, 4);
             this.lbl_SiparisNo.Name = "lbl_SiparisNo";
             this.lbl_SiparisNo.Size = new System.Drawing.Size(101, 17);
+            this.lbl_SiparisNo.TabIndex = 81;
             this.lbl_SiparisNo.Text = "Sipariş No:";
             // 
             // txtSiparisNo
             // 
             this.txtSiparisNo.BackColor = System.Drawing.Color.White;
-            this.txtSiparisNo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtSiparisNo.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtSiparisNo.Location = new System.Drawing.Point(110, 3);
             this.txtSiparisNo.Name = "txtSiparisNo";
-            this.txtSiparisNo.Size = new System.Drawing.Size(118, 21);
+            this.txtSiparisNo.Size = new System.Drawing.Size(118, 22);
             this.txtSiparisNo.TabIndex = 3;
             this.txtSiparisNo.GotFocus += new System.EventHandler(this.txtSiparisNo_GotFocus);
             this.txtSiparisNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSiparisNo_KeyPress);
@@ -272,16 +282,17 @@
             this.lst_Siparis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
             this.lst_Siparis.Location = new System.Drawing.Point(113, 156);
             this.lst_Siparis.Name = "lst_Siparis";
-            this.lst_Siparis.Size = new System.Drawing.Size(202, 50);
+            this.lst_Siparis.Size = new System.Drawing.Size(202, 43);
             this.lst_Siparis.TabIndex = 90;
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -302,13 +313,17 @@
             this.Controls.Add(this.btn_Geri);
             this.Controls.Add(this.btn_MalzemeGirisi);
             this.Name = "frm_31_Mal_Giris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mal Girişi";
             this.Load += new System.EventHandler(this.frm_31_Mal_Giris_Load);
             this.p1.ResumeLayout(false);
             this.p2.ResumeLayout(false);
             this.p3.ResumeLayout(false);
+            this.p3.PerformLayout();
             this.p4.ResumeLayout(false);
+            this.p4.PerformLayout();
             this.p5.ResumeLayout(false);
+            this.p5.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -44,16 +44,17 @@
             this.txtAtfNo.Enabled = false;
             this.txtAtfNo.Location = new System.Drawing.Point(131, 3);
             this.txtAtfNo.Name = "txtAtfNo";
-            this.txtAtfNo.Size = new System.Drawing.Size(178, 23);
+            this.txtAtfNo.Size = new System.Drawing.Size(178, 20);
             this.txtAtfNo.TabIndex = 3;
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -65,15 +66,16 @@
             this.panel1.Location = new System.Drawing.Point(3, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(312, 29);
+            this.panel1.TabIndex = 77;
             // 
             // btn_AtfAl
             // 
             this.btn_AtfAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_AtfAl.BackgroundImage = null;
             this.btn_AtfAl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.btn_AtfAl.ForeColor = System.Drawing.Color.White;
             this.btn_AtfAl.Location = new System.Drawing.Point(3, 2);
             this.btn_AtfAl.Name = "btn_AtfAl";
+            this.btn_AtfAl.PressedImage = null;
             this.btn_AtfAl.Size = new System.Drawing.Size(122, 26);
             this.btn_AtfAl.TabIndex = 75;
             this.btn_AtfAl.Text = "ATF No Al";
@@ -119,9 +121,11 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_Kaydet);
             this.Name = "frm_20_v2_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kargo Bilgilerini Gönder";
             this.Load += new System.EventHandler(this.frm_20_v2_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Ipt_Dty_Ft_D_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

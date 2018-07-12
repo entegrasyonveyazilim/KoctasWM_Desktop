@@ -46,6 +46,7 @@
             this.p1.Location = new System.Drawing.Point(3, 50);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 98);
+            this.p1.TabIndex = 1;
             // 
             // lbl_MalzemeNo
             // 
@@ -53,16 +54,17 @@
             this.lbl_MalzemeNo.Location = new System.Drawing.Point(6, 10);
             this.lbl_MalzemeNo.Name = "lbl_MalzemeNo";
             this.lbl_MalzemeNo.Size = new System.Drawing.Size(303, 19);
+            this.lbl_MalzemeNo.TabIndex = 0;
             this.lbl_MalzemeNo.Text = "Malzeme No:";
             this.lbl_MalzemeNo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtMalzemeNo
             // 
             this.txtMalzemeNo.BackColor = System.Drawing.Color.White;
-            this.txtMalzemeNo.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular);
+            this.txtMalzemeNo.Font = new System.Drawing.Font("Tahoma", 11F);
             this.txtMalzemeNo.Location = new System.Drawing.Point(52, 42);
             this.txtMalzemeNo.Name = "txtMalzemeNo";
-            this.txtMalzemeNo.Size = new System.Drawing.Size(210, 24);
+            this.txtMalzemeNo.Size = new System.Drawing.Size(210, 25);
             this.txtMalzemeNo.TabIndex = 3;
             this.txtMalzemeNo.GotFocus += new System.EventHandler(this.txtMalzemeNo_GotFocus);
             this.txtMalzemeNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMalzemeNo_KeyDown);
@@ -97,11 +99,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -117,9 +120,11 @@
             this.Controls.Add(this.btn_Geri);
             this.Controls.Add(this.btn_DetayGetir);
             this.Name = "frm_19_Dagitim_Toplanan_Tes_Icin_Dagitim_Ayristirma_Giris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sipariş Dağıtım (Web)";
             this.Load += new System.EventHandler(this.frm_19_Toplama_Ikmal_Siparisleri_Onaylama_Giris_Load);
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.ResumeLayout(false);
 
         }

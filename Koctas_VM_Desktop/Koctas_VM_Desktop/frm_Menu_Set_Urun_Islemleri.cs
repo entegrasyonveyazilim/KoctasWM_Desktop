@@ -25,20 +25,24 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_MalGirisiPaletleme frm = new frm_Menu_MalGirisiPaletleme();
+            frm.Show();
+            this.Hide();
         }
 
 
         private void btn_SetUrunPaletleme_Click(object sender, EventArgs e)
         {
             frm_09_Depo_Set_Urunu_Paletleme frm = new frm_09_Depo_Set_Urunu_Paletleme();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_SetAlaninaTasima_Click(object sender, EventArgs e)
         {
             frm_09_Depo_Set_Alanina_Tasima frm = new frm_09_Depo_Set_Alanina_Tasima();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
     }
 }

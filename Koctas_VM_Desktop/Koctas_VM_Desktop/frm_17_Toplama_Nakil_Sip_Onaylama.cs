@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace KoctasWM_Project
 {
@@ -20,7 +21,7 @@ namespace KoctasWM_Project
         decimal toplamMiktar = 0;
         string _tanum;
         string _kontrolAdres = "";
-        public string _kuyrukTipi = "";
+        public string _kuyrukTipi ;
 
         private void frm_17_Toplama_Nakil_Sip_Onaylama_Load(object sender, EventArgs e)
         {
@@ -36,7 +37,7 @@ namespace KoctasWM_Project
                 WS_Kontrol.ZKtWmWsToplamaNaksip chk = new KoctasWM_Project.WS_Kontrol.ZKtWmWsToplamaNaksip();
                 WS_Kontrol.ZKtWmWsToplamaNaksipResponse resp = new KoctasWM_Project.WS_Kontrol.ZKtWmWsToplamaNaksipResponse();
                 WS_Kontrol.ZktWmStNaksip sip = new KoctasWM_Project.WS_Kontrol.ZktWmStNaksip();
-
+                
                 chk.IvType = _kuyrukTipi;
                 
                 srv.Credentials = GlobalData.globalCr;
@@ -133,8 +134,9 @@ namespace KoctasWM_Project
             {
                 Cursor.Current = Cursors.Default;
             }
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi frm = new frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi();
+            frm.Show();
+            this.Hide();
             
         }
 

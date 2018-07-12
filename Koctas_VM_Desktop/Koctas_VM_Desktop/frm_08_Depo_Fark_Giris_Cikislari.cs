@@ -53,7 +53,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Envanter_Islemleri frm = new frm_Menu_Envanter_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void frm_08_Depo_Fark_Giris_Cikislari_Load(object sender, EventArgs e)
@@ -232,7 +234,8 @@ namespace KoctasWM_Project
                         if (malzemeKontrol) {
                             frm_02_SA_Trans_Girisi_Adresleme frm = new frm_02_SA_Trans_Girisi_Adresleme();
                             frm._paletNo = txtPaletNo.Text.ToString().Trim();
-                            frm.ShowDialog();
+                            frm .Show();
+                            this.Hide();
                         }
                         formAcilisDuzenle();
                     }

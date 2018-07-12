@@ -59,6 +59,7 @@
             this.p1.SuspendLayout();
             this.p2.SuspendLayout();
             this.p3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_mal)).BeginInit();
             this.SuspendLayout();
             // 
             // p1
@@ -69,6 +70,7 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 27);
+            this.p1.TabIndex = 86;
             // 
             // lbl_MalzemeNo
             // 
@@ -76,15 +78,16 @@
             this.lbl_MalzemeNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_MalzemeNo.Name = "lbl_MalzemeNo";
             this.lbl_MalzemeNo.Size = new System.Drawing.Size(122, 18);
+            this.lbl_MalzemeNo.TabIndex = 0;
             this.lbl_MalzemeNo.Text = "Malzeme No:";
             // 
             // txtMalzemeNo
             // 
             this.txtMalzemeNo.BackColor = System.Drawing.Color.White;
-            this.txtMalzemeNo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtMalzemeNo.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtMalzemeNo.Location = new System.Drawing.Point(131, 3);
             this.txtMalzemeNo.Name = "txtMalzemeNo";
-            this.txtMalzemeNo.Size = new System.Drawing.Size(178, 21);
+            this.txtMalzemeNo.Size = new System.Drawing.Size(178, 22);
             this.txtMalzemeNo.TabIndex = 3;
             this.txtMalzemeNo.GotFocus += new System.EventHandler(this.txtMalzemeNo_GotFocus);
             this.txtMalzemeNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMalzemeNo_KeyPress);
@@ -97,6 +100,7 @@
             this.p2.Location = new System.Drawing.Point(3, 32);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(312, 27);
+            this.p2.TabIndex = 85;
             // 
             // lbl_Miktar
             // 
@@ -104,15 +108,16 @@
             this.lbl_Miktar.Location = new System.Drawing.Point(3, 6);
             this.lbl_Miktar.Name = "lbl_Miktar";
             this.lbl_Miktar.Size = new System.Drawing.Size(122, 18);
+            this.lbl_Miktar.TabIndex = 0;
             this.lbl_Miktar.Text = "Miktar:";
             // 
             // txtMiktar
             // 
             this.txtMiktar.BackColor = System.Drawing.Color.White;
-            this.txtMiktar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtMiktar.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtMiktar.Location = new System.Drawing.Point(131, 3);
             this.txtMiktar.Name = "txtMiktar";
-            this.txtMiktar.Size = new System.Drawing.Size(178, 21);
+            this.txtMiktar.Size = new System.Drawing.Size(178, 22);
             this.txtMiktar.TabIndex = 3;
             this.txtMiktar.GotFocus += new System.EventHandler(this.txtMiktar_GotFocus);
             this.txtMiktar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMiktar_KeyPress);
@@ -125,6 +130,7 @@
             this.p3.Location = new System.Drawing.Point(3, 62);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(312, 27);
+            this.p3.TabIndex = 84;
             // 
             // lbl_SevkiyatNo
             // 
@@ -132,22 +138,23 @@
             this.lbl_SevkiyatNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_SevkiyatNo.Name = "lbl_SevkiyatNo";
             this.lbl_SevkiyatNo.Size = new System.Drawing.Size(122, 18);
+            this.lbl_SevkiyatNo.TabIndex = 0;
             this.lbl_SevkiyatNo.Text = "Sevkiyat No:";
             // 
             // txtSevkiyatNo
             // 
             this.txtSevkiyatNo.BackColor = System.Drawing.Color.White;
-            this.txtSevkiyatNo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtSevkiyatNo.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtSevkiyatNo.Location = new System.Drawing.Point(131, 3);
             this.txtSevkiyatNo.Name = "txtSevkiyatNo";
-            this.txtSevkiyatNo.Size = new System.Drawing.Size(178, 21);
+            this.txtSevkiyatNo.Size = new System.Drawing.Size(178, 22);
             this.txtSevkiyatNo.TabIndex = 3;
             this.txtSevkiyatNo.GotFocus += new System.EventHandler(this.txtSevkiyatNo_GotFocus);
             this.txtSevkiyatNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSevkiyatNo_KeyPress);
             // 
             // chk_Son
             // 
-            this.chk_Son.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.chk_Son.Font = new System.Drawing.Font("Tahoma", 9F);
             this.chk_Son.Location = new System.Drawing.Point(207, 99);
             this.chk_Son.Name = "chk_Son";
             this.chk_Son.Size = new System.Drawing.Size(105, 20);
@@ -158,25 +165,31 @@
             // 
             this.grd_mal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grd_mal.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
+            this.grd_mal.DataMember = "";
             this.grd_mal.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.grd_mal.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.grd_mal.Location = new System.Drawing.Point(3, 125);
             this.grd_mal.Name = "grd_mal";
             this.grd_mal.Size = new System.Drawing.Size(312, 78);
             this.grd_mal.TabIndex = 83;
-            this.grd_mal.TableStyles.Add(this.dataGridTableStyle1);
+            this.grd_mal.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle1});
             // 
             // dataGridTableStyle1
             // 
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn1);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn2);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn3);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn4);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn5);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn6);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn7);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn8);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn9);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn10);
+            this.dataGridTableStyle1.DataGrid = this.grd_mal;
+            this.dataGridTableStyle1.GridColumnStyles.AddRange(new System.Windows.Forms.DataGridColumnStyle[] {
+            this.dataGridTextBoxColumn1,
+            this.dataGridTextBoxColumn2,
+            this.dataGridTextBoxColumn3,
+            this.dataGridTextBoxColumn4,
+            this.dataGridTextBoxColumn5,
+            this.dataGridTextBoxColumn6,
+            this.dataGridTextBoxColumn7,
+            this.dataGridTextBoxColumn8,
+            this.dataGridTextBoxColumn9,
+            this.dataGridTextBoxColumn10});
+            this.dataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // dataGridTextBoxColumn1
             // 
@@ -208,6 +221,7 @@
             this.dataGridTextBoxColumn4.FormatInfo = null;
             this.dataGridTextBoxColumn4.HeaderText = "Miktar";
             this.dataGridTextBoxColumn4.MappingName = "menge";
+            this.dataGridTextBoxColumn4.Width = 75;
             // 
             // dataGridTextBoxColumn5
             // 
@@ -215,6 +229,7 @@
             this.dataGridTextBoxColumn5.FormatInfo = null;
             this.dataGridTextBoxColumn5.HeaderText = "TÖB";
             this.dataGridTextBoxColumn5.MappingName = "meins";
+            this.dataGridTextBoxColumn5.Width = 75;
             // 
             // dataGridTextBoxColumn6
             // 
@@ -259,11 +274,11 @@
             // btn_Sil
             // 
             this.btn_Sil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Sil.BackgroundImage = null;
             this.btn_Sil.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Sil.ForeColor = System.Drawing.Color.White;
             this.btn_Sil.Location = new System.Drawing.Point(101, 92);
             this.btn_Sil.Name = "btn_Sil";
+            this.btn_Sil.PressedImage = null;
             this.btn_Sil.Size = new System.Drawing.Size(92, 27);
             this.btn_Sil.TabIndex = 82;
             this.btn_Sil.Text = "Sil";
@@ -272,11 +287,11 @@
             // btn_Ekle
             // 
             this.btn_Ekle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Ekle.BackgroundImage = null;
             this.btn_Ekle.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Ekle.ForeColor = System.Drawing.Color.White;
             this.btn_Ekle.Location = new System.Drawing.Point(3, 92);
             this.btn_Ekle.Name = "btn_Ekle";
+            this.btn_Ekle.PressedImage = null;
             this.btn_Ekle.Size = new System.Drawing.Size(92, 27);
             this.btn_Ekle.TabIndex = 81;
             this.btn_Ekle.Text = "Ekle";
@@ -312,11 +327,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -338,11 +354,16 @@
             this.Controls.Add(this.btn_Kaydet);
             this.Controls.Add(this.p1);
             this.Name = "frm_31_Mal_Giris2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mal Girişi";
             this.Load += new System.EventHandler(this.frm_31_Mal_Giris2_Load);
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.p2.ResumeLayout(false);
+            this.p2.PerformLayout();
             this.p3.ResumeLayout(false);
+            this.p3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_mal)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -38,7 +38,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Adres_Palet_Sorgulama frm = new frm_Menu_Adres_Palet_Sorgulama();
+            frm.Show();
+            this.Hide();
         }
 
         private void frm_07_Depo_Palet_Sorgulama_Load(object sender, EventArgs e)

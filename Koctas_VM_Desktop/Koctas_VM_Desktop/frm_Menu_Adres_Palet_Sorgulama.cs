@@ -18,7 +18,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Depo_Ici_Islemleri frm = new frm_Menu_Depo_Ici_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void btn_Adresleme_Click(object sender, EventArgs e)
@@ -41,19 +43,22 @@ namespace KoctasWM_Project
         private void btn_PaletSorgulama_Click(object sender, EventArgs e)
         {
             frm_07_Depo_Palet_Sorgulama frm = new frm_07_Depo_Palet_Sorgulama();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_AdresSorgulama_Click(object sender, EventArgs e)
         {
             frm_07_Depo_Adres_Sorgulama frm = new frm_07_Depo_Adres_Sorgulama();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_UrunSorgulama_Click(object sender, EventArgs e)
         {
             frm_07_Depo_Urun_Sorgulama frm = new frm_07_Depo_Urun_Sorgulama();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
     }

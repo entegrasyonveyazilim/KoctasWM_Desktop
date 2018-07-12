@@ -21,7 +21,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Envanter_Islemleri frm = new frm_Menu_Envanter_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void formAcilisDuzenle()

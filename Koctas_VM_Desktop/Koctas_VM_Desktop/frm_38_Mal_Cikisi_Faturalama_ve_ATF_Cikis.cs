@@ -33,7 +33,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Mal_Cikis_Sevkiyat_Islemleri frm = new frm_Menu_Mal_Cikis_Sevkiyat_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void btn_Kaydet_Click(object sender, EventArgs e)
@@ -72,7 +74,7 @@ namespace KoctasWM_Project
                             {
                                 MessageBox.Show(GlobalData.rMsg[0].Message.ToString(), "BİLGİ");
                                 Utility.moreMsgCheck(GlobalData.rMsg);
-                                this.Close();
+                                this.Hide();
                             }
                             else
                             {
@@ -135,7 +137,7 @@ namespace KoctasWM_Project
                                     //Kargo koli bölme ekranı çağırılıyor - 24.07.2017 by Gökhan
                                     frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol frmBol = new frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol();
                                     bool devam = false;
-                                    if (frmBol.ShowDialog() == DialogResult.OK)
+                                    if (frmBol .ShowDialog() == DialogResult.OK)
                                     {
                                         devam = true;
                                     }
@@ -147,9 +149,9 @@ namespace KoctasWM_Project
                                         //frm._faturaNo = _faturaNo;
                                         frm._belgeNo = teslimat.Vbeln.ToString();
                                         frm._koliNo = txtKargoKoliNo.Text.ToString().Trim();
-                                        if (frm.ShowDialog() == DialogResult.OK)
+                                        if (frm .ShowDialog() == DialogResult.OK)
                                         {
-                                            this.Close();
+                                            this.Hide();
                                         }
                                     }
                                 }
@@ -175,7 +177,7 @@ namespace KoctasWM_Project
                         //Kargo koli bölme ekranı çağırılıyor - 24.07.2017 by Gökhan
                         frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol frmBol = new frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol();
                         bool devam = false;
-                        if (frmBol.ShowDialog() == DialogResult.OK)
+                        if (frmBol .ShowDialog() == DialogResult.OK)
                         {
                             devam = true;
                         }
@@ -189,9 +191,9 @@ namespace KoctasWM_Project
                             //frm._faturaNo = _faturaNo;
                             frm._koliNo = txtKargoKoliNo.Text.ToString().Trim();
                             frm._belgeNo = teslimat.Vbeln.ToString();
-                            if (frm.ShowDialog() == DialogResult.OK)
+                            if (frm .ShowDialog() == DialogResult.OK)
                             {
-                                this.Close();
+                                this.Hide();
                             }
                         }
 

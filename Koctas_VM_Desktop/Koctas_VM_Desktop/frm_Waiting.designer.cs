@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer();
-            this.timer2 = new System.Windows.Forms.Timer();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -38,6 +39,7 @@
             this.label1.Location = new System.Drawing.Point(3, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(315, 20);
+            this.label1.TabIndex = 0;
             this.label1.Text = "Sorgulama İşlemi Tamamlanana Kadar Bekleyiniz...";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -60,10 +62,11 @@
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Name = "frm_Waiting";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "İşleniyor...";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.frm_Waiting_Load);
             this.Activated += new System.EventHandler(this.frm_Waiting_Activated);
+            this.Load += new System.EventHandler(this.frm_Waiting_Load);
             this.GotFocus += new System.EventHandler(this.frm_Waiting_GotFocus);
             this.ResumeLayout(false);
 

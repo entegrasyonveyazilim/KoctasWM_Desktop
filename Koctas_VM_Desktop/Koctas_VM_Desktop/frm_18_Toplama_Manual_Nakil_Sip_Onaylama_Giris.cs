@@ -27,7 +27,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Mal_Cikis_Toplama_Islemleri frm = new frm_Menu_Mal_Cikis_Toplama_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void btn_DetayGetir_Click(object sender, EventArgs e)
@@ -59,7 +61,7 @@ namespace KoctasWM_Project
                     Cursor.Current = Cursors.Default;
                     frm_18_Toplama_Manual_Nakil_Sip_Onaylama frm = new frm_18_Toplama_Manual_Nakil_Sip_Onaylama();
                     frm._sip = sip;
-                    frm.ShowDialog();
+                    frm .Show();
                     if (frm.DialogResult == DialogResult.Abort)
                     {
                         this.Close();

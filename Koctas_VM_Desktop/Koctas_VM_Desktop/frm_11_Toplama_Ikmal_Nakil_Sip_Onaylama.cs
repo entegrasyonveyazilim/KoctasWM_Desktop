@@ -86,7 +86,7 @@ namespace KoctasWM_Project
                 else
                 {
                     MessageBox.Show(resp.EsResponse[0].Message.ToString(), "HATA");
-                    this.Close();
+                    this.Hide();
                 }
 
             }
@@ -105,7 +105,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Depo_Ici_Islemleri frm = new frm_Menu_Depo_Ici_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         

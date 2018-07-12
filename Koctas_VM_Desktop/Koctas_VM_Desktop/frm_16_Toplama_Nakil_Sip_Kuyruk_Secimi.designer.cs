@@ -46,6 +46,7 @@
             this.btn_Kaydet = new KoctasWM_Project.PictureButton();
             this.lbl_LoginInfo = new System.Windows.Forms.Label();
             this.p4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).BeginInit();
             this.SuspendLayout();
             // 
             // p4
@@ -61,15 +62,16 @@
             this.p4.Location = new System.Drawing.Point(3, 3);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(312, 84);
+            this.p4.TabIndex = 65;
             // 
             // btn_KuyrukDegistir
             // 
             this.btn_KuyrukDegistir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_KuyrukDegistir.BackgroundImage = null;
             this.btn_KuyrukDegistir.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.btn_KuyrukDegistir.ForeColor = System.Drawing.Color.White;
             this.btn_KuyrukDegistir.Location = new System.Drawing.Point(230, 55);
             this.btn_KuyrukDegistir.Name = "btn_KuyrukDegistir";
+            this.btn_KuyrukDegistir.PressedImage = null;
             this.btn_KuyrukDegistir.Size = new System.Drawing.Size(79, 23);
             this.btn_KuyrukDegistir.TabIndex = 76;
             this.btn_KuyrukDegistir.Text = "Değiştir";
@@ -81,7 +83,7 @@
             this.txtKullaniciAdi.Enabled = false;
             this.txtKullaniciAdi.Location = new System.Drawing.Point(131, 30);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(178, 23);
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(178, 20);
             this.txtKullaniciAdi.TabIndex = 61;
             // 
             // lbl_KullaniciAdi
@@ -90,6 +92,7 @@
             this.lbl_KullaniciAdi.Location = new System.Drawing.Point(3, 33);
             this.lbl_KullaniciAdi.Name = "lbl_KullaniciAdi";
             this.lbl_KullaniciAdi.Size = new System.Drawing.Size(109, 20);
+            this.lbl_KullaniciAdi.TabIndex = 77;
             this.lbl_KullaniciAdi.Text = "Kullanıcı Adı:";
             // 
             // txtDepoNo
@@ -98,7 +101,7 @@
             this.txtDepoNo.Enabled = false;
             this.txtDepoNo.Location = new System.Drawing.Point(131, 5);
             this.txtDepoNo.Name = "txtDepoNo";
-            this.txtDepoNo.Size = new System.Drawing.Size(178, 23);
+            this.txtDepoNo.Size = new System.Drawing.Size(178, 20);
             this.txtDepoNo.TabIndex = 59;
             // 
             // lbl_DepoNo
@@ -107,6 +110,7 @@
             this.lbl_DepoNo.Location = new System.Drawing.Point(3, 8);
             this.lbl_DepoNo.Name = "lbl_DepoNo";
             this.lbl_DepoNo.Size = new System.Drawing.Size(122, 20);
+            this.lbl_DepoNo.TabIndex = 78;
             this.lbl_DepoNo.Text = "Depo No:";
             // 
             // txtMevcutKuyruk
@@ -115,7 +119,7 @@
             this.txtMevcutKuyruk.Enabled = false;
             this.txtMevcutKuyruk.Location = new System.Drawing.Point(131, 55);
             this.txtMevcutKuyruk.Name = "txtMevcutKuyruk";
-            this.txtMevcutKuyruk.Size = new System.Drawing.Size(93, 23);
+            this.txtMevcutKuyruk.Size = new System.Drawing.Size(93, 20);
             this.txtMevcutKuyruk.TabIndex = 56;
             // 
             // lbl_MevcutKuyruk
@@ -124,25 +128,32 @@
             this.lbl_MevcutKuyruk.Location = new System.Drawing.Point(3, 58);
             this.lbl_MevcutKuyruk.Name = "lbl_MevcutKuyruk";
             this.lbl_MevcutKuyruk.Size = new System.Drawing.Size(122, 20);
+            this.lbl_MevcutKuyruk.TabIndex = 79;
             this.lbl_MevcutKuyruk.Text = "Mevcut Kuyruk:";
             // 
             // grd_List
             // 
             this.grd_List.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grd_List.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
+            this.grd_List.DataMember = "";
             this.grd_List.Enabled = false;
             this.grd_List.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.grd_List.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.grd_List.Location = new System.Drawing.Point(6, 90);
             this.grd_List.Name = "grd_List";
             this.grd_List.Size = new System.Drawing.Size(306, 113);
             this.grd_List.TabIndex = 3;
-            this.grd_List.TableStyles.Add(this.dataGridTableStyle1);
+            this.grd_List.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle1});
             // 
             // dataGridTableStyle1
             // 
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn1);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn2);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn3);
+            this.dataGridTableStyle1.DataGrid = this.grd_List;
+            this.dataGridTableStyle1.GridColumnStyles.AddRange(new System.Windows.Forms.DataGridColumnStyle[] {
+            this.dataGridTextBoxColumn1,
+            this.dataGridTextBoxColumn2,
+            this.dataGridTextBoxColumn3});
+            this.dataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // dataGridTextBoxColumn1
             // 
@@ -150,6 +161,7 @@
             this.dataGridTextBoxColumn1.FormatInfo = null;
             this.dataGridTextBoxColumn1.HeaderText = "Kuyruk No";
             this.dataGridTextBoxColumn1.MappingName = "kuyrukNo";
+            this.dataGridTextBoxColumn1.Width = 75;
             // 
             // dataGridTextBoxColumn2
             // 
@@ -157,7 +169,6 @@
             this.dataGridTextBoxColumn2.FormatInfo = null;
             this.dataGridTextBoxColumn2.HeaderText = "Kuyruk Açıklaması";
             this.dataGridTextBoxColumn2.MappingName = "kuyrukAciklamasi";
-            this.dataGridTextBoxColumn2.Width = 100;
             // 
             // dataGridTextBoxColumn3
             // 
@@ -165,6 +176,7 @@
             this.dataGridTextBoxColumn3.FormatInfo = null;
             this.dataGridTextBoxColumn3.HeaderText = "Açık Sip. Sayısı";
             this.dataGridTextBoxColumn3.MappingName = "acikSiparisSayisi";
+            this.dataGridTextBoxColumn3.Width = 75;
             // 
             // btn_Geri
             // 
@@ -196,11 +208,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -217,9 +230,12 @@
             this.Controls.Add(this.grd_List);
             this.Controls.Add(this.p4);
             this.Name = "frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Toplama Kuyruk Seçimi";
             this.Load += new System.EventHandler(this.frm_16_Toplama_Nakil_Sip_Kuyruk_Secimi_Load);
             this.p4.ResumeLayout(false);
+            this.p4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).EndInit();
             this.ResumeLayout(false);
 
         }

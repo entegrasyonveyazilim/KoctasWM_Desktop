@@ -69,6 +69,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).BeginInit();
             this.SuspendLayout();
             // 
             // p1
@@ -79,6 +80,7 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 33);
+            this.p1.TabIndex = 54;
             // 
             // lbl_MalzemeNo
             // 
@@ -86,6 +88,7 @@
             this.lbl_MalzemeNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_MalzemeNo.Name = "lbl_MalzemeNo";
             this.lbl_MalzemeNo.Size = new System.Drawing.Size(122, 20);
+            this.lbl_MalzemeNo.TabIndex = 0;
             this.lbl_MalzemeNo.Text = "Malzeme No:";
             // 
             // txtMalzemeNo
@@ -93,7 +96,7 @@
             this.txtMalzemeNo.BackColor = System.Drawing.Color.White;
             this.txtMalzemeNo.Location = new System.Drawing.Point(131, 3);
             this.txtMalzemeNo.Name = "txtMalzemeNo";
-            this.txtMalzemeNo.Size = new System.Drawing.Size(178, 23);
+            this.txtMalzemeNo.Size = new System.Drawing.Size(178, 20);
             this.txtMalzemeNo.TabIndex = 3;
             this.txtMalzemeNo.GotFocus += new System.EventHandler(this.txtMalzemeNo_GotFocus);
             this.txtMalzemeNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMalzemeNo_KeyDown);
@@ -126,19 +129,20 @@
             this.tabPage1.Controls.Add(this.lbl_SatisiKoduAdi);
             this.tabPage1.Controls.Add(this.txtMalzemeTanimi);
             this.tabPage1.Controls.Add(this.lbl_MalzemeTanimi);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(301, 135);
+            this.tabPage1.Size = new System.Drawing.Size(301, 138);
+            this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ana Veri  ";
             // 
             // txtMalzemeNo2
             // 
             this.txtMalzemeNo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtMalzemeNo2.Enabled = false;
-            this.txtMalzemeNo2.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtMalzemeNo2.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtMalzemeNo2.Location = new System.Drawing.Point(120, 2);
             this.txtMalzemeNo2.Name = "txtMalzemeNo2";
-            this.txtMalzemeNo2.Size = new System.Drawing.Size(178, 19);
+            this.txtMalzemeNo2.Size = new System.Drawing.Size(178, 20);
             this.txtMalzemeNo2.TabIndex = 86;
             // 
             // lbl_MalzemeNo2
@@ -147,36 +151,37 @@
             this.lbl_MalzemeNo2.Location = new System.Drawing.Point(0, 4);
             this.lbl_MalzemeNo2.Name = "lbl_MalzemeNo2";
             this.lbl_MalzemeNo2.Size = new System.Drawing.Size(114, 17);
+            this.lbl_MalzemeNo2.TabIndex = 87;
             this.lbl_MalzemeNo2.Text = "Malzeme No:";
             // 
             // txtBlokeStokOlcuBirimi
             // 
             this.txtBlokeStokOlcuBirimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtBlokeStokOlcuBirimi.Enabled = false;
-            this.txtBlokeStokOlcuBirimi.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtBlokeStokOlcuBirimi.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtBlokeStokOlcuBirimi.Location = new System.Drawing.Point(193, 109);
             this.txtBlokeStokOlcuBirimi.Name = "txtBlokeStokOlcuBirimi";
-            this.txtBlokeStokOlcuBirimi.Size = new System.Drawing.Size(43, 19);
+            this.txtBlokeStokOlcuBirimi.Size = new System.Drawing.Size(43, 20);
             this.txtBlokeStokOlcuBirimi.TabIndex = 76;
             // 
             // txtBlokeStok
             // 
             this.txtBlokeStok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtBlokeStok.Enabled = false;
-            this.txtBlokeStok.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtBlokeStok.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtBlokeStok.Location = new System.Drawing.Point(243, 87);
             this.txtBlokeStok.Name = "txtBlokeStok";
-            this.txtBlokeStok.Size = new System.Drawing.Size(55, 19);
+            this.txtBlokeStok.Size = new System.Drawing.Size(55, 20);
             this.txtBlokeStok.TabIndex = 75;
             // 
             // txtKullanilabilirStokOlcuBirimi
             // 
             this.txtKullanilabilirStokOlcuBirimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtKullanilabilirStokOlcuBirimi.Enabled = false;
-            this.txtKullanilabilirStokOlcuBirimi.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtKullanilabilirStokOlcuBirimi.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtKullanilabilirStokOlcuBirimi.Location = new System.Drawing.Point(132, 109);
             this.txtKullanilabilirStokOlcuBirimi.Name = "txtKullanilabilirStokOlcuBirimi";
-            this.txtKullanilabilirStokOlcuBirimi.Size = new System.Drawing.Size(43, 19);
+            this.txtKullanilabilirStokOlcuBirimi.Size = new System.Drawing.Size(43, 20);
             this.txtKullanilabilirStokOlcuBirimi.TabIndex = 72;
             this.txtKullanilabilirStokOlcuBirimi.TextChanged += new System.EventHandler(this.txtKullanilabilirStokOlcuBirimi_TextChanged);
             // 
@@ -184,30 +189,30 @@
             // 
             this.txtKullanilabilirStok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtKullanilabilirStok.Enabled = false;
-            this.txtKullanilabilirStok.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtKullanilabilirStok.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtKullanilabilirStok.Location = new System.Drawing.Point(181, 87);
             this.txtKullanilabilirStok.Name = "txtKullanilabilirStok";
-            this.txtKullanilabilirStok.Size = new System.Drawing.Size(55, 19);
+            this.txtKullanilabilirStok.Size = new System.Drawing.Size(55, 20);
             this.txtKullanilabilirStok.TabIndex = 71;
             // 
             // txtToplamStokOlcuBirimi
             // 
             this.txtToplamStokOlcuBirimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtToplamStokOlcuBirimi.Enabled = false;
-            this.txtToplamStokOlcuBirimi.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtToplamStokOlcuBirimi.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtToplamStokOlcuBirimi.Location = new System.Drawing.Point(255, 109);
             this.txtToplamStokOlcuBirimi.Name = "txtToplamStokOlcuBirimi";
-            this.txtToplamStokOlcuBirimi.Size = new System.Drawing.Size(43, 19);
+            this.txtToplamStokOlcuBirimi.Size = new System.Drawing.Size(43, 20);
             this.txtToplamStokOlcuBirimi.TabIndex = 69;
             // 
             // txtToplamStok
             // 
             this.txtToplamStok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtToplamStok.Enabled = false;
-            this.txtToplamStok.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtToplamStok.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtToplamStok.Location = new System.Drawing.Point(120, 87);
             this.txtToplamStok.Name = "txtToplamStok";
-            this.txtToplamStok.Size = new System.Drawing.Size(55, 19);
+            this.txtToplamStok.Size = new System.Drawing.Size(55, 20);
             this.txtToplamStok.TabIndex = 67;
             // 
             // lbl_ToplamStok
@@ -216,16 +221,17 @@
             this.lbl_ToplamStok.Location = new System.Drawing.Point(0, 89);
             this.lbl_ToplamStok.Name = "lbl_ToplamStok";
             this.lbl_ToplamStok.Size = new System.Drawing.Size(121, 17);
+            this.lbl_ToplamStok.TabIndex = 88;
             this.lbl_ToplamStok.Text = "Top./Kull./Blok:";
             // 
             // txtMalGrubuTanimi
             // 
             this.txtMalGrubuTanimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtMalGrubuTanimi.Enabled = false;
-            this.txtMalGrubuTanimi.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtMalGrubuTanimi.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtMalGrubuTanimi.Location = new System.Drawing.Point(120, 65);
             this.txtMalGrubuTanimi.Name = "txtMalGrubuTanimi";
-            this.txtMalGrubuTanimi.Size = new System.Drawing.Size(178, 19);
+            this.txtMalGrubuTanimi.Size = new System.Drawing.Size(178, 20);
             this.txtMalGrubuTanimi.TabIndex = 64;
             // 
             // lbl_MalGrubuTanimi
@@ -234,16 +240,17 @@
             this.lbl_MalGrubuTanimi.Location = new System.Drawing.Point(0, 67);
             this.lbl_MalGrubuTanimi.Name = "lbl_MalGrubuTanimi";
             this.lbl_MalGrubuTanimi.Size = new System.Drawing.Size(114, 17);
+            this.lbl_MalGrubuTanimi.TabIndex = 89;
             this.lbl_MalGrubuTanimi.Text = "Mal Grubu/Tanımı:";
             // 
             // txtSaticiKoduAdi
             // 
             this.txtSaticiKoduAdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtSaticiKoduAdi.Enabled = false;
-            this.txtSaticiKoduAdi.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtSaticiKoduAdi.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtSaticiKoduAdi.Location = new System.Drawing.Point(120, 44);
             this.txtSaticiKoduAdi.Name = "txtSaticiKoduAdi";
-            this.txtSaticiKoduAdi.Size = new System.Drawing.Size(178, 19);
+            this.txtSaticiKoduAdi.Size = new System.Drawing.Size(178, 20);
             this.txtSaticiKoduAdi.TabIndex = 61;
             // 
             // lbl_SatisiKoduAdi
@@ -252,16 +259,17 @@
             this.lbl_SatisiKoduAdi.Location = new System.Drawing.Point(0, 46);
             this.lbl_SatisiKoduAdi.Name = "lbl_SatisiKoduAdi";
             this.lbl_SatisiKoduAdi.Size = new System.Drawing.Size(114, 17);
+            this.lbl_SatisiKoduAdi.TabIndex = 90;
             this.lbl_SatisiKoduAdi.Text = "Satıcı Kodu/Adı:";
             // 
             // txtMalzemeTanimi
             // 
             this.txtMalzemeTanimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtMalzemeTanimi.Enabled = false;
-            this.txtMalzemeTanimi.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtMalzemeTanimi.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtMalzemeTanimi.Location = new System.Drawing.Point(120, 23);
             this.txtMalzemeTanimi.Name = "txtMalzemeTanimi";
-            this.txtMalzemeTanimi.Size = new System.Drawing.Size(178, 19);
+            this.txtMalzemeTanimi.Size = new System.Drawing.Size(178, 20);
             this.txtMalzemeTanimi.TabIndex = 58;
             // 
             // lbl_MalzemeTanimi
@@ -270,6 +278,7 @@
             this.lbl_MalzemeTanimi.Location = new System.Drawing.Point(0, 25);
             this.lbl_MalzemeTanimi.Name = "lbl_MalzemeTanimi";
             this.lbl_MalzemeTanimi.Size = new System.Drawing.Size(114, 17);
+            this.lbl_MalzemeTanimi.TabIndex = 91;
             this.lbl_MalzemeTanimi.Text = "Malzeme Tanımı:";
             // 
             // tabPage2
@@ -277,9 +286,10 @@
             this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.lbl_Bilgi);
             this.tabPage2.Controls.Add(this.grd_List);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(301, 135);
+            this.tabPage2.Size = new System.Drawing.Size(301, 138);
+            this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Adres Stokları  ";
             // 
             // lbl_Bilgi
@@ -289,32 +299,39 @@
             this.lbl_Bilgi.Location = new System.Drawing.Point(3, 123);
             this.lbl_Bilgi.Name = "lbl_Bilgi";
             this.lbl_Bilgi.Size = new System.Drawing.Size(298, 18);
+            this.lbl_Bilgi.TabIndex = 0;
             this.lbl_Bilgi.Text = "Detayını görmek istediğiniz kaydın üzerinde çift tıklayın";
             // 
             // grd_List
             // 
             this.grd_List.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grd_List.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
+            this.grd_List.DataMember = "";
             this.grd_List.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.grd_List.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.grd_List.Location = new System.Drawing.Point(0, 3);
             this.grd_List.Name = "grd_List";
             this.grd_List.Size = new System.Drawing.Size(301, 118);
             this.grd_List.TabIndex = 50;
-            this.grd_List.TableStyles.Add(this.dataGridTableStyle1);
+            this.grd_List.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle1});
             this.grd_List.CurrentCellChanged += new System.EventHandler(this.grd_List_DoubleClick);
             // 
             // dataGridTableStyle1
             // 
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn1);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn2);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn3);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn4);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn5);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn6);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn7);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn8);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn9);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn10);
+            this.dataGridTableStyle1.DataGrid = this.grd_List;
+            this.dataGridTableStyle1.GridColumnStyles.AddRange(new System.Windows.Forms.DataGridColumnStyle[] {
+            this.dataGridTextBoxColumn1,
+            this.dataGridTextBoxColumn2,
+            this.dataGridTextBoxColumn3,
+            this.dataGridTextBoxColumn4,
+            this.dataGridTextBoxColumn5,
+            this.dataGridTextBoxColumn6,
+            this.dataGridTextBoxColumn7,
+            this.dataGridTextBoxColumn8,
+            this.dataGridTextBoxColumn9,
+            this.dataGridTextBoxColumn10});
+            this.dataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // dataGridTextBoxColumn1
             // 
@@ -330,7 +347,6 @@
             this.dataGridTextBoxColumn2.FormatInfo = null;
             this.dataGridTextBoxColumn2.HeaderText = "Miktar";
             this.dataGridTextBoxColumn2.MappingName = "toplamMiktar";
-            this.dataGridTextBoxColumn2.Width = 100;
             // 
             // dataGridTextBoxColumn3
             // 
@@ -412,11 +428,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -432,12 +449,16 @@
             this.Controls.Add(this.btn_Geri);
             this.Controls.Add(this.p1);
             this.Name = "frm_07_Depo_Urun_Sorgulama";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ürün Sorgulama";
             this.Load += new System.EventHandler(this.frm_07_Depo_Urun_Sorgulama_Load);
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).EndInit();
             this.ResumeLayout(false);
 
         }

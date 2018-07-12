@@ -19,7 +19,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu frm = new frm_Menu();
+            frm.Show();
+            this.Hide();
         }
 
         private void frm_Menu_Mal_Cikis_Islemleri_Load(object sender, EventArgs e)
@@ -32,13 +34,16 @@ namespace KoctasWM_Project
         private void btn_ToplamaIslemleri_Click(object sender, EventArgs e)
         {
             frm_Menu_Mal_Cikis_Toplama_Islemleri frm = new frm_Menu_Mal_Cikis_Toplama_Islemleri();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
+
         }
 
         private void btn_SevkiyatIslemleri_Click(object sender, EventArgs e)
         {
             frm_Menu_Mal_Cikis_Sevkiyat_Islemleri frm = new frm_Menu_Mal_Cikis_Sevkiyat_Islemleri();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
     }
 }

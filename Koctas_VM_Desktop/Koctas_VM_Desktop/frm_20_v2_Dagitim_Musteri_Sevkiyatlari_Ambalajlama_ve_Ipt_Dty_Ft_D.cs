@@ -88,7 +88,7 @@ namespace KoctasWM_Project
             }
 
             this.DialogResult = DialogResult.OK;
-            this.Close();
+            this.Hide();
 
 
 
@@ -160,7 +160,7 @@ MessageBox.Show(ex.Message, "HATA");
             frm_Waiting frm = new frm_Waiting();
             frm._koliNo = _koliNo;
             frm._kontrolEttim = false;
-            if (frm.ShowDialog() == DialogResult.OK)
+            if (frm .ShowDialog() == DialogResult.OK)
             {
                 if (frm._atfKontrol == true)
                 {
@@ -182,7 +182,7 @@ MessageBox.Show(ex.Message, "HATA");
             if (MessageBox.Show("ATF No almadan kargoya teslim edemezsiniz.", "UYARI", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 this.DialogResult = DialogResult.OK;
-                this.Close();
+                this.Hide();
             }
         }
 

@@ -21,7 +21,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Mal_Cikis_Sevkiyat_Islemleri frm = new frm_Menu_Mal_Cikis_Sevkiyat_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalaj_Iptali_Load(object sender, EventArgs e)
@@ -250,10 +252,10 @@ namespace KoctasWM_Project
 
         private void btn_Kaydet_Click(object sender, EventArgs e)
         {
-            if (txtDagitimAdresi.Text.Trim() == "")
-            {
-                return;
-            }
+            //if (txtDagitimAdresi.Text.Trim() == "")
+            //{
+            //    return;
+            //}
 
             txtDagitimAraci.Text = txtDagitimAraci.Text.ToString().Trim().ToUpper();
             txtDagitimAdresi.Text = txtDagitimAdresi.Text.ToString().Trim().ToUpper();
@@ -295,10 +297,8 @@ namespace KoctasWM_Project
                     __Vbeln = resp.EtAmbalaj[0].Vbeln.ToString();
                     frm._Vbeln = __Vbeln;
 
-                    if (frm.ShowDialog() == DialogResult.OK)
-                    {
-                        this.Close();
-                    }
+                    frm.Show();
+                    this.Hide();
 
                     /*
                     if (resp.EtAmbalaj[0].Kostk.ToString().ToUpper() == "C")
@@ -310,7 +310,7 @@ namespace KoctasWM_Project
                         frm._dagitimListesi = new KoctasWM_Project.WS_Kontrol.ZktWmStAmbalaj[count];
                         frm._dagitimListesi = resp.EtAmbalaj;
                         frm._Vbeln = txtDagitimAdresi.Text.Trim().ToString();
-                        frm.ShowDialog();
+                        frm .Show();
                     }
                     else
                     {

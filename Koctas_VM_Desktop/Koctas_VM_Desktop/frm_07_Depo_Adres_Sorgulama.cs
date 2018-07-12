@@ -47,7 +47,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Adres_Palet_Sorgulama frm = new frm_Menu_Adres_Palet_Sorgulama();
+            frm.Show();
+            this.Hide();
         }
 
         private void dataGrid1_DoubleClick(object sender, EventArgs e)
@@ -67,7 +69,7 @@ namespace KoctasWM_Project
                 frm._toplanacakMiktar = drAdres.Rows[grd_List.CurrentCell.RowNumber]["toplanacakMiktar"].ToString();
                 frm._ean = drAdres.Rows[grd_List.CurrentCell.RowNumber]["ean"].ToString();
 
-                frm.ShowDialog();
+                frm .Show();
             }
             catch (Exception ex)
             {

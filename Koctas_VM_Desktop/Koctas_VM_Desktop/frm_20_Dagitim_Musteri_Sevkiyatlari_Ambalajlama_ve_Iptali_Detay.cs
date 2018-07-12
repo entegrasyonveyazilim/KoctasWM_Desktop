@@ -232,7 +232,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali frm = new frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali();
+            frm.Show();
+            this.Hide();
         }
 
         private void comboBox1_GotFocus(object sender, EventArgs e)
@@ -747,7 +749,7 @@ namespace KoctasWM_Project
                             frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol frmBol = new frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay_KoliBol();
                             bool devam = false;
                             Cursor.Current = Cursors.Default;
-                            if (frmBol.ShowDialog() == DialogResult.OK)
+                            if (frmBol .ShowDialog() == DialogResult.OK)
                             {
                                 devam = true;
                             }
@@ -760,7 +762,7 @@ namespace KoctasWM_Project
                                 //frm._faturaNo = faturaNo;
                                 frm._belgeNo = _Vbeln;
                                 frm._koliNo = _koliNo;
-                                if (frm.ShowDialog() == DialogResult.OK)
+                                if (frm .ShowDialog() == DialogResult.OK)
                                 {
                                     this.DialogResult = DialogResult.OK;
                                     this.Close();

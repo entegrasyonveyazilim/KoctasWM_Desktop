@@ -74,12 +74,14 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click_1(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Depo_Ici_Islemleri frm = new frm_Menu_Depo_Ici_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void txtHedefPalet_GotFocus(object sender, EventArgs e)

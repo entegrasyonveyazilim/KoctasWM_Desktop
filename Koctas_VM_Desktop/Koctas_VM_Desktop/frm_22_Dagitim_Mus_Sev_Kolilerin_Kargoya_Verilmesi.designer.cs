@@ -50,12 +50,13 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 34);
+            this.p1.TabIndex = 69;
             // 
             // cmbKargoFirmasi
             // 
             this.cmbKargoFirmasi.Location = new System.Drawing.Point(131, 6);
             this.cmbKargoFirmasi.Name = "cmbKargoFirmasi";
-            this.cmbKargoFirmasi.Size = new System.Drawing.Size(178, 23);
+            this.cmbKargoFirmasi.Size = new System.Drawing.Size(178, 21);
             this.cmbKargoFirmasi.TabIndex = 1;
             this.cmbKargoFirmasi.SelectedIndexChanged += new System.EventHandler(this.cmbKargoFirmasi_SelectedIndexChanged);
             this.cmbKargoFirmasi.GotFocus += new System.EventHandler(this.cmbKargoFirmasi_GotFocus);
@@ -66,6 +67,7 @@
             this.lbl_KargoFirmasi.Location = new System.Drawing.Point(3, 6);
             this.lbl_KargoFirmasi.Name = "lbl_KargoFirmasi";
             this.lbl_KargoFirmasi.Size = new System.Drawing.Size(122, 20);
+            this.lbl_KargoFirmasi.TabIndex = 2;
             this.lbl_KargoFirmasi.Text = "Kargo Firması:";
             // 
             // btn_Geri
@@ -104,6 +106,7 @@
             this.p2.Location = new System.Drawing.Point(3, 43);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(312, 33);
+            this.p2.TabIndex = 1;
             // 
             // lbl_KargoKoliNo
             // 
@@ -111,6 +114,7 @@
             this.lbl_KargoKoliNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_KargoKoliNo.Name = "lbl_KargoKoliNo";
             this.lbl_KargoKoliNo.Size = new System.Drawing.Size(122, 20);
+            this.lbl_KargoKoliNo.TabIndex = 0;
             this.lbl_KargoKoliNo.Text = "Kargo Koli No:";
             // 
             // txtKargoKoliNo
@@ -118,18 +122,19 @@
             this.txtKargoKoliNo.BackColor = System.Drawing.Color.White;
             this.txtKargoKoliNo.Location = new System.Drawing.Point(131, 6);
             this.txtKargoKoliNo.Name = "txtKargoKoliNo";
-            this.txtKargoKoliNo.Size = new System.Drawing.Size(178, 23);
+            this.txtKargoKoliNo.Size = new System.Drawing.Size(178, 20);
             this.txtKargoKoliNo.TabIndex = 3;
             this.txtKargoKoliNo.GotFocus += new System.EventHandler(this.txtKargoKoliNo_GotFocus);
             this.txtKargoKoliNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtKargoKoliNo_KeyDown);
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -146,10 +151,12 @@
             this.Controls.Add(this.btn_Kaydet);
             this.Controls.Add(this.p1);
             this.Name = "frm_22_Dagitim_Mus_Sev_Kolilerin_Kargoya_Verilmesi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri Sev. Kolilerin Kargoya Tes.ve İptali";
             this.Load += new System.EventHandler(this.frm_22_Dagitim_Mus_Sev_Kolilerin_Kargoya_Verilmesi_Load);
             this.p1.ResumeLayout(false);
             this.p2.ResumeLayout(false);
+            this.p2.PerformLayout();
             this.ResumeLayout(false);
 
         }

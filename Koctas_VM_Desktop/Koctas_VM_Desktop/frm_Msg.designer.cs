@@ -33,6 +33,7 @@
             this.dataGridTableStyle1 = new System.Windows.Forms.DataGridTableStyle();
             this.dataGridTextBoxColumn1 = new System.Windows.Forms.DataGridTextBoxColumn();
             this.dataGridTextBoxColumn2 = new System.Windows.Forms.DataGridTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_Hata)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Tamam
@@ -48,17 +49,23 @@
             // 
             this.grd_Hata.BackColor = System.Drawing.Color.White;
             this.grd_Hata.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
+            this.grd_Hata.DataMember = "";
             this.grd_Hata.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.grd_Hata.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.grd_Hata.Location = new System.Drawing.Point(3, 3);
             this.grd_Hata.Name = "grd_Hata";
             this.grd_Hata.Size = new System.Drawing.Size(312, 130);
             this.grd_Hata.TabIndex = 1;
-            this.grd_Hata.TableStyles.Add(this.dataGridTableStyle1);
+            this.grd_Hata.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle1});
             // 
             // dataGridTableStyle1
             // 
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn1);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn2);
+            this.dataGridTableStyle1.DataGrid = this.grd_Hata;
+            this.dataGridTableStyle1.GridColumnStyles.AddRange(new System.Windows.Forms.DataGridColumnStyle[] {
+            this.dataGridTextBoxColumn1,
+            this.dataGridTextBoxColumn2});
+            this.dataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // dataGridTextBoxColumn1
             // 
@@ -86,8 +93,10 @@
             this.Controls.Add(this.grd_Hata);
             this.Controls.Add(this.btn_Tamam);
             this.Name = "frm_Msg";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MESAJ DETAYLARI";
             this.Load += new System.EventHandler(this.frm_Msg_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grd_Hata)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -46,6 +46,7 @@
             this.btn_Kaydet = new KoctasWM_Project.PictureButton();
             this.lbl_LoginInfo = new System.Windows.Forms.Label();
             this.p2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).BeginInit();
             this.p1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,16 +59,17 @@
             this.p2.Location = new System.Drawing.Point(3, 43);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(312, 33);
+            this.p2.TabIndex = 2;
             // 
             // btn_Ekle
             // 
             this.btn_Ekle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Ekle.BackgroundImage = null;
             this.btn_Ekle.Enabled = false;
             this.btn_Ekle.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Ekle.ForeColor = System.Drawing.Color.White;
             this.btn_Ekle.Location = new System.Drawing.Point(249, 6);
             this.btn_Ekle.Name = "btn_Ekle";
+            this.btn_Ekle.PressedImage = null;
             this.btn_Ekle.Size = new System.Drawing.Size(60, 23);
             this.btn_Ekle.TabIndex = 75;
             this.btn_Ekle.Text = "Ekle";
@@ -79,6 +81,7 @@
             this.lbl_PaletKargoNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_PaletKargoNo.Name = "lbl_PaletKargoNo";
             this.lbl_PaletKargoNo.Size = new System.Drawing.Size(122, 20);
+            this.lbl_PaletKargoNo.TabIndex = 76;
             this.lbl_PaletKargoNo.Text = "Palet Kargo No:";
             // 
             // txtPaletKargoNo
@@ -87,7 +90,7 @@
             this.txtPaletKargoNo.Enabled = false;
             this.txtPaletKargoNo.Location = new System.Drawing.Point(131, 6);
             this.txtPaletKargoNo.Name = "txtPaletKargoNo";
-            this.txtPaletKargoNo.Size = new System.Drawing.Size(112, 23);
+            this.txtPaletKargoNo.Size = new System.Drawing.Size(112, 20);
             this.txtPaletKargoNo.TabIndex = 3;
             this.txtPaletKargoNo.GotFocus += new System.EventHandler(this.txtPaletKargoNo_GotFocus);
             this.txtPaletKargoNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPaletKargoNo_KeyDown);
@@ -96,19 +99,25 @@
             // 
             this.grd_List.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grd_List.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
+            this.grd_List.DataMember = "";
             this.grd_List.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.grd_List.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.grd_List.Location = new System.Drawing.Point(3, 82);
             this.grd_List.Name = "grd_List";
             this.grd_List.Size = new System.Drawing.Size(312, 108);
             this.grd_List.TabIndex = 75;
-            this.grd_List.TableStyles.Add(this.dataGridTableStyle1);
+            this.grd_List.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle1});
             this.grd_List.DoubleClick += new System.EventHandler(this.grd_List_DoubleClick);
             // 
             // dataGridTableStyle1
             // 
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn1);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn3);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn2);
+            this.dataGridTableStyle1.DataGrid = this.grd_List;
+            this.dataGridTableStyle1.GridColumnStyles.AddRange(new System.Windows.Forms.DataGridColumnStyle[] {
+            this.dataGridTextBoxColumn1,
+            this.dataGridTextBoxColumn3,
+            this.dataGridTextBoxColumn2});
+            this.dataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // dataGridTextBoxColumn1
             // 
@@ -116,7 +125,6 @@
             this.dataGridTextBoxColumn1.FormatInfo = null;
             this.dataGridTextBoxColumn1.HeaderText = "Koli No";
             this.dataGridTextBoxColumn1.MappingName = "koliNo";
-            this.dataGridTextBoxColumn1.Width = 100;
             // 
             // dataGridTextBoxColumn3
             // 
@@ -142,6 +150,7 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 34);
+            this.p1.TabIndex = 76;
             // 
             // txtSevkiyatNo
             // 
@@ -149,7 +158,7 @@
             this.txtSevkiyatNo.Enabled = false;
             this.txtSevkiyatNo.Location = new System.Drawing.Point(131, 6);
             this.txtSevkiyatNo.Name = "txtSevkiyatNo";
-            this.txtSevkiyatNo.Size = new System.Drawing.Size(178, 23);
+            this.txtSevkiyatNo.Size = new System.Drawing.Size(178, 20);
             this.txtSevkiyatNo.TabIndex = 4;
             // 
             // lbl_SevkiyatNo
@@ -158,6 +167,7 @@
             this.lbl_SevkiyatNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_SevkiyatNo.Name = "lbl_SevkiyatNo";
             this.lbl_SevkiyatNo.Size = new System.Drawing.Size(122, 20);
+            this.lbl_SevkiyatNo.TabIndex = 5;
             this.lbl_SevkiyatNo.Text = "Sevkiyat No:";
             // 
             // lbl_Bilgi
@@ -167,6 +177,7 @@
             this.lbl_Bilgi.Location = new System.Drawing.Point(3, 193);
             this.lbl_Bilgi.Name = "lbl_Bilgi";
             this.lbl_Bilgi.Size = new System.Drawing.Size(318, 13);
+            this.lbl_Bilgi.TabIndex = 1;
             this.lbl_Bilgi.Text = "Listeden çıkartmak istediğiniz koli no üzerine çift tıklayın";
             // 
             // btn_Geri
@@ -199,11 +210,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -222,10 +234,14 @@
             this.Controls.Add(this.btn_Kaydet);
             this.Controls.Add(this.p1);
             this.Name = "frm_24_Dagitim_Mag_Sev_Yukleme_Mal_Cikisi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mağaza Sevkiyatları Yükleme ve Mal Çıkışı";
             this.Load += new System.EventHandler(this.frm_24_Dagitim_Mag_Sev_Yukleme_Mal_Cikisi_Load);
             this.p2.ResumeLayout(false);
+            this.p2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).EndInit();
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.ResumeLayout(false);
 
         }

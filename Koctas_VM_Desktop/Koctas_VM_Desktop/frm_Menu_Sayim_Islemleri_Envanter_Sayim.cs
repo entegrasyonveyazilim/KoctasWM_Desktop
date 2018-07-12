@@ -25,21 +25,25 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Sayim_Islemleri frm = new frm_Menu_Sayim_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void btn_SistemOnerisiSayim_Click(object sender, EventArgs e)
         {
             frm_26_Sayim_Islemleri_Envanter_Sayimi_Sistem_Onerisi_Sayim frm = new frm_26_Sayim_Islemleri_Envanter_Sayimi_Sistem_Onerisi_Sayim();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_KullaniciSecimiSayim_Click(object sender, EventArgs e)
         {
             frm_26_Sayim_Islemleri_Envanter_Sayimi_Kullanici_Secimi_ile_Sayim frm = new frm_26_Sayim_Islemleri_Envanter_Sayimi_Kullanici_Secimi_ile_Sayim();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
-       
+
     }
 }

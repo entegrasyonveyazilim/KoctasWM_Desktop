@@ -61,8 +61,10 @@
             this.lbl_LoginInfo = new System.Windows.Forms.Label();
             this.btn_Kaydet = new KoctasWM_Project.PictureButton();
             this.btn_Geri = new KoctasWM_Project.PictureButton();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).BeginInit();
             this.p1.SuspendLayout();
             this.p2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_ListT)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_Bilgi
@@ -72,30 +74,37 @@
             this.lbl_Bilgi.Location = new System.Drawing.Point(0, 150);
             this.lbl_Bilgi.Name = "lbl_Bilgi";
             this.lbl_Bilgi.Size = new System.Drawing.Size(318, 17);
+            this.lbl_Bilgi.TabIndex = 81;
             this.lbl_Bilgi.Text = "İşlem yapmak istediğiniz kaydın üzerinde çift tıklayın";
             // 
             // grd_List
             // 
             this.grd_List.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grd_List.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
+            this.grd_List.DataMember = "";
             this.grd_List.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.grd_List.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.grd_List.Location = new System.Drawing.Point(3, 60);
             this.grd_List.Name = "grd_List";
             this.grd_List.Size = new System.Drawing.Size(156, 87);
             this.grd_List.TabIndex = 69;
-            this.grd_List.TableStyles.Add(this.dataGridTableStyle1);
+            this.grd_List.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle1});
             this.grd_List.DoubleClick += new System.EventHandler(this.grd_List_DoubleClick);
             // 
             // dataGridTableStyle1
             // 
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn9);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn10);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn11);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn12);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn13);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn14);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn15);
-            this.dataGridTableStyle1.GridColumnStyles.Add(this.dataGridTextBoxColumn16);
+            this.dataGridTableStyle1.DataGrid = this.grd_List;
+            this.dataGridTableStyle1.GridColumnStyles.AddRange(new System.Windows.Forms.DataGridColumnStyle[] {
+            this.dataGridTextBoxColumn9,
+            this.dataGridTextBoxColumn10,
+            this.dataGridTextBoxColumn11,
+            this.dataGridTextBoxColumn12,
+            this.dataGridTextBoxColumn13,
+            this.dataGridTextBoxColumn14,
+            this.dataGridTextBoxColumn15,
+            this.dataGridTextBoxColumn16});
+            this.dataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // dataGridTextBoxColumn9
             // 
@@ -166,6 +175,7 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 33);
+            this.p1.TabIndex = 82;
             // 
             // lbl_DagitimAraci
             // 
@@ -173,6 +183,7 @@
             this.lbl_DagitimAraci.Location = new System.Drawing.Point(3, 6);
             this.lbl_DagitimAraci.Name = "lbl_DagitimAraci";
             this.lbl_DagitimAraci.Size = new System.Drawing.Size(122, 20);
+            this.lbl_DagitimAraci.TabIndex = 0;
             this.lbl_DagitimAraci.Text = "Dağıtım Aracı:";
             // 
             // txtDagitimAraci
@@ -180,7 +191,7 @@
             this.txtDagitimAraci.BackColor = System.Drawing.Color.White;
             this.txtDagitimAraci.Location = new System.Drawing.Point(131, 3);
             this.txtDagitimAraci.Name = "txtDagitimAraci";
-            this.txtDagitimAraci.Size = new System.Drawing.Size(178, 23);
+            this.txtDagitimAraci.Size = new System.Drawing.Size(178, 20);
             this.txtDagitimAraci.TabIndex = 3;
             this.txtDagitimAraci.GotFocus += new System.EventHandler(this.txtDagitimAraci_GotFocus);
             this.txtDagitimAraci.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDagitimAraci_KeyDown);
@@ -193,6 +204,7 @@
             this.p2.Location = new System.Drawing.Point(3, 170);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(312, 33);
+            this.p2.TabIndex = 80;
             // 
             // lbl_DagitimAdresi
             // 
@@ -200,6 +212,7 @@
             this.lbl_DagitimAdresi.Location = new System.Drawing.Point(3, 6);
             this.lbl_DagitimAdresi.Name = "lbl_DagitimAdresi";
             this.lbl_DagitimAdresi.Size = new System.Drawing.Size(122, 20);
+            this.lbl_DagitimAdresi.TabIndex = 0;
             this.lbl_DagitimAdresi.Text = "Dağıtım Adresi:";
             // 
             // txtDagitimAdresi
@@ -207,7 +220,7 @@
             this.txtDagitimAdresi.BackColor = System.Drawing.Color.White;
             this.txtDagitimAdresi.Location = new System.Drawing.Point(131, 3);
             this.txtDagitimAdresi.Name = "txtDagitimAdresi";
-            this.txtDagitimAdresi.Size = new System.Drawing.Size(178, 23);
+            this.txtDagitimAdresi.Size = new System.Drawing.Size(178, 20);
             this.txtDagitimAdresi.TabIndex = 3;
             this.txtDagitimAdresi.GotFocus += new System.EventHandler(this.txtDagitimAdresi_GotFocus);
             this.txtDagitimAdresi.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDagitimAdresi_KeyDown);
@@ -218,6 +231,7 @@
             this.lbl_DagTamamlanan.Location = new System.Drawing.Point(3, 37);
             this.lbl_DagTamamlanan.Name = "lbl_DagTamamlanan";
             this.lbl_DagTamamlanan.Size = new System.Drawing.Size(156, 20);
+            this.lbl_DagTamamlanan.TabIndex = 79;
             this.lbl_DagTamamlanan.Text = "Tamamlananlar";
             this.lbl_DagTamamlanan.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -227,6 +241,7 @@
             this.lbl_DagTamamlanmayanlar.Location = new System.Drawing.Point(159, 39);
             this.lbl_DagTamamlanmayanlar.Name = "lbl_DagTamamlanmayanlar";
             this.lbl_DagTamamlanmayanlar.Size = new System.Drawing.Size(156, 20);
+            this.lbl_DagTamamlanmayanlar.TabIndex = 78;
             this.lbl_DagTamamlanmayanlar.Text = "Tamamlanmayanlar";
             this.lbl_DagTamamlanmayanlar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -234,23 +249,29 @@
             // 
             this.grd_ListT.BackColor = System.Drawing.Color.White;
             this.grd_ListT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
+            this.grd_ListT.DataMember = "";
             this.grd_ListT.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.grd_ListT.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.grd_ListT.Location = new System.Drawing.Point(159, 60);
             this.grd_ListT.Name = "grd_ListT";
             this.grd_ListT.Size = new System.Drawing.Size(156, 87);
             this.grd_ListT.TabIndex = 76;
-            this.grd_ListT.TableStyles.Add(this.dataGridTableStyle2);
+            this.grd_ListT.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle2});
             // 
             // dataGridTableStyle2
             // 
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn1);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn2);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn3);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn4);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn5);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn6);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn7);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn8);
+            this.dataGridTableStyle2.DataGrid = this.grd_ListT;
+            this.dataGridTableStyle2.GridColumnStyles.AddRange(new System.Windows.Forms.DataGridColumnStyle[] {
+            this.dataGridTextBoxColumn1,
+            this.dataGridTextBoxColumn2,
+            this.dataGridTextBoxColumn3,
+            this.dataGridTextBoxColumn4,
+            this.dataGridTextBoxColumn5,
+            this.dataGridTextBoxColumn6,
+            this.dataGridTextBoxColumn7,
+            this.dataGridTextBoxColumn8});
+            this.dataGridTableStyle2.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // dataGridTextBoxColumn1
             // 
@@ -315,11 +336,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -369,10 +391,15 @@
             this.Controls.Add(this.p1);
             this.Controls.Add(this.btn_Geri);
             this.Name = "frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri Sev. Ambalajlanması ve İptali";
             this.Load += new System.EventHandler(this.frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalaj_Iptali_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).EndInit();
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.p2.ResumeLayout(false);
+            this.p2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_ListT)).EndInit();
             this.ResumeLayout(false);
 
         }

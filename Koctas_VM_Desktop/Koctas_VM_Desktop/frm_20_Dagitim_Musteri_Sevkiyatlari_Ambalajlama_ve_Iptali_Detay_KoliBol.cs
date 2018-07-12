@@ -185,7 +185,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            frm_38_Mal_Cikisi_Faturalama_ve_ATF_Cikis frm = new frm_38_Mal_Cikisi_Faturalama_ve_ATF_Cikis();
+            frm.Show();
+            this.Hide();
         }
 
         private void txtKargoKoliNo_KeyDown(object sender, KeyEventArgs e)

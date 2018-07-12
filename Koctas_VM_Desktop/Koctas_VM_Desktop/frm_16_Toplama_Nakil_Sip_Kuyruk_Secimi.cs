@@ -76,7 +76,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Mal_Cikis_Toplama_Islemleri frm = new frm_Menu_Mal_Cikis_Toplama_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void btn_KuyrukDegistir_Click(object sender, EventArgs e)
@@ -207,7 +209,10 @@ namespace KoctasWM_Project
                     {
                         MessageBox.Show("Geçerli bir kuyruk no seçiniz", "HATA");
                     }
-
+                    frm_17_Toplama_Nakil_Sip_Onaylama frm = new frm_17_Toplama_Nakil_Sip_Onaylama();
+                    frm._kuyrukTipi = _kuyrukTipi;
+                    this.Hide();
+                    frm.ShowDialog();
 
                 }
                 catch (Exception ex)
@@ -220,13 +225,7 @@ namespace KoctasWM_Project
                 }
             }
 
-            frm_17_Toplama_Nakil_Sip_Onaylama frm = new frm_17_Toplama_Nakil_Sip_Onaylama();
-            frm._kuyrukTipi = _kuyrukTipi;
-
-            if (frm.ShowDialog() == DialogResult.OK)
-            {
-                this.Close();
-            }
+            
             
         }
 

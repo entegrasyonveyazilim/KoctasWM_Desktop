@@ -114,7 +114,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_MalGirisiPaletleme frm = new frm_Menu_MalGirisiPaletleme();
+            frm.Show();
+            this.Hide();
         }
 
  
@@ -529,7 +531,7 @@ namespace KoctasWM_Project
                         frm_32_1_Sarfa_Gonderilecek_Urunler frm = new frm_32_1_Sarfa_Gonderilecek_Urunler();
                         frm._stk = resp.EtSarf;
                         frm._stokAdedi = resp.EtSarf.Length;
-                        if (frm.ShowDialog() == DialogResult.OK)
+                        if (frm .ShowDialog() == DialogResult.OK)
                         {
                             this.Close();
                         }

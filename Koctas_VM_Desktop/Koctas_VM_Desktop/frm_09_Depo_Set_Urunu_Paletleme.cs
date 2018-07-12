@@ -65,7 +65,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Set_Urun_Islemleri frm = new frm_Menu_Set_Urun_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void txtMalzemeNo_KeyDown(object sender, KeyEventArgs e)

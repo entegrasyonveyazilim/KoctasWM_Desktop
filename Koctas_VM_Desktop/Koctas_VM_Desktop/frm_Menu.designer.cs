@@ -29,13 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Menu));
+            this.lbl_LoginInfo = new System.Windows.Forms.Label();
             this.btn_EnvanterIslemleri = new KoctasWM_Project.PictureButton();
             this.btn_sayimIslemleri = new KoctasWM_Project.PictureButton();
             this.btn_MalCikisIslemleri = new KoctasWM_Project.PictureButton();
             this.btn_DepoIciIslemler = new KoctasWM_Project.PictureButton();
             this.btn_MalGirisiPaletleme = new KoctasWM_Project.PictureButton();
-            this.lbl_LoginInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lbl_LoginInfo
+            // 
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
+            this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 250);
+            this.lbl_LoginInfo.Name = "lbl_LoginInfo";
+            this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
+            this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
+            this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btn_EnvanterIslemleri
             // 
@@ -107,16 +118,6 @@
             this.btn_MalGirisiPaletleme.Text = "MAL GİRİŞ İŞLEMLERİ";
             this.btn_MalGirisiPaletleme.Click += new System.EventHandler(this.btn_MalGirisiPaletleme_Click);
             // 
-            // lbl_LoginInfo
-            // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
-            this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
-            this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 250);
-            this.lbl_LoginInfo.Name = "lbl_LoginInfo";
-            this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
-            this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
-            this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -132,9 +133,10 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Koçtaş WM";
-            this.Load += new System.EventHandler(this.frm_Menu_Load);
             this.Closing += new System.ComponentModel.CancelEventHandler(this.frm_Menu_Closing);
+            this.Load += new System.EventHandler(this.frm_Menu_Load);
             this.ResumeLayout(false);
 
         }

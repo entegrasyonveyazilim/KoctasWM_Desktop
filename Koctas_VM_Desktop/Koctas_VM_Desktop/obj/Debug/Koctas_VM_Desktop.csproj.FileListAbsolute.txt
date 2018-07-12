@@ -66,10 +66,10 @@ C:\Users\Emirhan\source\repos\Koctas_VM_Desktop\Koctas_VM_Desktop\bin\Debug\Koct
 C:\Users\Emirhan\source\repos\Koctas_VM_Desktop\Koctas_VM_Desktop\bin\Debug\Koctas_VM_Desktop.pdb
 C:\Users\Emirhan\source\repos\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.exe
 C:\Users\Emirhan\source\repos\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.pdb
+C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\KoctasWM_Project.frm_WMLogin.resources
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\bin\Debug\Koctas_VM_Desktop.exe.config
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\bin\Debug\Koctas_VM_Desktop.exe
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\bin\Debug\Koctas_VM_Desktop.pdb
-C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.csprojAssemblyReference.cache
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\KoctasWM_Project.frm_01_SA_Trans_Girisi_Paletleme.resources
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\KoctasWM_Project.frm_02_SA_Trans_Girisi_Adresleme.resources
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\KoctasWM_Project.frm_03_Depo_Adresler_Arasi_Palet_Transferi.resources
@@ -128,9 +128,9 @@ C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Deskt
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\KoctasWM_Project.frm_Menu_Set_Urun_Islemleri.resources
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\KoctasWM_Project.frm_Msg.resources
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\KoctasWM_Project.frm_Waiting.resources
-C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\KoctasWM_Project.frm_WMLogin.resources
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.Properties.Resources.resources
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.csproj.GenerateResource.cache
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.csproj.CoreCompileInputs.cache
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.exe
 C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.pdb
+C:\Users\Emirhan\Desktop\Repo\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.csprojAssemblyReference.cache

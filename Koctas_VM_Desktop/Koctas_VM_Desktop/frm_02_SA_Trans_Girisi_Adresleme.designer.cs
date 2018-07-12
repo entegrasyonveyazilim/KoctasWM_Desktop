@@ -60,6 +60,7 @@
             this.lbl_PaletNo.Location = new System.Drawing.Point(3, 9);
             this.lbl_PaletNo.Name = "lbl_PaletNo";
             this.lbl_PaletNo.Size = new System.Drawing.Size(120, 20);
+            this.lbl_PaletNo.TabIndex = 0;
             this.lbl_PaletNo.Text = "Palet No:";
             // 
             // txtPaletNo
@@ -67,7 +68,7 @@
             this.txtPaletNo.BackColor = System.Drawing.Color.White;
             this.txtPaletNo.Location = new System.Drawing.Point(129, 6);
             this.txtPaletNo.Name = "txtPaletNo";
-            this.txtPaletNo.Size = new System.Drawing.Size(180, 23);
+            this.txtPaletNo.Size = new System.Drawing.Size(180, 24);
             this.txtPaletNo.TabIndex = 3;
             this.txtPaletNo.GotFocus += new System.EventHandler(this.txtPaletNo_GotFocus_1);
             this.txtPaletNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPaletNo_KeyDown);
@@ -80,6 +81,7 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 39);
+            this.p1.TabIndex = 3;
             // 
             // lbl_HedefAdres
             // 
@@ -87,6 +89,7 @@
             this.lbl_HedefAdres.Location = new System.Drawing.Point(3, 9);
             this.lbl_HedefAdres.Name = "lbl_HedefAdres";
             this.lbl_HedefAdres.Size = new System.Drawing.Size(120, 20);
+            this.lbl_HedefAdres.TabIndex = 0;
             this.lbl_HedefAdres.Text = "Hedef Adres:";
             // 
             // txtHedefAdres
@@ -95,7 +98,7 @@
             this.txtHedefAdres.Enabled = false;
             this.txtHedefAdres.Location = new System.Drawing.Point(129, 6);
             this.txtHedefAdres.Name = "txtHedefAdres";
-            this.txtHedefAdres.Size = new System.Drawing.Size(180, 23);
+            this.txtHedefAdres.Size = new System.Drawing.Size(180, 24);
             this.txtHedefAdres.TabIndex = 3;
             this.txtHedefAdres.GotFocus += new System.EventHandler(this.txtHedefAdres_GotFocus);
             this.txtHedefAdres.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtHedefAdres_KeyDown);
@@ -108,6 +111,7 @@
             this.p2.Location = new System.Drawing.Point(3, 151);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(312, 39);
+            this.p2.TabIndex = 2;
             // 
             // p3
             // 
@@ -125,6 +129,7 @@
             this.p3.Location = new System.Drawing.Point(3, 44);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(312, 105);
+            this.p3.TabIndex = 1;
             // 
             // txtMalzemeNo
             // 
@@ -132,7 +137,7 @@
             this.txtMalzemeNo.Enabled = false;
             this.txtMalzemeNo.Location = new System.Drawing.Point(3, 23);
             this.txtMalzemeNo.Name = "txtMalzemeNo";
-            this.txtMalzemeNo.Size = new System.Drawing.Size(131, 23);
+            this.txtMalzemeNo.Size = new System.Drawing.Size(131, 24);
             this.txtMalzemeNo.TabIndex = 50;
             // 
             // btn_Kopyala
@@ -153,7 +158,7 @@
             this.txtOnerilenAdres.Enabled = false;
             this.txtOnerilenAdres.Location = new System.Drawing.Point(129, 81);
             this.txtOnerilenAdres.Name = "txtOnerilenAdres";
-            this.txtOnerilenAdres.Size = new System.Drawing.Size(150, 23);
+            this.txtOnerilenAdres.Size = new System.Drawing.Size(150, 24);
             this.txtOnerilenAdres.TabIndex = 43;
             // 
             // lbl_OnerilenAdres
@@ -162,6 +167,7 @@
             this.lbl_OnerilenAdres.Location = new System.Drawing.Point(3, 84);
             this.lbl_OnerilenAdres.Name = "lbl_OnerilenAdres";
             this.lbl_OnerilenAdres.Size = new System.Drawing.Size(120, 20);
+            this.lbl_OnerilenAdres.TabIndex = 51;
             this.lbl_OnerilenAdres.Text = "Önerilen Adres:";
             // 
             // txtMiktar
@@ -170,7 +176,7 @@
             this.txtMiktar.Enabled = false;
             this.txtMiktar.Location = new System.Drawing.Point(62, 52);
             this.txtMiktar.Name = "txtMiktar";
-            this.txtMiktar.Size = new System.Drawing.Size(72, 23);
+            this.txtMiktar.Size = new System.Drawing.Size(72, 24);
             this.txtMiktar.TabIndex = 42;
             // 
             // lbl_OlcuBirimi
@@ -179,6 +185,7 @@
             this.lbl_OlcuBirimi.Location = new System.Drawing.Point(140, 55);
             this.lbl_OlcuBirimi.Name = "lbl_OlcuBirimi";
             this.lbl_OlcuBirimi.Size = new System.Drawing.Size(90, 20);
+            this.lbl_OlcuBirimi.TabIndex = 52;
             this.lbl_OlcuBirimi.Text = "Ölçü Birimi:";
             // 
             // txtOlcuBirimi
@@ -187,7 +194,7 @@
             this.txtOlcuBirimi.Enabled = false;
             this.txtOlcuBirimi.Location = new System.Drawing.Point(237, 52);
             this.txtOlcuBirimi.Name = "txtOlcuBirimi";
-            this.txtOlcuBirimi.Size = new System.Drawing.Size(72, 23);
+            this.txtOlcuBirimi.Size = new System.Drawing.Size(72, 24);
             this.txtOlcuBirimi.TabIndex = 41;
             // 
             // txtMalzemeTanimi
@@ -196,7 +203,7 @@
             this.txtMalzemeTanimi.Enabled = false;
             this.txtMalzemeTanimi.Location = new System.Drawing.Point(140, 23);
             this.txtMalzemeTanimi.Name = "txtMalzemeTanimi";
-            this.txtMalzemeTanimi.Size = new System.Drawing.Size(169, 23);
+            this.txtMalzemeTanimi.Size = new System.Drawing.Size(169, 24);
             this.txtMalzemeTanimi.TabIndex = 40;
             // 
             // lbl_Miktar
@@ -205,6 +212,7 @@
             this.lbl_Miktar.Location = new System.Drawing.Point(3, 55);
             this.lbl_Miktar.Name = "lbl_Miktar";
             this.lbl_Miktar.Size = new System.Drawing.Size(56, 20);
+            this.lbl_Miktar.TabIndex = 53;
             this.lbl_Miktar.Text = "Miktar:";
             // 
             // lbl_MalzemeTanimi
@@ -213,6 +221,7 @@
             this.lbl_MalzemeTanimi.Location = new System.Drawing.Point(3, 2);
             this.lbl_MalzemeTanimi.Name = "lbl_MalzemeTanimi";
             this.lbl_MalzemeTanimi.Size = new System.Drawing.Size(175, 20);
+            this.lbl_MalzemeTanimi.TabIndex = 54;
             this.lbl_MalzemeTanimi.Text = "Malzeme No/Tanımı:";
             // 
             // btn_Geri
@@ -245,11 +254,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -266,13 +276,17 @@
             this.Controls.Add(this.p1);
             this.Controls.Add(this.btn_Geri);
             this.Controls.Add(this.btn_Kaydet);
-            this.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular);
+            this.Font = new System.Drawing.Font("Tahoma", 10F);
             this.Name = "frm_02_SA_Trans_Girisi_Adresleme";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ürün Yerleştirme";
             this.Load += new System.EventHandler(this.frm_02_SA_Trans_Girisi_Adresleme_Load);
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.p2.ResumeLayout(false);
+            this.p2.PerformLayout();
             this.p3.ResumeLayout(false);
+            this.p3.PerformLayout();
             this.ResumeLayout(false);
 
         }

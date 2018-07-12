@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Koctas_VM_Desktop;
 
 namespace KoctasWM_Project
 {
@@ -22,38 +23,46 @@ namespace KoctasWM_Project
              
             this.TopMost = false;
             Utility.loginInfo(lbl_LoginInfo);
+            
+            this.StartPosition = FormStartPosition.CenterScreen;
+
 
         }
 
         private void btn_MalGirisiPaletleme_Click(object sender, EventArgs e)
         {
             frm_Menu_MalGirisiPaletleme frm = new frm_Menu_MalGirisiPaletleme();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_DepoIciIslemler_Click(object sender, EventArgs e)
         {
             frm_Menu_Depo_Ici_Islemleri frm = new frm_Menu_Depo_Ici_Islemleri();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_MalCikisIslemleri_Click(object sender, EventArgs e)
         {
             frm_Menu_Mal_Cikis_Islemleri frm = new frm_Menu_Mal_Cikis_Islemleri();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_sayimIslemleri_Click(object sender, EventArgs e)
         {
             frm_Menu_Sayim_Islemleri frm = new frm_Menu_Sayim_Islemleri();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void frm_Menu_Closing(object sender, CancelEventArgs e)
         {
             if (MessageBox.Show("Uygulamadan çıkmak istediğinize emin misiniz?", "BİLGİ", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
-                this.DialogResult = DialogResult.Abort;
+                Application.Exit();
+
             }
             else
             {
@@ -65,10 +74,13 @@ namespace KoctasWM_Project
         private void btn_EnvanterIslemleri_Click(object sender, EventArgs e)
         {
             frm_Menu_Envanter_Islemleri frm = new frm_Menu_Envanter_Islemleri();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
-
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+        
+        }
     }
 }

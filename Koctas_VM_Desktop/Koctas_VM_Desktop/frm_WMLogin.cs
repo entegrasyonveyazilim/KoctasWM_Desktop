@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Globalization;
 using Microsoft.Win32;
+using System.IO;
 
 namespace KoctasWM_Project
 {
@@ -232,7 +233,22 @@ namespace KoctasWM_Project
             lbl_Version.Text = /*Utility.GetCurrentApplicationDate()+*/" - V. " + Utility.GetCurrentApplicationVersion();
             lbl_BaglantiBilgisi.Text = " sisteme bağlanıyorsunuz...";
         }
+        public string dateoflogin;
+       //public static void WriteDebugLog(String Message,DateTime tarih)
+       // {
+       //     StreamWriter sw = null;
+       //     try
+       //     {
+       //         sw = new StreamWriter("C:\\Users\\Emirhan" + "\\LogFile.txt", true);
+       //         sw.WriteLine(tarih + ": " + Message);
+       //         sw.Flush();
+       //         sw.Close();
+       //     }
+       //     catch
+       //     {
 
+       //     }
+       // }
         private void btn_Giris_Click(object sender, EventArgs e)
         {
 
@@ -295,11 +311,13 @@ namespace KoctasWM_Project
                 if (ex.Message == "WebException")
                 {
                     MessageBox.Show("Kullanıcı adı / Şifre hatalı.", "Giriş Başarısız!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1);
+                    
                 }
                 else
                 {
                     MessageBox.Show(ex.Message, "HATA!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1);
                 }
+               // WriteDebugLog(ex.Message+" "+txtKullaniciAdi.Text.Trim(), System.DateTime.Now);
                 login = false;
             }
             finally
@@ -322,16 +340,13 @@ namespace KoctasWM_Project
                 //SetTimeZoneInformation(ref tzI);
 
                 DateTime to_set = Convert.ToDateTime(resp.E_TARIH + " " + resp.E_SAAT.Hour.ToString() +':'+resp.E_SAAT.Minute.ToString());
-                to_set -= new TimeSpan(2, 0, 0);
+                
                 SetCurrentDate(to_set);
+              //  WriteDebugLog(txtKullaniciAdi.Text.Trim()+" kullanıcısı başarılı giriş yaptı.", to_set);
 
-                frm.ShowDialog();
-                if (frm.DialogResult == DialogResult.Abort)
-                {
-                    this.Close();
-                    this.Dispose();
-                }
-
+                frm.Show();
+                this.Hide();
+                  
             }
             else
             {

@@ -42,19 +42,20 @@
             this.dataGridTextBoxColumn6 = new System.Windows.Forms.DataGridTextBoxColumn();
             this.grd_List = new System.Windows.Forms.DataGrid();
             this.p3 = new System.Windows.Forms.Panel();
+            this.btn_Ekle = new KoctasWM_Project.PictureButton();
             this.txtKabulMiktar = new System.Windows.Forms.TextBox();
             this.lbl_KabulMiktar = new System.Windows.Forms.Label();
             this.lbl_MalzemeNo = new System.Windows.Forms.Label();
             this.p2 = new System.Windows.Forms.Panel();
             this.txtDurum = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtMalzemeNo = new System.Windows.Forms.TextBox();
             this.lbl_LoginInfo = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btn_Kaydet = new KoctasWM_Project.PictureButton();
             this.btn_Geri = new KoctasWM_Project.PictureButton();
-            this.btn_Ekle = new KoctasWM_Project.PictureButton();
             this.p1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).BeginInit();
             this.p3.SuspendLayout();
             this.p2.SuspendLayout();
             this.SuspendLayout();
@@ -75,14 +76,15 @@
             this.p1.Location = new System.Drawing.Point(3, 7);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 28);
+            this.p1.TabIndex = 0;
             // 
             // txtSiparisId
             // 
             this.txtSiparisId.BackColor = System.Drawing.Color.White;
-            this.txtSiparisId.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtSiparisId.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtSiparisId.Location = new System.Drawing.Point(84, 5);
             this.txtSiparisId.Name = "txtSiparisId";
-            this.txtSiparisId.Size = new System.Drawing.Size(175, 19);
+            this.txtSiparisId.Size = new System.Drawing.Size(175, 20);
             this.txtSiparisId.TabIndex = 5;
             this.txtSiparisId.GotFocus += new System.EventHandler(this.txtSiparisNo_GotFocus);
             this.txtSiparisId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSiparisNo_KeyDown);
@@ -93,6 +95,7 @@
             this.lbl_WebSiparisId.Location = new System.Drawing.Point(3, 5);
             this.lbl_WebSiparisId.Name = "lbl_WebSiparisId";
             this.lbl_WebSiparisId.Size = new System.Drawing.Size(93, 19);
+            this.lbl_WebSiparisId.TabIndex = 6;
             this.lbl_WebSiparisId.Text = "İade Sip. No:";
             // 
             // dataGridTextBoxColumn2
@@ -115,10 +118,10 @@
             // 
             this.txtIadeTuru.BackColor = System.Drawing.Color.White;
             this.txtIadeTuru.Enabled = false;
-            this.txtIadeTuru.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtIadeTuru.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtIadeTuru.Location = new System.Drawing.Point(273, 20);
             this.txtIadeTuru.Name = "txtIadeTuru";
-            this.txtIadeTuru.Size = new System.Drawing.Size(33, 19);
+            this.txtIadeTuru.Size = new System.Drawing.Size(33, 20);
             this.txtIadeTuru.TabIndex = 7;
             // 
             // dataGridTextBoxColumn3
@@ -131,12 +134,15 @@
             // 
             // dataGridTableStyle2
             // 
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn2);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn4);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn8);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn3);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn5);
-            this.dataGridTableStyle2.GridColumnStyles.Add(this.dataGridTextBoxColumn6);
+            this.dataGridTableStyle2.DataGrid = this.grd_List;
+            this.dataGridTableStyle2.GridColumnStyles.AddRange(new System.Windows.Forms.DataGridColumnStyle[] {
+            this.dataGridTextBoxColumn2,
+            this.dataGridTextBoxColumn4,
+            this.dataGridTextBoxColumn8,
+            this.dataGridTextBoxColumn3,
+            this.dataGridTextBoxColumn5,
+            this.dataGridTextBoxColumn6});
+            this.dataGridTableStyle2.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // dataGridTextBoxColumn5
             // 
@@ -156,12 +162,15 @@
             // 
             this.grd_List.BackColor = System.Drawing.Color.White;
             this.grd_List.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(228)))));
+            this.grd_List.DataMember = "";
             this.grd_List.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
+            this.grd_List.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.grd_List.Location = new System.Drawing.Point(137, 86);
             this.grd_List.Name = "grd_List";
             this.grd_List.Size = new System.Drawing.Size(178, 121);
             this.grd_List.TabIndex = 99;
-            this.grd_List.TableStyles.Add(this.dataGridTableStyle2);
+            this.grd_List.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle2});
             // 
             // p3
             // 
@@ -172,15 +181,30 @@
             this.p3.Location = new System.Drawing.Point(3, 89);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(128, 46);
+            this.p3.TabIndex = 100;
+            // 
+            // btn_Ekle
+            // 
+            this.btn_Ekle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
+            this.btn_Ekle.Enabled = false;
+            this.btn_Ekle.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_Ekle.ForeColor = System.Drawing.Color.White;
+            this.btn_Ekle.Location = new System.Drawing.Point(66, 14);
+            this.btn_Ekle.Name = "btn_Ekle";
+            this.btn_Ekle.PressedImage = null;
+            this.btn_Ekle.Size = new System.Drawing.Size(59, 22);
+            this.btn_Ekle.TabIndex = 81;
+            this.btn_Ekle.Text = "Değiştir";
+            this.btn_Ekle.Click += new System.EventHandler(this.btn_Ekle_Click);
             // 
             // txtKabulMiktar
             // 
             this.txtKabulMiktar.BackColor = System.Drawing.Color.White;
             this.txtKabulMiktar.Enabled = false;
-            this.txtKabulMiktar.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtKabulMiktar.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtKabulMiktar.Location = new System.Drawing.Point(5, 17);
             this.txtKabulMiktar.Name = "txtKabulMiktar";
-            this.txtKabulMiktar.Size = new System.Drawing.Size(55, 19);
+            this.txtKabulMiktar.Size = new System.Drawing.Size(55, 20);
             this.txtKabulMiktar.TabIndex = 60;
             this.txtKabulMiktar.GotFocus += new System.EventHandler(this.txtKabulMiktar_GotFocus);
             this.txtKabulMiktar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtKabulMiktar_KeyDown);
@@ -192,6 +216,7 @@
             this.lbl_KabulMiktar.Location = new System.Drawing.Point(4, 1);
             this.lbl_KabulMiktar.Name = "lbl_KabulMiktar";
             this.lbl_KabulMiktar.Size = new System.Drawing.Size(58, 15);
+            this.lbl_KabulMiktar.TabIndex = 82;
             this.lbl_KabulMiktar.Text = "Kbl. Mik:";
             // 
             // lbl_MalzemeNo
@@ -200,6 +225,7 @@
             this.lbl_MalzemeNo.Location = new System.Drawing.Point(3, 21);
             this.lbl_MalzemeNo.Name = "lbl_MalzemeNo";
             this.lbl_MalzemeNo.Size = new System.Drawing.Size(122, 17);
+            this.lbl_MalzemeNo.TabIndex = 12;
             this.lbl_MalzemeNo.Text = "Malzeme No:";
             // 
             // p2
@@ -214,56 +240,60 @@
             this.p2.Location = new System.Drawing.Point(3, 38);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(312, 42);
+            this.p2.TabIndex = 101;
             // 
             // txtDurum
             // 
             this.txtDurum.BackColor = System.Drawing.Color.White;
             this.txtDurum.Enabled = false;
-            this.txtDurum.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtDurum.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtDurum.Location = new System.Drawing.Point(227, 20);
             this.txtDurum.Name = "txtDurum";
-            this.txtDurum.Size = new System.Drawing.Size(40, 19);
+            this.txtDurum.Size = new System.Drawing.Size(40, 20);
             this.txtDurum.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.label2.Location = new System.Drawing.Point(273, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Tip";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.label1.Location = new System.Drawing.Point(227, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 20);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Durum";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtMalzemeNo
             // 
             this.txtMalzemeNo.BackColor = System.Drawing.Color.White;
             this.txtMalzemeNo.Enabled = false;
-            this.txtMalzemeNo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.txtMalzemeNo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtMalzemeNo.Location = new System.Drawing.Point(84, 19);
             this.txtMalzemeNo.Name = "txtMalzemeNo";
-            this.txtMalzemeNo.Size = new System.Drawing.Size(137, 19);
+            this.txtMalzemeNo.Size = new System.Drawing.Size(137, 20);
             this.txtMalzemeNo.TabIndex = 5;
             this.txtMalzemeNo.GotFocus += new System.EventHandler(this.txtMalzemeNo_GotFocus);
             this.txtMalzemeNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMalzemeNo_KeyDown);
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 261);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 102;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
-            this.label1.Location = new System.Drawing.Point(227, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 20);
-            this.label1.Text = "Durum";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
-            this.label2.Location = new System.Drawing.Point(273, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 20);
-            this.label2.Text = "Tip";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btn_Kaydet
             // 
@@ -293,20 +323,6 @@
             this.btn_Geri.Text = "GERİ";
             this.btn_Geri.Click += new System.EventHandler(this.btn_Geri_Click);
             // 
-            // btn_Ekle
-            // 
-            this.btn_Ekle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Ekle.BackgroundImage = null;
-            this.btn_Ekle.Enabled = false;
-            this.btn_Ekle.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.btn_Ekle.ForeColor = System.Drawing.Color.White;
-            this.btn_Ekle.Location = new System.Drawing.Point(66, 14);
-            this.btn_Ekle.Name = "btn_Ekle";
-            this.btn_Ekle.Size = new System.Drawing.Size(59, 22);
-            this.btn_Ekle.TabIndex = 81;
-            this.btn_Ekle.Text = "Değiştir";
-            this.btn_Ekle.Click += new System.EventHandler(this.btn_Ekle_Click);
-            // 
             // frm_32_v2_Musteri_Iade_Girisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -322,11 +338,16 @@
             this.Controls.Add(this.p2);
             this.Controls.Add(this.lbl_LoginInfo);
             this.Name = "frm_32_v2_Musteri_Iade_Girisi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri İade Girişi - v2";
             this.Load += new System.EventHandler(this.frm_32_v2_Musteri_Iade_Girisi_Load);
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_List)).EndInit();
             this.p3.ResumeLayout(false);
+            this.p3.PerformLayout();
             this.p2.ResumeLayout(false);
+            this.p2.PerformLayout();
             this.ResumeLayout(false);
 
         }

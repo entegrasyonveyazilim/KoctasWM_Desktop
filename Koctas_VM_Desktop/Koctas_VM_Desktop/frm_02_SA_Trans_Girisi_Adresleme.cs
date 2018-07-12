@@ -64,8 +64,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click_1(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Abort;
-            this.Close();
+            frm_Menu_MalGirisiPaletleme frm = new frm_Menu_MalGirisiPaletleme();
+            frm.Show();
+            this.Hide();
         }
 
         private void txtPaletNo_KeyDown(object sender, KeyEventArgs e)

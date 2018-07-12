@@ -45,7 +45,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Set_Urun_Islemleri frm = new frm_Menu_Set_Urun_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void frm_09_Depo_Set_Alanina_Tasima_Load(object sender, EventArgs e)

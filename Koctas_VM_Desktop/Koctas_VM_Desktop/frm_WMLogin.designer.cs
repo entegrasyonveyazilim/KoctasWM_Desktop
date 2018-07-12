@@ -58,6 +58,7 @@
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(178, 20);
             this.txtKullaniciAdi.TabIndex = 1;
+            this.txtKullaniciAdi.Text = "ozgurm";
             this.txtKullaniciAdi.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtKullaniciAdi_KeyDown);
             // 
             // lbl_KullaniciAdi
@@ -95,6 +96,7 @@
             this.txtSifre.PasswordChar = '*';
             this.txtSifre.Size = new System.Drawing.Size(178, 20);
             this.txtSifre.TabIndex = 5;
+            this.txtSifre.Text = "Macit*180";
             this.txtSifre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSifre_KeyDown);
             // 
             // lbl_BaglantiBilgisi
@@ -167,6 +169,7 @@
             this.Controls.Add(this.pbBg);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Name = "frm_WMLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Koçtaş WM ";
             this.Load += new System.EventHandler(this.frm_WMLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbBg)).EndInit();

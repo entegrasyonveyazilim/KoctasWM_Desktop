@@ -60,6 +60,7 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 32);
+            this.p1.TabIndex = 2;
             // 
             // lbl_KargoKoliNo
             // 
@@ -67,6 +68,7 @@
             this.lbl_KargoKoliNo.Location = new System.Drawing.Point(3, 8);
             this.lbl_KargoKoliNo.Name = "lbl_KargoKoliNo";
             this.lbl_KargoKoliNo.Size = new System.Drawing.Size(106, 20);
+            this.lbl_KargoKoliNo.TabIndex = 0;
             this.lbl_KargoKoliNo.Text = "Kargo Koli No:";
             this.lbl_KargoKoliNo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -75,7 +77,7 @@
             this.txtKargoKoliNo.BackColor = System.Drawing.Color.White;
             this.txtKargoKoliNo.Location = new System.Drawing.Point(131, 5);
             this.txtKargoKoliNo.Name = "txtKargoKoliNo";
-            this.txtKargoKoliNo.Size = new System.Drawing.Size(175, 23);
+            this.txtKargoKoliNo.Size = new System.Drawing.Size(175, 20);
             this.txtKargoKoliNo.TabIndex = 3;
             this.txtKargoKoliNo.GotFocus += new System.EventHandler(this.txtKargoKoliNo_GotFocus);
             this.txtKargoKoliNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtKargoKoliNo_KeyDown);
@@ -98,6 +100,7 @@
             this.p3.Location = new System.Drawing.Point(3, 41);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(312, 138);
+            this.p3.TabIndex = 1;
             // 
             // txtMalzemeNo
             // 
@@ -105,7 +108,7 @@
             this.txtMalzemeNo.Enabled = false;
             this.txtMalzemeNo.Location = new System.Drawing.Point(131, 3);
             this.txtMalzemeNo.Name = "txtMalzemeNo";
-            this.txtMalzemeNo.Size = new System.Drawing.Size(178, 23);
+            this.txtMalzemeNo.Size = new System.Drawing.Size(178, 20);
             this.txtMalzemeNo.TabIndex = 69;
             // 
             // lbl_MalzemeNo
@@ -114,6 +117,7 @@
             this.lbl_MalzemeNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_MalzemeNo.Name = "lbl_MalzemeNo";
             this.lbl_MalzemeNo.Size = new System.Drawing.Size(106, 20);
+            this.lbl_MalzemeNo.TabIndex = 70;
             this.lbl_MalzemeNo.Text = "Malzeme No:";
             // 
             // txtMalzemeTanimi
@@ -122,7 +126,7 @@
             this.txtMalzemeTanimi.Enabled = false;
             this.txtMalzemeTanimi.Location = new System.Drawing.Point(131, 32);
             this.txtMalzemeTanimi.Name = "txtMalzemeTanimi";
-            this.txtMalzemeTanimi.Size = new System.Drawing.Size(178, 23);
+            this.txtMalzemeTanimi.Size = new System.Drawing.Size(178, 20);
             this.txtMalzemeTanimi.TabIndex = 68;
             // 
             // lbl_MalzemeTanimi
@@ -131,6 +135,7 @@
             this.lbl_MalzemeTanimi.Location = new System.Drawing.Point(3, 32);
             this.lbl_MalzemeTanimi.Name = "lbl_MalzemeTanimi";
             this.lbl_MalzemeTanimi.Size = new System.Drawing.Size(122, 20);
+            this.lbl_MalzemeTanimi.TabIndex = 71;
             this.lbl_MalzemeTanimi.Text = "Malzeme Tanımı:";
             // 
             // lbl_TeslimatTipi
@@ -139,6 +144,7 @@
             this.lbl_TeslimatTipi.Location = new System.Drawing.Point(185, 56);
             this.lbl_TeslimatTipi.Name = "lbl_TeslimatTipi";
             this.lbl_TeslimatTipi.Size = new System.Drawing.Size(101, 15);
+            this.lbl_TeslimatTipi.TabIndex = 72;
             this.lbl_TeslimatTipi.Text = "Teslimat Tipi";
             this.lbl_TeslimatTipi.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -146,10 +152,10 @@
             // 
             this.txtOlcuBirimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtOlcuBirimi.Enabled = false;
-            this.txtOlcuBirimi.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtOlcuBirimi.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtOlcuBirimi.Location = new System.Drawing.Point(24, 110);
             this.txtOlcuBirimi.Name = "txtOlcuBirimi";
-            this.txtOlcuBirimi.Size = new System.Drawing.Size(101, 21);
+            this.txtOlcuBirimi.Size = new System.Drawing.Size(101, 22);
             this.txtOlcuBirimi.TabIndex = 62;
             // 
             // lbl_Miktar
@@ -158,6 +164,7 @@
             this.lbl_Miktar.Location = new System.Drawing.Point(185, 94);
             this.lbl_Miktar.Name = "lbl_Miktar";
             this.lbl_Miktar.Size = new System.Drawing.Size(101, 13);
+            this.lbl_Miktar.TabIndex = 73;
             this.lbl_Miktar.Text = "Tes. Miktarı";
             this.lbl_Miktar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -165,10 +172,10 @@
             // 
             this.txtMiktar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtMiktar.Enabled = false;
-            this.txtMiktar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtMiktar.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtMiktar.Location = new System.Drawing.Point(185, 110);
             this.txtMiktar.Name = "txtMiktar";
-            this.txtMiktar.Size = new System.Drawing.Size(101, 21);
+            this.txtMiktar.Size = new System.Drawing.Size(101, 22);
             this.txtMiktar.TabIndex = 59;
             // 
             // lbl_OlcuBirimi
@@ -177,6 +184,7 @@
             this.lbl_OlcuBirimi.Location = new System.Drawing.Point(33, 94);
             this.lbl_OlcuBirimi.Name = "lbl_OlcuBirimi";
             this.lbl_OlcuBirimi.Size = new System.Drawing.Size(76, 13);
+            this.lbl_OlcuBirimi.TabIndex = 74;
             this.lbl_OlcuBirimi.Text = "Ölçü Birimi";
             this.lbl_OlcuBirimi.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -184,20 +192,20 @@
             // 
             this.txtTeslimatTipi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtTeslimatTipi.Enabled = false;
-            this.txtTeslimatTipi.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtTeslimatTipi.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtTeslimatTipi.Location = new System.Drawing.Point(185, 70);
             this.txtTeslimatTipi.Name = "txtTeslimatTipi";
-            this.txtTeslimatTipi.Size = new System.Drawing.Size(101, 21);
+            this.txtTeslimatTipi.Size = new System.Drawing.Size(101, 22);
             this.txtTeslimatTipi.TabIndex = 56;
             // 
             // txtTeslimatNo
             // 
             this.txtTeslimatNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(188)))), ((int)(((byte)(138)))));
             this.txtTeslimatNo.Enabled = false;
-            this.txtTeslimatNo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular);
+            this.txtTeslimatNo.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtTeslimatNo.Location = new System.Drawing.Point(24, 70);
             this.txtTeslimatNo.Name = "txtTeslimatNo";
-            this.txtTeslimatNo.Size = new System.Drawing.Size(101, 21);
+            this.txtTeslimatNo.Size = new System.Drawing.Size(101, 22);
             this.txtTeslimatNo.TabIndex = 50;
             // 
             // lbl_TeslimatNo
@@ -206,6 +214,7 @@
             this.lbl_TeslimatNo.Location = new System.Drawing.Point(24, 52);
             this.lbl_TeslimatNo.Name = "lbl_TeslimatNo";
             this.lbl_TeslimatNo.Size = new System.Drawing.Size(101, 20);
+            this.lbl_TeslimatNo.TabIndex = 75;
             this.lbl_TeslimatNo.Text = "Teslimat No";
             this.lbl_TeslimatNo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -240,11 +249,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -261,10 +271,13 @@
             this.Controls.Add(this.btn_Geri);
             this.Controls.Add(this.btn_Kaydet);
             this.Name = "frm_38_Mal_Cikisi_Faturalama_ve_ATF_Cikis";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mal Çıkışı, Faturalama ve ATF No Kayıt";
             this.Load += new System.EventHandler(this.frm_38_Mal_Cikisi_Faturalama_ve_ATF_Cikis_Load);
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.p3.ResumeLayout(false);
+            this.p3.PerformLayout();
             this.ResumeLayout(false);
 
         }

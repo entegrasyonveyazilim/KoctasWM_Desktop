@@ -30,37 +30,44 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu frm = new frm_Menu();
+            frm.Show();
+            this.Hide();
         }
 
         private void btn_Paletleme_Click(object sender, EventArgs e)
         {
             frm_01_SA_Trans_Girisi_Paletleme frm = new frm_01_SA_Trans_Girisi_Paletleme();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_Adresleme_Click(object sender, EventArgs e)
         {
             frm_02_SA_Trans_Girisi_Adresleme frm = new frm_02_SA_Trans_Girisi_Adresleme();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_SetUrunuIslemleri_Click(object sender, EventArgs e)
         {
             frm_Menu_Set_Urun_Islemleri frm = new frm_Menu_Set_Urun_Islemleri();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_MalGirisi_Click(object sender, EventArgs e)
         {
             frm_31_Mal_Giris frm = new frm_31_Mal_Giris();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
         private void btn_MusteriIadeGirisi_Click(object sender, EventArgs e)
         {
             frm_32_v2_Musteri_Iade_Girisi frm = new frm_32_v2_Musteri_Iade_Girisi();
-            frm.ShowDialog();
+            frm .Show();
+            this.Hide();
         }
 
      }

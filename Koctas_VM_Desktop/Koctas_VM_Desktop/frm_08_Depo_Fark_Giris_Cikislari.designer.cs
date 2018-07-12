@@ -62,6 +62,7 @@
             this.p1.Location = new System.Drawing.Point(3, 3);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 34);
+            this.p1.TabIndex = 66;
             // 
             // lbl_PaletNo
             // 
@@ -69,6 +70,7 @@
             this.lbl_PaletNo.Location = new System.Drawing.Point(3, 8);
             this.lbl_PaletNo.Name = "lbl_PaletNo";
             this.lbl_PaletNo.Size = new System.Drawing.Size(122, 20);
+            this.lbl_PaletNo.TabIndex = 0;
             this.lbl_PaletNo.Text = "Palet No:";
             // 
             // txtPaletNo
@@ -76,7 +78,7 @@
             this.txtPaletNo.BackColor = System.Drawing.Color.White;
             this.txtPaletNo.Location = new System.Drawing.Point(131, 5);
             this.txtPaletNo.Name = "txtPaletNo";
-            this.txtPaletNo.Size = new System.Drawing.Size(178, 23);
+            this.txtPaletNo.Size = new System.Drawing.Size(178, 20);
             this.txtPaletNo.TabIndex = 3;
             this.txtPaletNo.GotFocus += new System.EventHandler(this.txtPaletNo_GotFocus);
             this.txtPaletNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPaletNo_KeyDown);
@@ -98,6 +100,7 @@
             this.p4.Location = new System.Drawing.Point(3, 43);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(312, 102);
+            this.p4.TabIndex = 65;
             // 
             // p5
             // 
@@ -107,6 +110,7 @@
             this.p5.Location = new System.Drawing.Point(0, 52);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(78, 42);
+            this.p5.TabIndex = 0;
             // 
             // txtMiktar
             // 
@@ -114,7 +118,7 @@
             this.txtMiktar.Enabled = false;
             this.txtMiktar.Location = new System.Drawing.Point(3, 17);
             this.txtMiktar.Name = "txtMiktar";
-            this.txtMiktar.Size = new System.Drawing.Size(72, 23);
+            this.txtMiktar.Size = new System.Drawing.Size(72, 20);
             this.txtMiktar.TabIndex = 60;
             this.txtMiktar.GotFocus += new System.EventHandler(this.txtMiktar_GotFocus);
             this.txtMiktar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMiktar_KeyDown);
@@ -126,6 +130,7 @@
             this.lbl_Miktar.Location = new System.Drawing.Point(1, 2);
             this.lbl_Miktar.Name = "lbl_Miktar";
             this.lbl_Miktar.Size = new System.Drawing.Size(72, 20);
+            this.lbl_Miktar.TabIndex = 61;
             this.lbl_Miktar.Text = "Fiziksel Mik.";
             this.lbl_Miktar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -135,7 +140,7 @@
             this.txtToplamMiktar.Enabled = false;
             this.txtToplamMiktar.Location = new System.Drawing.Point(81, 70);
             this.txtToplamMiktar.Name = "txtToplamMiktar";
-            this.txtToplamMiktar.Size = new System.Drawing.Size(72, 23);
+            this.txtToplamMiktar.Size = new System.Drawing.Size(72, 20);
             this.txtToplamMiktar.TabIndex = 69;
             // 
             // lbl_ToplamMiktar
@@ -144,6 +149,7 @@
             this.lbl_ToplamMiktar.Location = new System.Drawing.Point(81, 54);
             this.lbl_ToplamMiktar.Name = "lbl_ToplamMiktar";
             this.lbl_ToplamMiktar.Size = new System.Drawing.Size(72, 20);
+            this.lbl_ToplamMiktar.TabIndex = 70;
             this.lbl_ToplamMiktar.Text = "Top.Miktar";
             this.lbl_ToplamMiktar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -153,7 +159,7 @@
             this.txtOlcuBirimi.Enabled = false;
             this.txtOlcuBirimi.Location = new System.Drawing.Point(159, 70);
             this.txtOlcuBirimi.Name = "txtOlcuBirimi";
-            this.txtOlcuBirimi.Size = new System.Drawing.Size(72, 23);
+            this.txtOlcuBirimi.Size = new System.Drawing.Size(72, 20);
             this.txtOlcuBirimi.TabIndex = 57;
             // 
             // txtStokTipi
@@ -162,7 +168,7 @@
             this.txtStokTipi.Enabled = false;
             this.txtStokTipi.Location = new System.Drawing.Point(237, 70);
             this.txtStokTipi.Name = "txtStokTipi";
-            this.txtStokTipi.Size = new System.Drawing.Size(72, 23);
+            this.txtStokTipi.Size = new System.Drawing.Size(72, 20);
             this.txtStokTipi.TabIndex = 60;
             // 
             // txtMalzemeNo
@@ -171,7 +177,7 @@
             this.txtMalzemeNo.Enabled = false;
             this.txtMalzemeNo.Location = new System.Drawing.Point(131, 3);
             this.txtMalzemeNo.Name = "txtMalzemeNo";
-            this.txtMalzemeNo.Size = new System.Drawing.Size(178, 23);
+            this.txtMalzemeNo.Size = new System.Drawing.Size(178, 20);
             this.txtMalzemeNo.TabIndex = 61;
             this.txtMalzemeNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMalzemeNo_KeyDown);
             // 
@@ -181,6 +187,7 @@
             this.lbl_MalzemeNo.Location = new System.Drawing.Point(3, 6);
             this.lbl_MalzemeNo.Name = "lbl_MalzemeNo";
             this.lbl_MalzemeNo.Size = new System.Drawing.Size(109, 20);
+            this.lbl_MalzemeNo.TabIndex = 71;
             this.lbl_MalzemeNo.Text = "Malzeme No:";
             // 
             // label1
@@ -189,6 +196,7 @@
             this.label1.Location = new System.Drawing.Point(237, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 20);
+            this.label1.TabIndex = 72;
             this.label1.Text = "Stok Tipi";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -198,6 +206,7 @@
             this.lbl_OlcuBirimi.Location = new System.Drawing.Point(159, 54);
             this.lbl_OlcuBirimi.Name = "lbl_OlcuBirimi";
             this.lbl_OlcuBirimi.Size = new System.Drawing.Size(72, 20);
+            this.lbl_OlcuBirimi.TabIndex = 73;
             this.lbl_OlcuBirimi.Text = "Ölçü Birimi";
             this.lbl_OlcuBirimi.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -207,7 +216,7 @@
             this.txtMalzemeTanimi.Enabled = false;
             this.txtMalzemeTanimi.Location = new System.Drawing.Point(131, 28);
             this.txtMalzemeTanimi.Name = "txtMalzemeTanimi";
-            this.txtMalzemeTanimi.Size = new System.Drawing.Size(178, 23);
+            this.txtMalzemeTanimi.Size = new System.Drawing.Size(178, 20);
             this.txtMalzemeTanimi.TabIndex = 56;
             // 
             // lbl_MalzemeTanimi
@@ -216,6 +225,7 @@
             this.lbl_MalzemeTanimi.Location = new System.Drawing.Point(3, 31);
             this.lbl_MalzemeTanimi.Name = "lbl_MalzemeTanimi";
             this.lbl_MalzemeTanimi.Size = new System.Drawing.Size(122, 20);
+            this.lbl_MalzemeTanimi.TabIndex = 74;
             this.lbl_MalzemeTanimi.Text = "Malzeme Tanımı:";
             // 
             // btn_Geri
@@ -248,11 +258,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -269,11 +280,15 @@
             this.Controls.Add(this.p4);
             this.Controls.Add(this.p1);
             this.Name = "frm_08_Depo_Fark_Giris_Cikislari";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fark Giriş Çıkışları";
             this.Load += new System.EventHandler(this.frm_08_Depo_Fark_Giris_Cikislari_Load);
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.p4.ResumeLayout(false);
+            this.p4.PerformLayout();
             this.p5.ResumeLayout(false);
+            this.p5.PerformLayout();
             this.ResumeLayout(false);
 
         }

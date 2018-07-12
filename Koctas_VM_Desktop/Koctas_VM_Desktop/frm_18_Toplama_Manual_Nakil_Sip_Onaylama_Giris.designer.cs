@@ -46,6 +46,7 @@
             this.p1.Location = new System.Drawing.Point(3, 62);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(312, 98);
+            this.p1.TabIndex = 1;
             // 
             // lbl_NakilSiparisNo
             // 
@@ -53,16 +54,17 @@
             this.lbl_NakilSiparisNo.Location = new System.Drawing.Point(6, 10);
             this.lbl_NakilSiparisNo.Name = "lbl_NakilSiparisNo";
             this.lbl_NakilSiparisNo.Size = new System.Drawing.Size(303, 19);
+            this.lbl_NakilSiparisNo.TabIndex = 0;
             this.lbl_NakilSiparisNo.Text = "Nakil Sipariş No:";
             this.lbl_NakilSiparisNo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtNakilSiparisNo
             // 
             this.txtNakilSiparisNo.BackColor = System.Drawing.Color.White;
-            this.txtNakilSiparisNo.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular);
+            this.txtNakilSiparisNo.Font = new System.Drawing.Font("Tahoma", 11F);
             this.txtNakilSiparisNo.Location = new System.Drawing.Point(52, 42);
             this.txtNakilSiparisNo.Name = "txtNakilSiparisNo";
-            this.txtNakilSiparisNo.Size = new System.Drawing.Size(210, 24);
+            this.txtNakilSiparisNo.Size = new System.Drawing.Size(210, 25);
             this.txtNakilSiparisNo.TabIndex = 3;
             this.txtNakilSiparisNo.GotFocus += new System.EventHandler(this.txtNakilSiparisNo_GotFocus);
             this.txtNakilSiparisNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNakilSiparisNo_KeyDown);
@@ -97,11 +99,12 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 257);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -117,9 +120,11 @@
             this.Controls.Add(this.btn_Geri);
             this.Controls.Add(this.btn_DetayGetir);
             this.Name = "frm_18_Toplama_Manual_Nakil_Sip_Onaylama_Giris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manuel Toplama İşlemi";
             this.Load += new System.EventHandler(this.frm_18_Toplama_Manual_Nakil_Sip_Onaylama_Giris_Load);
             this.p1.ResumeLayout(false);
+            this.p1.PerformLayout();
             this.ResumeLayout(false);
 
         }

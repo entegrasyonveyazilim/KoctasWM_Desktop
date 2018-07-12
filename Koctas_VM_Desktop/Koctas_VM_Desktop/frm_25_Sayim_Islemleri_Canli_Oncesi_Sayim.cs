@@ -24,7 +24,9 @@ namespace KoctasWM_Project
 
         private void btn_Geri_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frm_Menu_Sayim_Islemleri frm = new frm_Menu_Sayim_Islemleri();
+            frm.Show();
+            this.Hide();
         }
 
         private void formAcilisDuzenle()
@@ -156,14 +158,14 @@ namespace KoctasWM_Project
 
                                     frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim_Detay frm = new frm_25_Sayim_Islemleri_Canli_Oncesi_Sayim_Detay();
                                     frm._sayim = _sayim;
-                                    if (frm.ShowDialog() == DialogResult.Abort)
+                                    if (frm .ShowDialog() == DialogResult.Abort)
                                     {
-                                        this.Close();
+                                        this.Hide();
                                     } 
                                 }
                                 else
                                 {
-                                    this.Close();
+                                    this.Hide();
                                 }
                             }
                         }
