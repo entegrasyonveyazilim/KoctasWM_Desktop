@@ -351,6 +351,8 @@ namespace KoctasWM_Project
                 finally
                 {
                     Cursor.Current = Cursors.Default;
+                    Utility.selectText(txtMalzemeNo);
+                    txtMalzemeNo.Enabled = true;
                 }
             }
         }
@@ -467,14 +469,14 @@ namespace KoctasWM_Project
                                 txtDesiBilgisi.Enabled = true;
                                 MessageBox.Show("Desi bilgisi giriniz", "HATA");
                                 txtDesiBilgisi.Text = "";
-                                Utility.selectText(txtDesiBilgisi);
+                                Utility.selectText(txtKolilenecekMiktar);
                             }
                         }
                         else
                         {
                             txtDesiBilgisi.Enabled = true;
                             MessageBox.Show("Desi bilgisi giriniz", "HATA");
-                            Utility.selectText(txtDesiBilgisi);
+                            Utility.selectText(txtKolilenecekMiktar);
                         }
                     }
                     
@@ -842,5 +844,16 @@ namespace KoctasWM_Project
             }
         }
 
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+            panel1.Left = 337;
+            panel2.Left = 0;
+        }
+
+        private void btn_previous_Click(object sender, EventArgs e)
+        {
+            panel1.Left = 0;
+            panel2.Left = 337;
+        }
     }
 }
