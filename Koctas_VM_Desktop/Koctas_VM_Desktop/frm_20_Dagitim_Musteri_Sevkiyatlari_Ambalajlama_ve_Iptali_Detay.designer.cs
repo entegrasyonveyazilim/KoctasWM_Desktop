@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay));
             this.p4 = new System.Windows.Forms.Panel();
-            this.btn_Onayla = new KoctasWM_Project.PictureButton();
             this.p3 = new System.Windows.Forms.Panel();
             this.txtKolilenecekMiktar = new System.Windows.Forms.TextBox();
             this.lbl_KolilenecekMiktar = new System.Windows.Forms.Label();
@@ -48,7 +47,7 @@
             this.lbl_DesiBilgisi = new System.Windows.Forms.Label();
             this.cmbKoliTipi = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_newKoliNo = new System.Windows.Forms.TextBox();
             this.lbl_KoliTipi = new System.Windows.Forms.Label();
             this.p5 = new System.Windows.Forms.Panel();
             this.txtMalzemeNo = new System.Windows.Forms.TextBox();
@@ -57,12 +56,12 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_next = new KoctasWM_Project.PictureButton();
-            this.btn_Geri = new KoctasWM_Project.PictureButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_previous = new KoctasWM_Project.PictureButton();
             this.btn_approveKoliDesi = new KoctasWM_Project.PictureButton();
             this.btn_Kaydet = new KoctasWM_Project.PictureButton();
+            this.btn_next = new KoctasWM_Project.PictureButton();
+            this.btn_Geri = new KoctasWM_Project.PictureButton();
+            this.btn_Onayla = new KoctasWM_Project.PictureButton();
             this.p4.SuspendLayout();
             this.p3.SuspendLayout();
             this.p1.SuspendLayout();
@@ -88,20 +87,6 @@
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(312, 75);
             this.p4.TabIndex = 69;
-            // 
-            // btn_Onayla
-            // 
-            this.btn_Onayla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Onayla.Enabled = false;
-            this.btn_Onayla.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.btn_Onayla.ForeColor = System.Drawing.Color.White;
-            this.btn_Onayla.Location = new System.Drawing.Point(234, 45);
-            this.btn_Onayla.Name = "btn_Onayla";
-            this.btn_Onayla.PressedImage = null;
-            this.btn_Onayla.Size = new System.Drawing.Size(75, 26);
-            this.btn_Onayla.TabIndex = 74;
-            this.btn_Onayla.Text = "Onayla";
-            this.btn_Onayla.Click += new System.EventHandler(this.btn_Onayla_Click);
             // 
             // p3
             // 
@@ -227,7 +212,7 @@
             this.p2.Controls.Add(this.lbl_DesiBilgisi);
             this.p2.Controls.Add(this.cmbKoliTipi);
             this.p2.Controls.Add(this.label1);
-            this.p2.Controls.Add(this.textBox1);
+            this.p2.Controls.Add(this.btn_newKoliNo);
             this.p2.Controls.Add(this.lbl_KoliTipi);
             this.p2.Location = new System.Drawing.Point(3, 3);
             this.p2.Name = "p2";
@@ -256,7 +241,6 @@
             // 
             // cmbKoliTipi
             // 
-            this.cmbKoliTipi.Enabled = false;
             this.cmbKoliTipi.Items.AddRange(new object[] {
             "Koli Tipi 1",
             "Koli Tipi 2"});
@@ -277,12 +261,13 @@
             this.label1.TabIndex = 70;
             this.label1.Text = "Koli Numarası:";
             // 
-            // textBox1
+            // btn_newKoliNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 1);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 22);
-            this.textBox1.TabIndex = 72;
+            this.btn_newKoliNo.Enabled = false;
+            this.btn_newKoliNo.Location = new System.Drawing.Point(110, 1);
+            this.btn_newKoliNo.Name = "btn_newKoliNo";
+            this.btn_newKoliNo.Size = new System.Drawing.Size(137, 22);
+            this.btn_newKoliNo.TabIndex = 72;
             // 
             // lbl_KoliTipi
             // 
@@ -367,10 +352,50 @@
             this.panel1.Size = new System.Drawing.Size(315, 270);
             this.panel1.TabIndex = 76;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.p2);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.btn_approveKoliDesi);
+            this.panel2.Controls.Add(this.btn_Kaydet);
+            this.panel2.Location = new System.Drawing.Point(337, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(315, 270);
+            this.panel2.TabIndex = 70;
+            // 
+            // btn_approveKoliDesi
+            // 
+            this.btn_approveKoliDesi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
+            this.btn_approveKoliDesi.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.btn_approveKoliDesi.ForeColor = System.Drawing.Color.White;
+            this.btn_approveKoliDesi.Location = new System.Drawing.Point(253, 3);
+            this.btn_approveKoliDesi.Name = "btn_approveKoliDesi";
+            this.btn_approveKoliDesi.PressedImage = null;
+            this.btn_approveKoliDesi.Size = new System.Drawing.Size(75, 26);
+            this.btn_approveKoliDesi.TabIndex = 75;
+            this.btn_approveKoliDesi.Text = "Onayla";
+            this.btn_approveKoliDesi.Click += new System.EventHandler(this.btn_approveKoliDesi_Click);
+            // 
+            // btn_Kaydet
+            // 
+            this.btn_Kaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
+            this.btn_Kaydet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Kaydet.BackgroundImage")));
+            this.btn_Kaydet.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Kaydet.ForeColor = System.Drawing.Color.White;
+            this.btn_Kaydet.Location = new System.Drawing.Point(195, 206);
+            this.btn_Kaydet.Name = "btn_Kaydet";
+            this.btn_Kaydet.PressedImage = ((System.Drawing.Image)(resources.GetObject("btn_Kaydet.PressedImage")));
+            this.btn_Kaydet.Size = new System.Drawing.Size(117, 47);
+            this.btn_Kaydet.TabIndex = 65;
+            this.btn_Kaydet.Text = "   TAMAMLA";
+            this.btn_Kaydet.Click += new System.EventHandler(this.btn_Kaydet_Click);
+            // 
             // btn_next
             // 
             this.btn_next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
             this.btn_next.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_next.BackgroundImage")));
+            this.btn_next.Enabled = false;
             this.btn_next.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.btn_next.ForeColor = System.Drawing.Color.White;
             this.btn_next.Location = new System.Drawing.Point(203, 209);
@@ -395,58 +420,19 @@
             this.btn_Geri.Text = "GERİ";
             this.btn_Geri.Click += new System.EventHandler(this.btn_Geri_Click);
             // 
-            // panel2
+            // btn_Onayla
             // 
-            this.panel2.Controls.Add(this.btn_previous);
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Controls.Add(this.p2);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.btn_approveKoliDesi);
-            this.panel2.Controls.Add(this.btn_Kaydet);
-            this.panel2.Location = new System.Drawing.Point(337, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(315, 270);
-            this.panel2.TabIndex = 70;
-            // 
-            // btn_previous
-            // 
-            this.btn_previous.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_previous.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_previous.BackgroundImage")));
-            this.btn_previous.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_previous.ForeColor = System.Drawing.Color.White;
-            this.btn_previous.Location = new System.Drawing.Point(9, 209);
-            this.btn_previous.Name = "btn_previous";
-            this.btn_previous.PressedImage = ((System.Drawing.Image)(resources.GetObject("btn_previous.PressedImage")));
-            this.btn_previous.Size = new System.Drawing.Size(150, 47);
-            this.btn_previous.TabIndex = 76;
-            this.btn_previous.Text = "GERİ";
-            this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
-            // 
-            // btn_approveKoliDesi
-            // 
-            this.btn_approveKoliDesi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_approveKoliDesi.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.btn_approveKoliDesi.ForeColor = System.Drawing.Color.White;
-            this.btn_approveKoliDesi.Location = new System.Drawing.Point(253, 3);
-            this.btn_approveKoliDesi.Name = "btn_approveKoliDesi";
-            this.btn_approveKoliDesi.PressedImage = null;
-            this.btn_approveKoliDesi.Size = new System.Drawing.Size(75, 26);
-            this.btn_approveKoliDesi.TabIndex = 75;
-            this.btn_approveKoliDesi.Text = "Onayla";
-            // 
-            // btn_Kaydet
-            // 
-            this.btn_Kaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Kaydet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Kaydet.BackgroundImage")));
-            this.btn_Kaydet.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Kaydet.ForeColor = System.Drawing.Color.White;
-            this.btn_Kaydet.Location = new System.Drawing.Point(195, 203);
-            this.btn_Kaydet.Name = "btn_Kaydet";
-            this.btn_Kaydet.PressedImage = ((System.Drawing.Image)(resources.GetObject("btn_Kaydet.PressedImage")));
-            this.btn_Kaydet.Size = new System.Drawing.Size(117, 47);
-            this.btn_Kaydet.TabIndex = 65;
-            this.btn_Kaydet.Text = "   TAMAMLA";
-            this.btn_Kaydet.Click += new System.EventHandler(this.btn_Kaydet_Click);
+            this.btn_Onayla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
+            this.btn_Onayla.Enabled = false;
+            this.btn_Onayla.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.btn_Onayla.ForeColor = System.Drawing.Color.White;
+            this.btn_Onayla.Location = new System.Drawing.Point(234, 45);
+            this.btn_Onayla.Name = "btn_Onayla";
+            this.btn_Onayla.PressedImage = null;
+            this.btn_Onayla.Size = new System.Drawing.Size(75, 26);
+            this.btn_Onayla.TabIndex = 74;
+            this.btn_Onayla.Text = "Onayla";
+            this.btn_Onayla.Click += new System.EventHandler(this.btn_Onayla_Click);
             // 
             // frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay
             // 
@@ -508,12 +494,11 @@
         private System.Windows.Forms.Label lbl_LoginInfo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox btn_newKoliNo;
         private System.Windows.Forms.Label label2;
         private PictureButton btn_approveKoliDesi;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private PictureButton btn_next;
-        private PictureButton btn_previous;
     }
 }

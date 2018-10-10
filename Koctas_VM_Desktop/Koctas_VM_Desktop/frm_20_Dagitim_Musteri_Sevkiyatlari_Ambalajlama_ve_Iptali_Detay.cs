@@ -17,6 +17,7 @@ namespace KoctasWM_Project
         }
 
         DataTable _topla = new DataTable();
+        DataTable _toplaSecondScreen = new DataTable();
         public DataTable _koliTipiTablo = new DataTable();
         public WS_Kontrol.ZktWmStAmbalaj[] _dagitimListesi;
         public string _Vbeln;
@@ -27,6 +28,7 @@ namespace KoctasWM_Project
         string _koliTipi;
         string _koliTipiDesi;
         string _koliNo;
+        
 
 
         decimal miktar;
@@ -212,7 +214,7 @@ namespace KoctasWM_Project
             koliTipiCek();
             koliTipiDoldur();
 
-            cmbKoliTipi.Focus();
+            //cmbKoliTipi.Focus();
 
             Utility.selectText(txtKargoKoliNo);
 
@@ -537,6 +539,7 @@ namespace KoctasWM_Project
                         {
                             txtKolilenecekMiktar.Enabled = true;
                             btn_Onayla.Enabled = true;
+                            btn_next.Enabled = true;
                             Utility.selectText(txtKolilenecekMiktar);
                         }
                         else
@@ -854,6 +857,45 @@ namespace KoctasWM_Project
         {
             panel1.Left = 0;
             panel2.Left = 337;
+        }
+
+        private void setupSecondScreen()
+        {
+            _toplaSecondScreen.Columns.Add("Koli_No");
+            _toplaSecondScreen.Columns.Add("Koli_Tipi");
+            _toplaSecondScreen.Columns.Add("Desi_Bilgisi");
+
+            List<String> discinctList = new List<String>();
+
+            for (int i = 0; i < _topla.Rows.Count; i++)
+            {
+                if (discinctList.Contains(_topla.Rows[i]["KoliNo"].ToString()))
+                    continue;
+
+                DataRow dataRow = _toplaSecondScreen.NewRow();
+                dataRow["Koli_No"] = _topla.Rows[i]["KoliNo"].ToString();
+                dataRow["Koli_Tipi"] = "";
+                dataRow["Desi_Bilgisi"] = "";
+                _toplaSecondScreen.Rows.Add(dataRow);
+                discinctList.Add(_topla.Rows[i]["KoliNo"].ToString());
+            }
+            dataGridView1.DataSource = _toplaSecondScreen;
+
+            try
+            {
+                if (dataGridView1.Rows.Count > 0)
+                    dataGridView1.Rows[0].DefaultCellStyle.BackColor = Color.Yellow;
+
+                if (dataGridView1.Rows[0].Cells.Count > 0)
+                    btn_newKoliNo.Text = dataGridView1.Rows[0].Cells["Koli_No"].ToString();
+            }
+            catch (Exception e)
+            { }
+        }
+
+        private void btn_approveKoliDesi_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
