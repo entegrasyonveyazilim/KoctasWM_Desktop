@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay));
             this.p4 = new System.Windows.Forms.Panel();
+            this.btn_Onayla = new KoctasWM_Project.PictureButton();
             this.p3 = new System.Windows.Forms.Panel();
             this.txtKolilenecekMiktar = new System.Windows.Forms.TextBox();
             this.lbl_KolilenecekMiktar = new System.Windows.Forms.Label();
@@ -56,12 +57,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_next = new KoctasWM_Project.PictureButton();
+            this.btn_Geri = new KoctasWM_Project.PictureButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_approveKoliDesi = new KoctasWM_Project.PictureButton();
             this.btn_Kaydet = new KoctasWM_Project.PictureButton();
-            this.btn_next = new KoctasWM_Project.PictureButton();
-            this.btn_Geri = new KoctasWM_Project.PictureButton();
-            this.btn_Onayla = new KoctasWM_Project.PictureButton();
             this.p4.SuspendLayout();
             this.p3.SuspendLayout();
             this.p1.SuspendLayout();
@@ -87,6 +87,20 @@
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(312, 75);
             this.p4.TabIndex = 69;
+            // 
+            // btn_Onayla
+            // 
+            this.btn_Onayla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
+            this.btn_Onayla.Enabled = false;
+            this.btn_Onayla.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.btn_Onayla.ForeColor = System.Drawing.Color.White;
+            this.btn_Onayla.Location = new System.Drawing.Point(234, 45);
+            this.btn_Onayla.Name = "btn_Onayla";
+            this.btn_Onayla.PressedImage = null;
+            this.btn_Onayla.Size = new System.Drawing.Size(75, 26);
+            this.btn_Onayla.TabIndex = 74;
+            this.btn_Onayla.Text = "Onayla";
+            this.btn_Onayla.Click += new System.EventHandler(this.btn_Onayla_Click);
             // 
             // p3
             // 
@@ -355,6 +369,34 @@
             this.panel1.Size = new System.Drawing.Size(315, 270);
             this.panel1.TabIndex = 76;
             // 
+            // btn_next
+            // 
+            this.btn_next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
+            this.btn_next.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_next.BackgroundImage")));
+            this.btn_next.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_next.ForeColor = System.Drawing.Color.White;
+            this.btn_next.Location = new System.Drawing.Point(203, 209);
+            this.btn_next.Name = "btn_next";
+            this.btn_next.PressedImage = ((System.Drawing.Image)(resources.GetObject("btn_next.PressedImage")));
+            this.btn_next.Size = new System.Drawing.Size(106, 44);
+            this.btn_next.TabIndex = 76;
+            this.btn_next.Text = "   TAMAMLA";
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
+            // 
+            // btn_Geri
+            // 
+            this.btn_Geri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
+            this.btn_Geri.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Geri.BackgroundImage")));
+            this.btn_Geri.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Geri.ForeColor = System.Drawing.Color.White;
+            this.btn_Geri.Location = new System.Drawing.Point(0, 206);
+            this.btn_Geri.Name = "btn_Geri";
+            this.btn_Geri.PressedImage = ((System.Drawing.Image)(resources.GetObject("btn_Geri.PressedImage")));
+            this.btn_Geri.Size = new System.Drawing.Size(150, 47);
+            this.btn_Geri.TabIndex = 66;
+            this.btn_Geri.Text = "GERİ";
+            this.btn_Geri.Click += new System.EventHandler(this.btn_Geri_Click);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dataGridView1);
@@ -394,54 +436,12 @@
             this.btn_Kaydet.Text = "   TAMAMLA";
             this.btn_Kaydet.Click += new System.EventHandler(this.btn_Kaydet_Click);
             // 
-            // btn_next
-            // 
-            this.btn_next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_next.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_next.BackgroundImage")));
-            this.btn_next.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_next.ForeColor = System.Drawing.Color.White;
-            this.btn_next.Location = new System.Drawing.Point(203, 209);
-            this.btn_next.Name = "btn_next";
-            this.btn_next.PressedImage = ((System.Drawing.Image)(resources.GetObject("btn_next.PressedImage")));
-            this.btn_next.Size = new System.Drawing.Size(106, 44);
-            this.btn_next.TabIndex = 76;
-            this.btn_next.Text = "   TAMAMLA";
-            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
-            // 
-            // btn_Geri
-            // 
-            this.btn_Geri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Geri.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Geri.BackgroundImage")));
-            this.btn_Geri.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Geri.ForeColor = System.Drawing.Color.White;
-            this.btn_Geri.Location = new System.Drawing.Point(0, 206);
-            this.btn_Geri.Name = "btn_Geri";
-            this.btn_Geri.PressedImage = ((System.Drawing.Image)(resources.GetObject("btn_Geri.PressedImage")));
-            this.btn_Geri.Size = new System.Drawing.Size(150, 47);
-            this.btn_Geri.TabIndex = 66;
-            this.btn_Geri.Text = "GERİ";
-            this.btn_Geri.Click += new System.EventHandler(this.btn_Geri_Click);
-            // 
-            // btn_Onayla
-            // 
-            this.btn_Onayla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Onayla.Enabled = false;
-            this.btn_Onayla.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.btn_Onayla.ForeColor = System.Drawing.Color.White;
-            this.btn_Onayla.Location = new System.Drawing.Point(234, 45);
-            this.btn_Onayla.Name = "btn_Onayla";
-            this.btn_Onayla.PressedImage = null;
-            this.btn_Onayla.Size = new System.Drawing.Size(75, 26);
-            this.btn_Onayla.TabIndex = 74;
-            this.btn_Onayla.Text = "Onayla";
-            this.btn_Onayla.Click += new System.EventHandler(this.btn_Onayla_Click);
-            // 
             // frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(323, 277);
+            this.ClientSize = new System.Drawing.Size(711, 277);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
