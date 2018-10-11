@@ -35,6 +35,7 @@
             this.btn_MalCikisIslemleri = new KoctasWM_Project.PictureButton();
             this.btn_DepoIciIslemler = new KoctasWM_Project.PictureButton();
             this.btn_MalGirisiPaletleme = new KoctasWM_Project.PictureButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_LoginInfo
@@ -118,12 +119,23 @@
             this.btn_MalGirisiPaletleme.Text = "MAL GİRİŞ İŞLEMLERİ";
             this.btn_MalGirisiPaletleme.Click += new System.EventHandler(this.btn_MalGirisiPaletleme_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(91, 254);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(318, 295);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_LoginInfo);
             this.Controls.Add(this.btn_EnvanterIslemleri);
             this.Controls.Add(this.btn_sayimIslemleri);
@@ -149,5 +161,6 @@
         private PictureButton btn_sayimIslemleri;
         private PictureButton btn_EnvanterIslemleri;
         private System.Windows.Forms.Label lbl_LoginInfo;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -191,7 +191,7 @@
             this.txtDagitimAraci.BackColor = System.Drawing.Color.White;
             this.txtDagitimAraci.Location = new System.Drawing.Point(131, 3);
             this.txtDagitimAraci.Name = "txtDagitimAraci";
-            this.txtDagitimAraci.Size = new System.Drawing.Size(178, 20);
+            this.txtDagitimAraci.Size = new System.Drawing.Size(178, 22);
             this.txtDagitimAraci.TabIndex = 3;
             this.txtDagitimAraci.GotFocus += new System.EventHandler(this.txtDagitimAraci_GotFocus);
             this.txtDagitimAraci.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDagitimAraci_KeyDown);
@@ -220,8 +220,9 @@
             this.txtDagitimAdresi.BackColor = System.Drawing.Color.White;
             this.txtDagitimAdresi.Location = new System.Drawing.Point(131, 3);
             this.txtDagitimAdresi.Name = "txtDagitimAdresi";
-            this.txtDagitimAdresi.Size = new System.Drawing.Size(178, 20);
+            this.txtDagitimAdresi.Size = new System.Drawing.Size(178, 22);
             this.txtDagitimAdresi.TabIndex = 3;
+            this.txtDagitimAdresi.Text = "arac-1-14";
             this.txtDagitimAdresi.GotFocus += new System.EventHandler(this.txtDagitimAdresi_GotFocus);
             this.txtDagitimAdresi.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDagitimAdresi_KeyDown);
             // 

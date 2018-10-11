@@ -82,5 +82,11 @@ namespace KoctasWM_Project
         {
         
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay asd = new frm_20_Dagitim_Musteri_Sevkiyatlari_Ambalajlama_ve_Iptali_Detay();
+            asd.Show();
+        }
     }
 }

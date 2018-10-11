@@ -47,7 +47,7 @@
             this.lbl_DesiBilgisi = new System.Windows.Forms.Label();
             this.cmbKoliTipi = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_newKoliNo = new System.Windows.Forms.TextBox();
+            this.txt_newKoliNo = new System.Windows.Forms.TextBox();
             this.lbl_KoliTipi = new System.Windows.Forms.Label();
             this.p5 = new System.Windows.Forms.Panel();
             this.txtMalzemeNo = new System.Windows.Forms.TextBox();
@@ -202,6 +202,7 @@
             this.txtKargoKoliNo.Name = "txtKargoKoliNo";
             this.txtKargoKoliNo.Size = new System.Drawing.Size(178, 22);
             this.txtKargoKoliNo.TabIndex = 3;
+            this.txtKargoKoliNo.Text = "99990036";
             this.txtKargoKoliNo.GotFocus += new System.EventHandler(this.txtKargoKoliNo_GotFocus);
             this.txtKargoKoliNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtKargoKoliNo_KeyDown);
             // 
@@ -212,7 +213,7 @@
             this.p2.Controls.Add(this.lbl_DesiBilgisi);
             this.p2.Controls.Add(this.cmbKoliTipi);
             this.p2.Controls.Add(this.label1);
-            this.p2.Controls.Add(this.btn_newKoliNo);
+            this.p2.Controls.Add(this.txt_newKoliNo);
             this.p2.Controls.Add(this.lbl_KoliTipi);
             this.p2.Location = new System.Drawing.Point(3, 3);
             this.p2.Name = "p2";
@@ -261,13 +262,13 @@
             this.label1.TabIndex = 70;
             this.label1.Text = "Koli Numarası:";
             // 
-            // btn_newKoliNo
+            // txt_newKoliNo
             // 
-            this.btn_newKoliNo.Enabled = false;
-            this.btn_newKoliNo.Location = new System.Drawing.Point(110, 1);
-            this.btn_newKoliNo.Name = "btn_newKoliNo";
-            this.btn_newKoliNo.Size = new System.Drawing.Size(137, 22);
-            this.btn_newKoliNo.TabIndex = 72;
+            this.txt_newKoliNo.Location = new System.Drawing.Point(110, 1);
+            this.txt_newKoliNo.Name = "txt_newKoliNo";
+            this.txt_newKoliNo.Size = new System.Drawing.Size(137, 22);
+            this.txt_newKoliNo.TabIndex = 72;
+            this.txt_newKoliNo.TextChanged += new System.EventHandler(this.txt_newKoliNo_TextChanged);
             // 
             // lbl_KoliTipi
             // 
@@ -321,7 +322,9 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 93);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -395,7 +398,6 @@
             // 
             this.btn_next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
             this.btn_next.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_next.BackgroundImage")));
-            this.btn_next.Enabled = false;
             this.btn_next.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.btn_next.ForeColor = System.Drawing.Color.White;
             this.btn_next.Location = new System.Drawing.Point(203, 209);
@@ -439,7 +441,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(657, 277);
+            this.ClientSize = new System.Drawing.Size(323, 277);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -494,7 +496,7 @@
         private System.Windows.Forms.Label lbl_LoginInfo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox btn_newKoliNo;
+        private System.Windows.Forms.TextBox txt_newKoliNo;
         private System.Windows.Forms.Label label2;
         private PictureButton btn_approveKoliDesi;
         private System.Windows.Forms.Panel panel1;

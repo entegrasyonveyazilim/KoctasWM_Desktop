@@ -56,9 +56,9 @@
             this.txtKullaniciAdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(239)))), ((int)(((byte)(250)))));
             this.txtKullaniciAdi.Location = new System.Drawing.Point(137, 151);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(178, 20);
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(178, 22);
             this.txtKullaniciAdi.TabIndex = 1;
-            this.txtKullaniciAdi.Text = "ozgurm";
+            this.txtKullaniciAdi.Text = "gokhankaya";
             this.txtKullaniciAdi.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtKullaniciAdi_KeyDown);
             // 
             // lbl_KullaniciAdi
@@ -94,9 +94,9 @@
             this.txtSifre.Location = new System.Drawing.Point(137, 180);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '*';
-            this.txtSifre.Size = new System.Drawing.Size(178, 20);
+            this.txtSifre.Size = new System.Drawing.Size(178, 22);
             this.txtSifre.TabIndex = 5;
-            this.txtSifre.Text = "Macit*180";
+            this.txtSifre.Text = "Gokhan123";
             this.txtSifre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSifre_KeyDown);
             // 
             // lbl_BaglantiBilgisi

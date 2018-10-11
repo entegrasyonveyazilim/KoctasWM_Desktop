@@ -18,6 +18,7 @@ namespace KoctasWM_Project
 
         DataTable _topla = new DataTable();
         DataTable _toplaSecondScreen = new DataTable();
+        private int secondScreenDateGridIndex = 0;
         public DataTable _koliTipiTablo = new DataTable();
         public WS_Kontrol.ZktWmStAmbalaj[] _dagitimListesi;
         public string _Vbeln;
@@ -304,7 +305,7 @@ namespace KoctasWM_Project
                     }
                 }
             }
-            if (!buldum) cmbKoliTipi.Focus();
+            //if (!buldum) cmbKoliTipi.Focus();
         }
 
         private void txtKargoKoliNo_KeyDown(object sender, KeyEventArgs e)
@@ -342,7 +343,7 @@ namespace KoctasWM_Project
                     else
                     {
                         MessageBox.Show(resp.EsResponse[0].Message.ToString(), "HATA");
-                        Utility.selectText(txtKargoKoliNo);
+                        Utility.selectText(txtMalzemeNo);
                     }
 
                 }
@@ -580,22 +581,22 @@ namespace KoctasWM_Project
                 return;
             }
 
-            try
-            {
-                _koliTipiDesi = txtDesiBilgisi.Text.ToString().Trim();
-                if (!(Convert.ToDecimal(_koliTipiDesi) > 0))
-                {
-                    MessageBox.Show("Desi bilgisi sıfırdan büyük olmalı", "HATA");
-                    Utility.selectText(txtDesiBilgisi);
-                    return;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Desi bilgisi alanı sayısal bir değer olmalıdır", "HATA");
-                Utility.selectText(txtDesiBilgisi);
-                return;
-            }
+            //try
+            //{
+            //    _koliTipiDesi = txtDesiBilgisi.Text.ToString().Trim();
+            //    if (!(Convert.ToDecimal(_koliTipiDesi) > 0))
+            //    {
+            //        MessageBox.Show("Desi bilgisi sıfırdan büyük olmalı", "HATA");
+            //        Utility.selectText(txtDesiBilgisi);
+            //        return;
+            //    }
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Desi bilgisi alanı sayısal bir değer olmalıdır", "HATA");
+            //    Utility.selectText(txtDesiBilgisi);
+            //    return;
+            //}
 
             if (!(miktar > 0))
             {
@@ -851,12 +852,7 @@ namespace KoctasWM_Project
         {
             panel1.Left = 337;
             panel2.Left = 0;
-        }
-
-        private void btn_previous_Click(object sender, EventArgs e)
-        {
-            panel1.Left = 0;
-            panel2.Left = 337;
+            setupSecondScreen();
         }
 
         private void setupSecondScreen()
@@ -881,21 +877,72 @@ namespace KoctasWM_Project
             }
             dataGridView1.DataSource = _toplaSecondScreen;
 
-            try
-            {
-                if (dataGridView1.Rows.Count > 0)
-                    dataGridView1.Rows[0].DefaultCellStyle.BackColor = Color.Yellow;
+            //try
+            //{
+            //    if (dataGridView1.Rows.Count > 0)
+            //    {
+            //        dataGridView1.Rows[0].DefaultCellStyle.BackColor = Color.Yellow;
+            //        dataGridView1.Rows[0].Selected = false;
+            //    }
 
-                if (dataGridView1.Rows[0].Cells.Count > 0)
-                    btn_newKoliNo.Text = dataGridView1.Rows[0].Cells["Koli_No"].ToString();
-            }
-            catch (Exception e)
-            { }
+            //    if (dataGridView1.Rows[0].Cells.Count > 0)
+            //        txt_newKoliNo.Text = dataGridView1.Rows[0].Cells["Koli_No"].Value.ToString();
+            //}
+            //catch (Exception e)
+            //{ }
         }
 
         private void btn_approveKoliDesi_Click(object sender, EventArgs e)
         {
+            if (txt_newKoliNo.Text.Trim().Equals(""))
+            {
+                MessageBox.Show("Kargo No Giriniz");
+                return;
+            }
 
+            if (cmbKoliTipi.SelectedIndex <= 0 || txtDesiBilgisi.Equals(""))
+            {
+                MessageBox.Show("Lütfen Koli Tipi Seçiniz");
+                return;
+            }
+
+            if (secondScreenDateGridIndex < dataGridView1.Rows.Count && secondScreenDateGridIndex != -1)
+            {
+                dataGridView1.Rows[secondScreenDateGridIndex].Cells["Koli_Tipi"].Value = cmbKoliTipi.SelectedItem.ToString();
+                dataGridView1.Rows[secondScreenDateGridIndex].Cells["Desi_Bilgisi"].Value = txtDesiBilgisi.Text;
+                dataGridView1.Rows[secondScreenDateGridIndex].DefaultCellStyle.BackColor = Color.LightGreen;
+
+                for (int i = 0; i < _topla.Rows.Count; i++)
+                {
+                    if (_topla.Rows[i]["KoliNo"].ToString().Equals(txt_newKoliNo.Text))
+                    {
+                        _topla.Rows[i]["KoliTipi"] = cmbKoliTipi.SelectedItem.ToString();
+                        _topla.Rows[i]["Desi"] = txtDesiBilgisi.Text;
+                    }
+                }
+
+                dataGridView1.Rows[secondScreenDateGridIndex].Selected = true;
+                txt_newKoliNo.Text = dataGridView1.Rows[secondScreenDateGridIndex].Cells["Koli_No"].Value.ToString();
+                dataGridView1.Rows[secondScreenDateGridIndex].DefaultCellStyle.BackColor = Color.LightGreen;
+
+                txt_newKoliNo.Text = "";
+                cmbKoliTipi.SelectedIndex = 0;
+                txtDesiBilgisi.Text = "";
+            }
+        }
+        
+        private void txt_newKoliNo_TextChanged(object sender, EventArgs e)
+        {
+            cmbKoliTipi.Enabled = true;
+            secondScreenDateGridIndex = -1;
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                if (dataGridView1.Rows[i].Cells["Koli_No"].Value.ToString().Equals(txt_newKoliNo.Text))
+                {
+                    secondScreenDateGridIndex = i;
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
+                }
+            }
         }
     }
 }
