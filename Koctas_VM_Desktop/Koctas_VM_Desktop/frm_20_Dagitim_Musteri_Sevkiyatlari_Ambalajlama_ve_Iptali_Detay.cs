@@ -690,16 +690,7 @@ namespace KoctasWM_Project
         }
 
         private void btn_Kaydet_Click(object sender, EventArgs e)
-        {
-
-            if (!toplamMiktarKarsilastir())
-            {
-                MessageBox.Show("Dağıtım adresindeki tüm ürünler koliye aktarılmadı. Kontrol ediniz.", "HATA");
-                return;
-            }
-            
-            
-            
+        {            
             if (MessageBox.Show("Mal çıkışını onaylıyor musunuz?", "BİLGİ", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Cursor.Current = Cursors.WaitCursor;
@@ -850,6 +841,12 @@ namespace KoctasWM_Project
 
         private void btn_next_Click(object sender, EventArgs e)
         {
+            if (!toplamMiktarKarsilastir())
+            {
+                MessageBox.Show("Dağıtım adresindeki tüm ürünler koliye aktarılmadı. Kontrol ediniz.", "HATA");
+                return;
+            }
+
             panel1.Left = 337;
             panel2.Left = 0;
             setupSecondScreen();
@@ -916,8 +913,8 @@ namespace KoctasWM_Project
                 {
                     if (_topla.Rows[i]["KoliNo"].ToString().Equals(txt_newKoliNo.Text))
                     {
-                        _topla.Rows[i]["KoliTipi"] = cmbKoliTipi.SelectedItem.ToString();
-                        _topla.Rows[i]["Desi"] = txtDesiBilgisi.Text;
+                        _topla.Rows[i]["KoliTipi"] = _koliTipi;
+                        _topla.Rows[i]["Desi"] = _koliTipiDesi;
                     }
                 }
 
