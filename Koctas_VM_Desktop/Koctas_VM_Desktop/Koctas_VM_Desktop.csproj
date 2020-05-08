@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -402,6 +405,12 @@
       <DependentUpon>frm_WMLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalData.cs" />
+    <Compile Include="Kerem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kerem.Designer.cs">
+      <DependentUpon>Kerem.cs</DependentUpon>
+    </Compile>
     <Compile Include="PictureButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -413,6 +422,11 @@
     <Compile Include="Service References\Web References\WS_Yardim\Reference.cs" />
     <Compile Include="TaskBarHelper.cs" />
     <Compile Include="Utility.cs" />
+    <Compile Include="Web References\WS_Palet_Oku\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_01_SA_Trans_Girisi_Paletleme.resx">
       <DependentUpon>frm_01_SA_Trans_Girisi_Paletleme.cs</DependentUpon>
     </EmbeddedResource>
@@ -590,6 +604,9 @@
     <EmbeddedResource Include="frm_WMLogin.resx">
       <DependentUpon>frm_WMLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kerem.resx">
+      <DependentUpon>Kerem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -707,6 +724,14 @@
     <None Include="Service References\Web References\WS_Yardim\ZKtWmWsKargoFirmalariResponse.datasource" />
     <None Include="Service References\Web References\WS_Yardim\ZKtWmWsKoliTipleriResponse.datasource" />
     <None Include="Service References\Web References\WS_Yardim\ZKtWmWsSayimKytOnceKontResponse.datasource" />
+    <None Include="Web References\WS_Palet_Oku\paletlioku.wsdl" />
+    <None Include="Web References\WS_Palet_Oku\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_Palet_Oku\Z_EWM_PALETLI_MAL_KABUL_OKUResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -717,6 +742,25 @@
     <Content Include="KoctasWM_Project.csproj" />
     <Content Include="KoctasWM_Project.csproj.user" />
     <Content Include="WindowsFormsApplication1.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\Users\KemalTalha.Koc\Desktop\paletlioku.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_Palet_Oku\</RelPath>
+      <UpdateFromURL>C:\Users\KemalTalha.Koc\Desktop\paletlioku.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Koctas_VM_Desktop_WS_Palet_Oku_Z_EWM_PALETLI_MAL_KABUL_OKU</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,7 +12,7 @@ namespace Koctas_VM_Desktop.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -20,6 +20,17 @@ namespace Koctas_VM_Desktop.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://kterpdev.koctas.com.tr:8000/sap/bc/srt/rfc/sap/zewm_palet_mal_kabul_oku/50" +
+            "0/z_ewm_paletli_mal_kabul_oku/paletlioku")]
+        public string Koctas_VM_Desktop_WS_Palet_Oku_Z_EWM_PALETLI_MAL_KABUL_OKU {
+            get {
+                return ((string)(this["Koctas_VM_Desktop_WS_Palet_Oku_Z_EWM_PALETLI_MAL_KABUL_OKU"]));
             }
         }
     }

@@ -21,7 +21,7 @@ namespace KoctasWM_Project
 
         private void frm_01_SA_Trans_Girisi_Adresleme_Load(object sender, EventArgs e)
         {
-             
+            
             this.TopMost = false;
             Utility.loginInfo(lbl_LoginInfo);
             txtMalzemeNo.Focus();

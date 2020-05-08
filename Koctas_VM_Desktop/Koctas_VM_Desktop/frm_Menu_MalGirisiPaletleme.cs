@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Koctas_VM_Desktop;
 
 namespace KoctasWM_Project
 {
@@ -63,5 +64,10 @@ namespace KoctasWM_Project
             frm.ShowDialog();
         }
 
-     }
+        private void pictureButton1_Click(object sender, EventArgs e)
+        {
+            Kerem kerem = new Kerem();
+            kerem.ShowDialog();
+        }
+    }
 }

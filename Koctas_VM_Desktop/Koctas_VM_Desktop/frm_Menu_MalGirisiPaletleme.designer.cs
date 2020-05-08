@@ -36,6 +36,7 @@
             this.btn_Adresleme = new KoctasWM_Project.PictureButton();
             this.btn_Paletleme = new KoctasWM_Project.PictureButton();
             this.lbl_LoginInfo = new System.Windows.Forms.Label();
+            this.pictureButton1 = new KoctasWM_Project.PictureButton();
             this.SuspendLayout();
             // 
             // btn_MusteriIadeGirisi
@@ -124,21 +125,37 @@
             // 
             // lbl_LoginInfo
             // 
-            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular);
+            this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_LoginInfo.Location = new System.Drawing.Point(98, 259);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
+            this.lbl_LoginInfo.TabIndex = 0;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pictureButton1
+            // 
+            this.pictureButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
+            this.pictureButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureButton1.BackgroundImage")));
+            this.pictureButton1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.pictureButton1.ForeColor = System.Drawing.Color.White;
+            this.pictureButton1.Location = new System.Drawing.Point(3, 290);
+            this.pictureButton1.Name = "pictureButton1";
+            this.pictureButton1.PressedImage = ((System.Drawing.Image)(resources.GetObject("pictureButton1.PressedImage")));
+            this.pictureButton1.Size = new System.Drawing.Size(312, 47);
+            this.pictureButton1.TabIndex = 25;
+            this.pictureButton1.Text = "KEREM";
+            this.pictureButton1.Click += new System.EventHandler(this.pictureButton1_Click);
             // 
             // frm_Menu_MalGirisiPaletleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(318, 295);
+            this.ClientSize = new System.Drawing.Size(318, 354);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureButton1);
             this.Controls.Add(this.lbl_LoginInfo);
             this.Controls.Add(this.btn_MusteriIadeGirisi);
             this.Controls.Add(this.btn_SetUrunuIslemleri);
@@ -164,5 +181,6 @@
         private PictureButton btn_SetUrunuIslemleri;
         private PictureButton btn_MusteriIadeGirisi;
         private System.Windows.Forms.Label lbl_LoginInfo;
+        private PictureButton pictureButton1;
     }
 }
