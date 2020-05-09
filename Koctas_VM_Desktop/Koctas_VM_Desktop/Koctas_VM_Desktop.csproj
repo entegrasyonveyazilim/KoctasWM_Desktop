@@ -414,6 +414,12 @@
     <Compile Include="PictureButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Popupform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popupform.Designer.cs">
+      <DependentUpon>Popupform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\Web References\WS_Islem\Reference.cs" />
@@ -422,6 +428,11 @@
     <Compile Include="Service References\Web References\WS_Yardim\Reference.cs" />
     <Compile Include="TaskBarHelper.cs" />
     <Compile Include="Utility.cs" />
+    <Compile Include="Web References\WS_Palet_Kaydet\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\WS_Palet_Oku\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -607,6 +618,9 @@
     <EmbeddedResource Include="Kerem.resx">
       <DependentUpon>Kerem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Popupform.resx">
+      <DependentUpon>Popupform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -724,6 +738,14 @@
     <None Include="Service References\Web References\WS_Yardim\ZKtWmWsKargoFirmalariResponse.datasource" />
     <None Include="Service References\Web References\WS_Yardim\ZKtWmWsKoliTipleriResponse.datasource" />
     <None Include="Service References\Web References\WS_Yardim\ZKtWmWsSayimKytOnceKontResponse.datasource" />
+    <None Include="Web References\WS_Palet_Kaydet\paletlikaydet.wsdl" />
+    <None Include="Web References\WS_Palet_Kaydet\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_Palet_Kaydet\Z_EWM_PALETLI_MAL_KABUL_KAYDETResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\WS_Palet_Oku\paletlioku.wsdl" />
     <None Include="Web References\WS_Palet_Oku\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
@@ -750,6 +772,17 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <WebReferenceUrl Include="C:\Users\KemalTalha.Koc\Desktop\paletlikaydet.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_Palet_Kaydet\</RelPath>
+      <UpdateFromURL>C:\Users\KemalTalha.Koc\Desktop\paletlikaydet.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Koctas_VM_Desktop_WS_Palet_Kaydet_Z_EWM_PALETLI_MAL_KABUL_KAYDET</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="C:\Users\KemalTalha.Koc\Desktop\paletlioku.wsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\WS_Palet_Oku\</RelPath>

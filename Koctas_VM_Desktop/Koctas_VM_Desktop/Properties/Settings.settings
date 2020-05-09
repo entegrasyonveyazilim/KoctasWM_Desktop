@@ -5,5 +5,8 @@
     <Setting Name="Koctas_VM_Desktop_WS_Palet_Oku_Z_EWM_PALETLI_MAL_KABUL_OKU" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://kterpdev.koctas.com.tr:8000/sap/bc/srt/rfc/sap/zewm_palet_mal_kabul_oku/500/z_ewm_paletli_mal_kabul_oku/paletlioku</Value>
     </Setting>
+    <Setting Name="Koctas_VM_Desktop_WS_Palet_Kaydet_Z_EWM_PALETLI_MAL_KABUL_KAYDET" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://kterpdev.koctas.com.tr:8000/sap/bc/srt/rfc/sap/zewm_paletli_mal_kabul_kaydet/500/z_ewm_paletli_mal_kabul_kaydet/paletlikaydet</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

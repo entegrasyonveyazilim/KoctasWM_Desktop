@@ -203,3 +203,4 @@ C:\Users\KemalTalha.Koc\Source\Repos\kpmehmetkeskin\KoctasWM_Desktop\Koctas_VM_D
 C:\Users\KemalTalha.Koc\Source\Repos\kpmehmetkeskin\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.exe
 C:\Users\KemalTalha.Koc\Source\Repos\kpmehmetkeskin\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.pdb
 C:\Users\KemalTalha.Koc\Source\Repos\kpmehmetkeskin\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.Kerem.resources
+C:\Users\KemalTalha.Koc\source\repos\kpmehmetkeskin\KoctasWM_Desktop\Koctas_VM_Desktop\Koctas_VM_Desktop\obj\Debug\Koctas_VM_Desktop.Popupform.resources

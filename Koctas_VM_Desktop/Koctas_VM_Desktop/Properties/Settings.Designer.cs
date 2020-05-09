@@ -33,5 +33,16 @@ namespace Koctas_VM_Desktop.Properties {
                 return ((string)(this["Koctas_VM_Desktop_WS_Palet_Oku_Z_EWM_PALETLI_MAL_KABUL_OKU"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://kterpdev.koctas.com.tr:8000/sap/bc/srt/rfc/sap/zewm_paletli_mal_kabul_kayd" +
+            "et/500/z_ewm_paletli_mal_kabul_kaydet/paletlikaydet")]
+        public string Koctas_VM_Desktop_WS_Palet_Kaydet_Z_EWM_PALETLI_MAL_KABUL_KAYDET {
+            get {
+                return ((string)(this["Koctas_VM_Desktop_WS_Palet_Kaydet_Z_EWM_PALETLI_MAL_KABUL_KAYDET"]));
+            }
+        }
     }
 }

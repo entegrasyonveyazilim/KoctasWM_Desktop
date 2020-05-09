@@ -35,11 +35,12 @@
             this.p2 = new System.Windows.Forms.Panel();
             this.dtp_kayit = new System.Windows.Forms.DateTimePicker();
             this.lbl_KayitTarihi = new System.Windows.Forms.Label();
-            this.btn_Ekle = new KoctasWM_Project.PictureButton();
             this.grd_mal = new System.Windows.Forms.DataGrid();
             this.lbl_LoginInfo = new System.Windows.Forms.Label();
+            this.pictureButton1 = new KoctasWM_Project.PictureButton();
             this.btn_Geri = new KoctasWM_Project.PictureButton();
             this.btn_Kaydet = new KoctasWM_Project.PictureButton();
+            this.btn_Ekle = new KoctasWM_Project.PictureButton();
             this.p1.SuspendLayout();
             this.p2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grd_mal)).BeginInit();
@@ -101,19 +102,6 @@
             this.lbl_KayitTarihi.TabIndex = 65;
             this.lbl_KayitTarihi.Text = "Kayıt Tarihi:";
             // 
-            // btn_Ekle
-            // 
-            this.btn_Ekle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
-            this.btn_Ekle.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.btn_Ekle.ForeColor = System.Drawing.Color.White;
-            this.btn_Ekle.Location = new System.Drawing.Point(3, 65);
-            this.btn_Ekle.Name = "btn_Ekle";
-            this.btn_Ekle.PressedImage = null;
-            this.btn_Ekle.Size = new System.Drawing.Size(92, 27);
-            this.btn_Ekle.TabIndex = 96;
-            this.btn_Ekle.Text = "Listele";
-            this.btn_Ekle.Click += new System.EventHandler(this.btn_Ekle_Click);
-            // 
             // grd_mal
             // 
             this.grd_mal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -136,6 +124,19 @@
             this.lbl_LoginInfo.TabIndex = 98;
             this.lbl_LoginInfo.Text = "Bağlı Kullanıcı: ";
             this.lbl_LoginInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pictureButton1
+            // 
+            this.pictureButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
+            this.pictureButton1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.pictureButton1.ForeColor = System.Drawing.Color.White;
+            this.pictureButton1.Location = new System.Drawing.Point(101, 65);
+            this.pictureButton1.Name = "pictureButton1";
+            this.pictureButton1.PressedImage = null;
+            this.pictureButton1.Size = new System.Drawing.Size(92, 27);
+            this.pictureButton1.TabIndex = 101;
+            this.pictureButton1.Text = "Listele";
+            this.pictureButton1.Click += new System.EventHandler(this.pictureButton1_Click);
             // 
             // btn_Geri
             // 
@@ -165,11 +166,25 @@
             this.btn_Kaydet.Text = "    KAYDET";
             this.btn_Kaydet.Click += new System.EventHandler(this.btn_Kaydet_Click);
             // 
+            // btn_Ekle
+            // 
+            this.btn_Ekle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
+            this.btn_Ekle.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.btn_Ekle.ForeColor = System.Drawing.Color.White;
+            this.btn_Ekle.Location = new System.Drawing.Point(3, 65);
+            this.btn_Ekle.Name = "btn_Ekle";
+            this.btn_Ekle.PressedImage = null;
+            this.btn_Ekle.Size = new System.Drawing.Size(92, 27);
+            this.btn_Ekle.TabIndex = 96;
+            this.btn_Ekle.Text = "Listele";
+            this.btn_Ekle.Click += new System.EventHandler(this.btn_Ekle_Click);
+            // 
             // Kerem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(318, 295);
+            this.Controls.Add(this.pictureButton1);
             this.Controls.Add(this.btn_Geri);
             this.Controls.Add(this.btn_Kaydet);
             this.Controls.Add(this.lbl_LoginInfo);
@@ -201,5 +216,6 @@
         private System.Windows.Forms.Label lbl_LoginInfo;
         private KoctasWM_Project.PictureButton btn_Geri;
         private KoctasWM_Project.PictureButton btn_Kaydet;
+        private KoctasWM_Project.PictureButton pictureButton1;
     }
 }
