@@ -41,9 +41,13 @@
             this.btn_Geri = new KoctasWM_Project.PictureButton();
             this.btn_Kaydet = new KoctasWM_Project.PictureButton();
             this.btn_Ekle = new KoctasWM_Project.PictureButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.p1.SuspendLayout();
             this.p2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grd_mal)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // p1
@@ -113,12 +117,14 @@
             this.grd_mal.Name = "grd_mal";
             this.grd_mal.Size = new System.Drawing.Size(312, 112);
             this.grd_mal.TabIndex = 97;
+            this.grd_mal.Click += new System.EventHandler(this.grd_mal_Click);
+            this.grd_mal.MouseClick += new System.Windows.Forms.MouseEventHandler(this.grd_mal_MouseClick);
             // 
             // lbl_LoginInfo
             // 
             this.lbl_LoginInfo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.lbl_LoginInfo.ForeColor = System.Drawing.Color.Black;
-            this.lbl_LoginInfo.Location = new System.Drawing.Point(95, 269);
+            this.lbl_LoginInfo.Location = new System.Drawing.Point(95, 272);
             this.lbl_LoginInfo.Name = "lbl_LoginInfo";
             this.lbl_LoginInfo.Size = new System.Drawing.Size(217, 16);
             this.lbl_LoginInfo.TabIndex = 98;
@@ -130,12 +136,12 @@
             this.pictureButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(117)))), ((int)(((byte)(30)))));
             this.pictureButton1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.pictureButton1.ForeColor = System.Drawing.Color.White;
-            this.pictureButton1.Location = new System.Drawing.Point(101, 65);
+            this.pictureButton1.Location = new System.Drawing.Point(128, 0);
             this.pictureButton1.Name = "pictureButton1";
             this.pictureButton1.PressedImage = null;
-            this.pictureButton1.Size = new System.Drawing.Size(92, 27);
+            this.pictureButton1.Size = new System.Drawing.Size(60, 27);
             this.pictureButton1.TabIndex = 101;
-            this.pictureButton1.Text = "Listele";
+            this.pictureButton1.Text = "Güncelle";
             this.pictureButton1.Click += new System.EventHandler(this.pictureButton1_Click);
             // 
             // btn_Geri
@@ -179,12 +185,41 @@
             this.btn_Ekle.Text = "Listele";
             this.btn_Ekle.Click += new System.EventHandler(this.btn_Ekle_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.pictureButton1);
+            this.panel1.Location = new System.Drawing.Point(120, 65);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(192, 27);
+            this.panel1.TabIndex = 88;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(3, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Miktar:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.textBox2.Location = new System.Drawing.Point(63, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(56, 22);
+            this.textBox2.TabIndex = 3;
+            // 
             // Kerem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(318, 295);
-            this.Controls.Add(this.pictureButton1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_Geri);
             this.Controls.Add(this.btn_Kaydet);
             this.Controls.Add(this.lbl_LoginInfo);
@@ -199,6 +234,8 @@
             this.p1.PerformLayout();
             this.p2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grd_mal)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -217,5 +254,8 @@
         private KoctasWM_Project.PictureButton btn_Geri;
         private KoctasWM_Project.PictureButton btn_Kaydet;
         private KoctasWM_Project.PictureButton pictureButton1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

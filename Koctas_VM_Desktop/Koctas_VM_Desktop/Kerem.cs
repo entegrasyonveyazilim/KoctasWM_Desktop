@@ -87,8 +87,8 @@ namespace Koctas_VM_Desktop
 
                 grd_mal.DataSource = null;
                 grd_mal.DataSource = dt_mal;
-             
-             
+                grd_mal.ReadOnly = true;
+     
                // grd_mal.Row
                 //EditdwColumn(grd_mal);
                 Utility.selectText(txtSevkNo);
@@ -153,33 +153,24 @@ namespace Koctas_VM_Desktop
         {
             this.Close();
         }
-        private string degisken = "ali";
+
         private void pictureButton1_Click(object sender, EventArgs e)
         {
-            //Popupform popup = new Popupform();
-            //if (popup.ShowDialog(this) == DialogResult.OK)
-            //{
-            //    // Read the contents of testDialog's TextBox.
-            //    this.degisken = popup.ReturnValue1;
-            //}
-            //else
-            //{
-            //    this.degisken = "Cancelled";
-            //}
+            dt_mal.Rows[rownum]["Giris_Miktari"] = textBox2.Text;
 
-            ////if (popup.ShowDialog(this) == DialogResult.OK)
-            ////{
-            ////    // Read the contents of testDialog's TextBox.
-            ////    degisken = popup.ReturnValue1;
-            ////}
-            ////degisken = degisken;
-            ////popup.Dispose();
-            ////else
-            ////{
-            ////    this.txtResult.Text = "Cancelled";
-            ////}
+        }
 
+        int rownum = 0;
+        private void grd_mal_MouseClick(object sender, MouseEventArgs e)
+        {
+            rownum = grd_mal.CurrentCell.RowNumber;
+            textBox2.Text = dt_mal.Rows[rownum]["Giris_Miktari"].ToString();
+        }
 
+        private void grd_mal_Click(object sender, EventArgs e)
+        {
+            rownum = grd_mal.CurrentCell.RowNumber;
+            textBox2.Text = dt_mal.Rows[rownum]["Giris_Miktari"].ToString();
         }
     }
 }
